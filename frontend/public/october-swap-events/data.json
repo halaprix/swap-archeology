@@ -1,0 +1,2358 @@
+{
+  "metadata": {
+    "title": "October 10 2025 Bounded Swap-Event Experiment",
+    "startBlock": 23550020,
+    "endBlock": 23550069,
+    "startUtc": "2025-10-10T21:30:23Z",
+    "endUtc": "2025-10-10T21:40:23Z",
+    "canonicalBlockCount": 50,
+    "worstGapBlock": 23550044,
+    "cacheReused": true,
+    "generatedAt": "2026-09-11T06:59:19.089541+00:00",
+    "executionTimeSeconds": 0.0375
+  },
+  "coverageAndExclusions": {
+    "includedPools": [
+      {
+        "address": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+        "label": "Uniswap V3 0.05%",
+        "family": "uniswap_v3",
+        "feeBps": 5.0
+      },
+      {
+        "address": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8",
+        "label": "Uniswap V3 0.3%",
+        "family": "uniswap_v3",
+        "feeBps": 30.0
+      },
+      {
+        "address": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+        "label": "Uniswap V3 0.01%",
+        "family": "uniswap_v3",
+        "feeBps": 1.0
+      },
+      {
+        "address": "0x7bea39867e4169dbe237d55c8242a8f2fcdcc387",
+        "label": "Uniswap V3 1.0%",
+        "family": "uniswap_v3",
+        "feeBps": 100.0
+      },
+      {
+        "address": "0x1ac1a8feaaea1900c4166deeed0c11cc10669d36",
+        "label": "PancakeSwap V3 0.05%",
+        "family": "pancake_v3",
+        "feeBps": 5.0
+      },
+      {
+        "address": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc",
+        "label": "Uniswap V2 0.3%",
+        "family": "uniswap_v2",
+        "feeBps": 30.0
+      }
+    ],
+    "excludedFamilies": [
+      {
+        "family": "uniswap_v4",
+        "reason": "Singleton pool manager, flash accounting, and distinct Swap event semantics."
+      },
+      {
+        "family": "fluid_dex",
+        "reason": "Internal debt/collateral liquidity architecture and distinct event schema."
+      }
+    ],
+    "excludedAssets": [
+      {
+        "asset": "native_eth",
+        "reason": "Only direct canonical WETH/USDC pairs analyzed in this phase."
+      }
+    ],
+    "interpretationNotes": [
+      "Pool legs reflect direct pool execution swaps, not reconstructed net routed user intents.",
+      "Arbitrage and MEV rebalance transactions are included in pool volumes.",
+      "Chainlink is a block-end benchmark, not necessarily visible to transactions at execution time."
+    ]
+  },
+  "verification": {
+    "firstBlockHeaderHash": "0x8b495f6d13a48ce9420ebb269f2e52e5fd0d752083f7db37f7ec45eafb99d84d",
+    "firstLogBlockHash": "0x8b495f6d13a48ce9420ebb269f2e52e5fd0d752083f7db37f7ec45eafb99d84d",
+    "firstHashMatch": true,
+    "lastBlockHeaderHash": "0xc9f70544ee18eb451a2623abeb753ef2b6267b719ac14689d64e79d37e6cbb5d",
+    "lastLogBlockHash": "0xc9f70544ee18eb451a2623abeb753ef2b6267b719ac14689d64e79d37e6cbb5d",
+    "lastHashMatch": true,
+    "totalRawLogs": 168,
+    "dedupedLogs": 168,
+    "validDecodedSwaps": 168,
+    "rejectedLogsCount": 0
+  },
+  "totals": {
+    "buy": {
+      "count": 104,
+      "baseVolumeWei": "2636675880303185808320",
+      "quoteVolumeRaw": "9198295482838",
+      "wethVolume": 2636.6758803031857,
+      "usdcVolume": 9198295.482838,
+      "vwap": 3488.5954513985644
+    },
+    "sell": {
+      "count": 64,
+      "baseVolumeWei": "2122326762104841309517",
+      "quoteVolumeRaw": "7406627146050",
+      "wethVolume": 2122.3267621048412,
+      "usdcVolume": 7406627.14605,
+      "vwap": 3489.861824436683
+    },
+    "combined": {
+      "count": 168,
+      "baseVolumeWei": "4759002642408027117837",
+      "quoteVolumeRaw": "16604922628888",
+      "wethVolume": 4759.002642408027,
+      "usdcVolume": 16604922.628888,
+      "vwap": 3489.1602036358627,
+      "note": "Mixed-direction volume-weighted average price"
+    }
+  },
+  "worstGapBlockAnalysis": {
+    "block": 23550044,
+    "timestamp": "2025-10-10T21:35:23Z",
+    "chainlinkPrice": 3765.112534,
+    "simulatedAggregate1Weth": 3422.473543,
+    "executionCount": 4,
+    "buy": {
+      "count": 3,
+      "baseVolumeWei": "5516101094068617747",
+      "quoteVolumeRaw": "18620348348",
+      "wethVolume": 5.516101094068618,
+      "usdcVolume": 18620.348348,
+      "vwap": 3375.6358033434494
+    },
+    "sell": {
+      "count": 1,
+      "baseVolumeWei": "29783838875308015790",
+      "quoteVolumeRaw": "100000000000",
+      "wethVolume": 29.783838875308017,
+      "usdcVolume": 100000.0,
+      "vwap": 3357.5255499687773
+    },
+    "executions": [
+      {
+        "blockNumber": 23550044,
+        "blockHash": "0x2742795d478dfa176d81f5595fe2a49f658f23fcf85ce7886ead8c83c7816d01",
+        "timestamp": "2025-10-10T21:35:23Z",
+        "transactionHash": "0x9ca93e78631eb86dd775b30128fd5ffeec7c6333a98b52a0509c7930fb67367b",
+        "transactionIndex": 138,
+        "logIndex": 460,
+        "poolAddress": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc",
+        "poolLabel": "Uniswap V2 0.3%",
+        "family": "uniswap_v2",
+        "feeBps": 30.0,
+        "direction": "SELL_WETH",
+        "baseVolumeWei": "29783838875308015790",
+        "quoteVolumeRaw": "100000000000",
+        "baseVolumeWeth": 29.783838875308017,
+        "quoteVolumeUsdc": 100000.0,
+        "executionPrice": 3357.5255499687773,
+        "postSwapSpot": null,
+        "sqrtPriceX96": null,
+        "intrablockIndex": 0
+      },
+      {
+        "blockNumber": 23550044,
+        "blockHash": "0x2742795d478dfa176d81f5595fe2a49f658f23fcf85ce7886ead8c83c7816d01",
+        "timestamp": "2025-10-10T21:35:23Z",
+        "transactionHash": "0xe7ca1034cf6c34e05ac61a77a5b4de3cfaad503be91541c7878a1fb051938af4",
+        "transactionIndex": 157,
+        "logIndex": 511,
+        "poolAddress": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+        "poolLabel": "Uniswap V3 0.05%",
+        "family": "uniswap_v3",
+        "feeBps": 5.0,
+        "direction": "BUY_WETH",
+        "baseVolumeWei": "148199373792686690",
+        "quoteVolumeRaw": "500000000",
+        "baseVolumeWeth": 0.1481993737926867,
+        "quoteVolumeUsdc": 500.0,
+        "executionPrice": 3373.8334191576314,
+        "postSwapSpot": 3372.1961887779694,
+        "sqrtPriceX96": "1364341743786692704350631879849110",
+        "intrablockIndex": 1
+      },
+      {
+        "blockNumber": 23550044,
+        "blockHash": "0x2742795d478dfa176d81f5595fe2a49f658f23fcf85ce7886ead8c83c7816d01",
+        "timestamp": "2025-10-10T21:35:23Z",
+        "transactionHash": "0x0124d00be6711c411b6ad7bb895d1612ad9377edaba7771060b13bafc1c67b15",
+        "transactionIndex": 162,
+        "logIndex": 550,
+        "poolAddress": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+        "poolLabel": "Uniswap V3 0.05%",
+        "family": "uniswap_v3",
+        "feeBps": 5.0,
+        "direction": "BUY_WETH",
+        "baseVolumeWei": "885684430297968773",
+        "quoteVolumeRaw": "2988458913",
+        "baseVolumeWeth": 0.8856844302979687,
+        "quoteVolumeUsdc": 2988.458913,
+        "executionPrice": 3374.1802506278673,
+        "postSwapSpot": 3372.7901571524803,
+        "sqrtPriceX96": "1364221604155821059373677774271716",
+        "intrablockIndex": 2
+      },
+      {
+        "blockNumber": 23550044,
+        "blockHash": "0x2742795d478dfa176d81f5595fe2a49f658f23fcf85ce7886ead8c83c7816d01",
+        "timestamp": "2025-10-10T21:35:23Z",
+        "transactionHash": "0x5fc47dc8c48430b502ac969345b02f3dc38c344588e5434c4b14dbb30ec8646b",
+        "transactionIndex": 163,
+        "logIndex": 566,
+        "poolAddress": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+        "poolLabel": "Uniswap V3 0.05%",
+        "family": "uniswap_v3",
+        "feeBps": 5.0,
+        "direction": "BUY_WETH",
+        "baseVolumeWei": "4482217289977962284",
+        "quoteVolumeRaw": "15131889435",
+        "baseVolumeWeth": 4.482217289977962,
+        "quoteVolumeUsdc": 15131.889435,
+        "executionPrice": 3375.9830137718286,
+        "postSwapSpot": 3375.803215831202,
+        "sqrtPriceX96": "1363612653176075573245545077586291",
+        "intrablockIndex": 3
+      }
+    ]
+  },
+  "perPool": {
+    "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640": {
+      "address": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+      "label": "Uniswap V3 0.05%",
+      "family": "uniswap_v3",
+      "feeBps": 5.0,
+      "buy": {
+        "count": 44,
+        "baseVolumeWei": "788713663340489932477",
+        "quoteVolumeRaw": "2706984906305",
+        "wethVolume": 788.7136633404899,
+        "usdcVolume": 2706984.906305,
+        "vwap": 3432.1516567114254
+      },
+      "sell": {
+        "count": 21,
+        "baseVolumeWei": "589931033420030572907",
+        "quoteVolumeRaw": "2027507190859",
+        "wethVolume": 589.9310334200305,
+        "usdcVolume": 2027507.190859,
+        "vwap": 3436.8546084189743
+      },
+      "total": {
+        "count": 65,
+        "baseVolumeWei": "1378644696760520505384",
+        "quoteVolumeRaw": "4734492097164",
+        "wethVolume": 1378.6446967605204,
+        "usdcVolume": 4734492.097164,
+        "vwap": 3434.164080338396
+      }
+    },
+    "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8": {
+      "address": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8",
+      "label": "Uniswap V3 0.3%",
+      "family": "uniswap_v3",
+      "feeBps": 30.0,
+      "buy": {
+        "count": 16,
+        "baseVolumeWei": "1289297172792290128329",
+        "quoteVolumeRaw": "4540631255276",
+        "wethVolume": 1289.2971727922902,
+        "usdcVolume": 4540631.255276,
+        "vwap": 3521.7879563344936
+      },
+      "sell": {
+        "count": 19,
+        "baseVolumeWei": "1067146055428155212641",
+        "quoteVolumeRaw": "3756847143682",
+        "wethVolume": 1067.1460554281553,
+        "usdcVolume": 3756847.143682,
+        "vwap": 3520.4620066507164
+      },
+      "total": {
+        "count": 35,
+        "baseVolumeWei": "2356443228220445340970",
+        "quoteVolumeRaw": "8297478398958",
+        "wethVolume": 2356.4432282204452,
+        "usdcVolume": 8297478.398958,
+        "vwap": 3521.1874827233355
+      }
+    },
+    "0xe0554a476a092703abdb3ef35c80e0d76d32939f": {
+      "address": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+      "label": "Uniswap V3 0.01%",
+      "family": "uniswap_v3",
+      "feeBps": 1.0,
+      "buy": {
+        "count": 11,
+        "baseVolumeWei": "160853302415652511603",
+        "quoteVolumeRaw": "566359370750",
+        "wethVolume": 160.8533024156525,
+        "usdcVolume": 566359.37075,
+        "vwap": 3520.9682502290234
+      },
+      "sell": {
+        "count": 5,
+        "baseVolumeWei": "135946051043540084081",
+        "quoteVolumeRaw": "481195231891",
+        "wethVolume": 135.94605104354008,
+        "usdcVolume": 481195.231891,
+        "vwap": 3539.6043371416895
+      },
+      "total": {
+        "count": 16,
+        "baseVolumeWei": "296799353459192595684",
+        "quoteVolumeRaw": "1047554602641",
+        "wethVolume": 296.7993534591926,
+        "usdcVolume": 1047554.602641,
+        "vwap": 3529.504328199387
+      }
+    },
+    "0x7bea39867e4169dbe237d55c8242a8f2fcdcc387": {
+      "address": "0x7bea39867e4169dbe237d55c8242a8f2fcdcc387",
+      "label": "Uniswap V3 1.0%",
+      "family": "uniswap_v3",
+      "feeBps": 100.0,
+      "buy": {
+        "count": 2,
+        "baseVolumeWei": "15918790491307745551",
+        "quoteVolumeRaw": "57013644507",
+        "wethVolume": 15.918790491307746,
+        "usdcVolume": 57013.644507,
+        "vwap": 3581.5311809104833
+      },
+      "sell": {
+        "count": 6,
+        "baseVolumeWei": "13857067425419369498",
+        "quoteVolumeRaw": "48635767816",
+        "wethVolume": 13.85706742541937,
+        "usdcVolume": 48635.767816,
+        "vwap": 3509.816783223748
+      },
+      "total": {
+        "count": 8,
+        "baseVolumeWei": "29775857916727115049",
+        "quoteVolumeRaw": "105649412323",
+        "wethVolume": 29.775857916727116,
+        "usdcVolume": 105649.412323,
+        "vwap": 3548.156785892291
+      }
+    },
+    "0x1ac1a8feaaea1900c4166deeed0c11cc10669d36": {
+      "address": "0x1ac1a8feaaea1900c4166deeed0c11cc10669d36",
+      "label": "PancakeSwap V3 0.05%",
+      "family": "pancake_v3",
+      "feeBps": 5.0,
+      "buy": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "total": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      }
+    },
+    "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc": {
+      "address": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc",
+      "label": "Uniswap V2 0.3%",
+      "family": "uniswap_v2",
+      "feeBps": 30.0,
+      "buy": {
+        "count": 31,
+        "baseVolumeWei": "381892951263445490360",
+        "quoteVolumeRaw": "1327306306000",
+        "wethVolume": 381.89295126344547,
+        "usdcVolume": 1327306.306,
+        "vwap": 3475.5978124465814
+      },
+      "sell": {
+        "count": 13,
+        "baseVolumeWei": "315446554787696070390",
+        "quoteVolumeRaw": "1092441811802",
+        "wethVolume": 315.4465547876961,
+        "usdcVolume": 1092441.811802,
+        "vwap": 3463.1597499527056
+      },
+      "total": {
+        "count": 44,
+        "baseVolumeWei": "697339506051141560750",
+        "quoteVolumeRaw": "2419748117802",
+        "wethVolume": 697.3395060511416,
+        "usdcVolume": 2419748.117802,
+        "vwap": 3469.971365173939
+      }
+    }
+  },
+  "sizeBins": [
+    {
+      "bin": "< 1 WETH",
+      "count": 27,
+      "baseVolumeWei": "13196840355043613111",
+      "quoteVolumeRaw": "45067888688",
+      "wethVolume": 13.196840355043614,
+      "usdcVolume": 45067.888688,
+      "combinedVwap": 3415.0514422776814,
+      "buy": {
+        "count": 20,
+        "baseVolumeWei": "8527124889300122653",
+        "quoteVolumeRaw": "29185656981",
+        "wethVolume": 8.527124889300122,
+        "usdcVolume": 29185.656981,
+        "vwap": 3422.6843584315625
+      },
+      "sell": {
+        "count": 7,
+        "baseVolumeWei": "4669715465743490458",
+        "quoteVolumeRaw": "15882231707",
+        "wethVolume": 4.66971546574349,
+        "usdcVolume": 15882.231707,
+        "vwap": 3401.113370506249
+      }
+    },
+    {
+      "bin": "1 - 10 WETH",
+      "count": 48,
+      "baseVolumeWei": "214614472396524477582",
+      "quoteVolumeRaw": "734188676855",
+      "wethVolume": 214.6144723965245,
+      "usdcVolume": 734188.676855,
+      "combinedVwap": 3420.9653648077538,
+      "buy": {
+        "count": 39,
+        "baseVolumeWei": "171556556615842102063",
+        "quoteVolumeRaw": "587135324366",
+        "wethVolume": 171.5565566158421,
+        "usdcVolume": 587135.324366,
+        "vwap": 3422.4009618049304
+      },
+      "sell": {
+        "count": 9,
+        "baseVolumeWei": "43057915780682375519",
+        "quoteVolumeRaw": "147053352489",
+        "wethVolume": 43.05791578068238,
+        "usdcVolume": 147053.352489,
+        "vwap": 3415.245485592557
+      }
+    },
+    {
+      "bin": "10 - 100 WETH",
+      "count": 87,
+      "baseVolumeWei": "3194658372675224815344",
+      "quoteVolumeRaw": "11067551839128",
+      "wethVolume": 3194.6583726752247,
+      "usdcVolume": 11067551.839128,
+      "combinedVwap": 3464.3929171869386,
+      "buy": {
+        "count": 40,
+        "baseVolumeWei": "1270984466917826349625",
+        "quoteVolumeRaw": "4371765878029",
+        "wethVolume": 1270.9844669178262,
+        "usdcVolume": 4371765.878029,
+        "vwap": 3439.6690060506066
+      },
+      "sell": {
+        "count": 47,
+        "baseVolumeWei": "1923673905757398465719",
+        "quoteVolumeRaw": "6695785961099",
+        "wethVolume": 1923.6739057573984,
+        "usdcVolume": 6695785.961099,
+        "vwap": 3480.728173865155
+      }
+    },
+    {
+      "bin": ">= 100 WETH",
+      "count": 6,
+      "baseVolumeWei": "1336532956981234211800",
+      "quoteVolumeRaw": "4758114224217",
+      "wethVolume": 1336.5329569812343,
+      "usdcVolume": 4758114.224217,
+      "combinedVwap": 3560.0425708647954,
+      "buy": {
+        "count": 5,
+        "baseVolumeWei": "1185607731880217233979",
+        "quoteVolumeRaw": "4210208623462",
+        "wethVolume": 1185.6077318802172,
+        "usdcVolume": 4210208.623462,
+        "vwap": 3551.0974753725377
+      },
+      "sell": {
+        "count": 1,
+        "baseVolumeWei": "150925225101016977821",
+        "quoteVolumeRaw": "547905600755",
+        "wethVolume": 150.925225101017,
+        "usdcVolume": 547905.600755,
+        "vwap": 3630.3116353696137
+      }
+    }
+  ],
+  "perMinute": [
+    {
+      "minute": "2025-10-10T21:30",
+      "buy": {
+        "count": 11,
+        "baseVolumeWei": "94515481364629028788",
+        "quoteVolumeRaw": "317862816963",
+        "wethVolume": 94.51548136462903,
+        "usdcVolume": 317862.816963,
+        "vwap": 3363.0767401662442
+      },
+      "sell": {
+        "count": 5,
+        "baseVolumeWei": "35480842399617841045",
+        "quoteVolumeRaw": "119605012530",
+        "wethVolume": 35.48084239961784,
+        "usdcVolume": 119605.01253,
+        "vwap": 3370.9744312972753
+      },
+      "combined": {
+        "count": 16,
+        "baseVolumeWei": "129996323764246869833",
+        "quoteVolumeRaw": "437467829493",
+        "wethVolume": 129.99632376424688,
+        "usdcVolume": 437467.829493,
+        "vwap": 3365.2323144642464
+      }
+    },
+    {
+      "minute": "2025-10-10T21:31",
+      "buy": {
+        "count": 6,
+        "baseVolumeWei": "72612967384200826881",
+        "quoteVolumeRaw": "243860729521",
+        "wethVolume": 72.61296738420083,
+        "usdcVolume": 243860.729521,
+        "vwap": 3358.363365467686
+      },
+      "sell": {
+        "count": 5,
+        "baseVolumeWei": "46758062644490333829",
+        "quoteVolumeRaw": "155625319927",
+        "wethVolume": 46.75806264449034,
+        "usdcVolume": 155625.319927,
+        "vwap": 3328.3098384602954
+      },
+      "combined": {
+        "count": 11,
+        "baseVolumeWei": "119371030028691160710",
+        "quoteVolumeRaw": "399486049448",
+        "wethVolume": 119.37103002869117,
+        "usdcVolume": 399486.049448,
+        "vwap": 3346.5912906337694
+      }
+    },
+    {
+      "minute": "2025-10-10T21:32",
+      "buy": {
+        "count": 11,
+        "baseVolumeWei": "55222258660214487473",
+        "quoteVolumeRaw": "186671939389",
+        "wethVolume": 55.222258660214486,
+        "usdcVolume": 186671.939389,
+        "vwap": 3380.374941517739
+      },
+      "sell": {
+        "count": 1,
+        "baseVolumeWei": "31643075231194980352",
+        "quoteVolumeRaw": "106603978544",
+        "wethVolume": 31.64307523119498,
+        "usdcVolume": 106603.978544,
+        "vwap": 3368.9512718064025
+      },
+      "combined": {
+        "count": 12,
+        "baseVolumeWei": "86865333891409467825",
+        "quoteVolumeRaw": "293275917933",
+        "wethVolume": 86.86533389140946,
+        "usdcVolume": 293275.917933,
+        "vwap": 3376.2135571783424
+      }
+    },
+    {
+      "minute": "2025-10-10T21:33",
+      "buy": {
+        "count": 7,
+        "baseVolumeWei": "205290439969895903397",
+        "quoteVolumeRaw": "700265785162",
+        "wethVolume": 205.2904399698959,
+        "usdcVolume": 700265.785162,
+        "vwap": 3411.0978829052538
+      },
+      "sell": {
+        "count": 4,
+        "baseVolumeWei": "192213039279146304574",
+        "quoteVolumeRaw": "653480409491",
+        "wethVolume": 192.2130392791463,
+        "usdcVolume": 653480.409491,
+        "vwap": 3399.771482422513
+      },
+      "combined": {
+        "count": 11,
+        "baseVolumeWei": "397503479249042207971",
+        "quoteVolumeRaw": "1353746194653",
+        "wethVolume": 397.5034792490422,
+        "usdcVolume": 1353746.194653,
+        "vwap": 3405.6209953444372
+      }
+    },
+    {
+      "minute": "2025-10-10T21:34",
+      "buy": {
+        "count": 7,
+        "baseVolumeWei": "157670577874071320780",
+        "quoteVolumeRaw": "536878889729",
+        "wethVolume": 157.6705778740713,
+        "usdcVolume": 536878.889729,
+        "vwap": 3405.067051620725
+      },
+      "sell": {
+        "count": 6,
+        "baseVolumeWei": "151359773950742402331",
+        "quoteVolumeRaw": "513697062638",
+        "wethVolume": 151.3597739507424,
+        "usdcVolume": 513697.062638,
+        "vwap": 3393.881010982313
+      },
+      "combined": {
+        "count": 13,
+        "baseVolumeWei": "309030351824813723111",
+        "quoteVolumeRaw": "1050575952367",
+        "wethVolume": 309.03035182481375,
+        "usdcVolume": 1050575.952367,
+        "vwap": 3399.5882480907935
+      }
+    },
+    {
+      "minute": "2025-10-10T21:35",
+      "buy": {
+        "count": 9,
+        "baseVolumeWei": "213360904153542837219",
+        "quoteVolumeRaw": "725336634443",
+        "wethVolume": 213.36090415354283,
+        "usdcVolume": 725336.634443,
+        "vwap": 3399.576118786127
+      },
+      "sell": {
+        "count": 6,
+        "baseVolumeWei": "162599455348534662042",
+        "quoteVolumeRaw": "551378959581",
+        "wethVolume": 162.59945534853466,
+        "usdcVolume": 551378.959581,
+        "vwap": 3391.0258702841898
+      },
+      "combined": {
+        "count": 15,
+        "baseVolumeWei": "375960359502077499261",
+        "quoteVolumeRaw": "1276715594024",
+        "wethVolume": 375.9603595020775,
+        "usdcVolume": 1276715.594024,
+        "vwap": 3395.8782136363634
+      }
+    },
+    {
+      "minute": "2025-10-10T21:36",
+      "buy": {
+        "count": 14,
+        "baseVolumeWei": "147546337342752532239",
+        "quoteVolumeRaw": "503769234311",
+        "wethVolume": 147.54633734275254,
+        "usdcVolume": 503769.234311,
+        "vwap": 3414.3120282324317
+      },
+      "sell": {
+        "count": 4,
+        "baseVolumeWei": "73591368671453040172",
+        "quoteVolumeRaw": "251273128411",
+        "wethVolume": 73.59136867145304,
+        "usdcVolume": 251273.128411,
+        "vwap": 3414.4374937882058
+      },
+      "combined": {
+        "count": 18,
+        "baseVolumeWei": "221137706014205572411",
+        "quoteVolumeRaw": "755042362722",
+        "wethVolume": 221.13770601420558,
+        "usdcVolume": 755042.362722,
+        "vwap": 3414.3537813198495
+      }
+    },
+    {
+      "minute": "2025-10-10T21:37",
+      "buy": {
+        "count": 20,
+        "baseVolumeWei": "1487272830596025037332",
+        "quoteVolumeRaw": "5274178519390",
+        "wethVolume": 1487.272830596025,
+        "usdcVolume": 5274178.51939,
+        "vwap": 3546.2078045736716
+      },
+      "sell": {
+        "count": 24,
+        "baseVolumeWei": "1166269376639419191906",
+        "quoteVolumeRaw": "4139081405208",
+        "wethVolume": 1166.269376639419,
+        "usdcVolume": 4139081.405208,
+        "vwap": 3548.992615355019
+      },
+      "combined": {
+        "count": 44,
+        "baseVolumeWei": "2653542207235444229238",
+        "quoteVolumeRaw": "9413259924598",
+        "wethVolume": 2653.542207235444,
+        "usdcVolume": 9413259.924598,
+        "vwap": 3547.431768347515
+      }
+    },
+    {
+      "minute": "2025-10-10T21:38",
+      "buy": {
+        "count": 7,
+        "baseVolumeWei": "54298884971949124432",
+        "quoteVolumeRaw": "188888641314",
+        "wethVolume": 54.29888497194912,
+        "usdcVolume": 188888.641314,
+        "vwap": 3478.6836122248205
+      },
+      "sell": {
+        "count": 6,
+        "baseVolumeWei": "144529881296892463538",
+        "quoteVolumeRaw": "504035259949",
+        "wethVolume": 144.52988129689246,
+        "usdcVolume": 504035.259949,
+        "vwap": 3487.4121214672114
+      },
+      "combined": {
+        "count": 13,
+        "baseVolumeWei": "198828766268841587970",
+        "quoteVolumeRaw": "692923901263",
+        "wethVolume": 198.82876626884158,
+        "usdcVolume": 692923.901263,
+        "vwap": 3485.028420515769
+      }
+    },
+    {
+      "minute": "2025-10-10T21:39",
+      "buy": {
+        "count": 7,
+        "baseVolumeWei": "88012434903694685617",
+        "quoteVolumeRaw": "307810813538",
+        "wethVolume": 88.01243490369468,
+        "usdcVolume": 307810.813538,
+        "vwap": 3497.3559574259475
+      },
+      "sell": {
+        "count": 2,
+        "baseVolumeWei": "64410039982794035200",
+        "quoteVolumeRaw": "225078904403",
+        "wethVolume": 64.41003998279403,
+        "usdcVolume": 225078.904403,
+        "vwap": 3494.4692545312146
+      },
+      "combined": {
+        "count": 9,
+        "baseVolumeWei": "152422474886488720817",
+        "quoteVolumeRaw": "532889717941",
+        "wethVolume": 152.42247488648871,
+        "usdcVolume": 532889.717941,
+        "vwap": 3496.136106816602
+      }
+    },
+    {
+      "minute": "2025-10-10T21:40",
+      "buy": {
+        "count": 5,
+        "baseVolumeWei": "60872763082210024162",
+        "quoteVolumeRaw": "212771479078",
+        "wethVolume": 60.87276308221002,
+        "usdcVolume": 212771.479078,
+        "vwap": 3495.347809177766
+      },
+      "sell": {
+        "count": 1,
+        "baseVolumeWei": "53471846660556054528",
+        "quoteVolumeRaw": "186767705368",
+        "wethVolume": 53.471846660556054,
+        "usdcVolume": 186767.705368,
+        "vwap": 3492.8231776549196
+      },
+      "combined": {
+        "count": 6,
+        "baseVolumeWei": "114344609742766078690",
+        "quoteVolumeRaw": "399539184446",
+        "wethVolume": 114.34460974276608,
+        "usdcVolume": 399539.184446,
+        "vwap": 3494.167196379596
+      }
+    }
+  ],
+  "perBlock": [
+    {
+      "block": 23550020,
+      "timestamp": "2025-10-10T21:30:23Z",
+      "blockHash": "0x8b495f6d13a48ce9420ebb269f2e52e5fd0d752083f7db37f7ec45eafb99d84d",
+      "chainlink": 3571.890656,
+      "aggregateWeth1": 3529.805585,
+      "buy": {
+        "count": 4,
+        "baseVolumeWei": "24319433183805206010",
+        "quoteVolumeRaw": "81524687850",
+        "wethVolume": 24.319433183805206,
+        "usdcVolume": 81524.68785,
+        "vwap": 3352.2445705802434
+      },
+      "sell": {
+        "count": 2,
+        "baseVolumeWei": "1277184998559185078",
+        "quoteVolumeRaw": "4417608224",
+        "wethVolume": 1.277184998559185,
+        "usdcVolume": 4417.608224,
+        "vwap": 3458.863225753185
+      },
+      "combined": {
+        "count": 6,
+        "baseVolumeWei": "25596618182364391088",
+        "quoteVolumeRaw": "85942296074",
+        "wethVolume": 25.59661818236439,
+        "usdcVolume": 85942.296074,
+        "vwap": 3357.5644822179165
+      }
+    },
+    {
+      "block": 23550021,
+      "timestamp": "2025-10-10T21:30:35Z",
+      "blockHash": "0xd1d6e62835a4612d12611ac8e509231b1e67a1bc99b7a89596b3a319fdaaabb5",
+      "chainlink": 3571.890656,
+      "aggregateWeth1": 3453.116933,
+      "buy": {
+        "count": 1,
+        "baseVolumeWei": "16003166230726836225",
+        "quoteVolumeRaw": "53653731550",
+        "wethVolume": 16.003166230726837,
+        "usdcVolume": 53653.73155,
+        "vwap": 3352.694759052262
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 1,
+        "baseVolumeWei": "16003166230726836225",
+        "quoteVolumeRaw": "53653731550",
+        "wethVolume": 16.003166230726837,
+        "usdcVolume": 53653.73155,
+        "vwap": 3352.694759052262
+      }
+    },
+    {
+      "block": 23550022,
+      "timestamp": "2025-10-10T21:30:47Z",
+      "blockHash": "0x4f263dd1c9a613d9ca15e73dae1b48bbc209cf87fc9013b03cc78a359b1ffac3",
+      "chainlink": 3571.890656,
+      "aggregateWeth1": 3432.519794,
+      "buy": {
+        "count": 4,
+        "baseVolumeWei": "50262363108177035811",
+        "quoteVolumeRaw": "169414217653",
+        "wethVolume": 50.262363108177034,
+        "usdcVolume": 169414.217653,
+        "vwap": 3370.597942010381
+      },
+      "sell": {
+        "count": 2,
+        "baseVolumeWei": "11211188749353095412",
+        "quoteVolumeRaw": "37736972909",
+        "wethVolume": 11.211188749353095,
+        "usdcVolume": 37736.972909,
+        "vwap": 3366.009952439476
+      },
+      "combined": {
+        "count": 6,
+        "baseVolumeWei": "61473551857530131223",
+        "quoteVolumeRaw": "207151190562",
+        "wethVolume": 61.47355185753013,
+        "usdcVolume": 207151.190562,
+        "vwap": 3369.761211164265
+      }
+    },
+    {
+      "block": 23550023,
+      "timestamp": "2025-10-10T21:30:59Z",
+      "blockHash": "0xa5343136e12d95a9e91e14778f7ef77a0c6b2e4531d84e8a2ef29dcc6ecaa791",
+      "chainlink": 3571.890656,
+      "aggregateWeth1": 3432.519794,
+      "buy": {
+        "count": 2,
+        "baseVolumeWei": "3930518841919950742",
+        "quoteVolumeRaw": "13270179910",
+        "wethVolume": 3.930518841919951,
+        "usdcVolume": 13270.17991,
+        "vwap": 3376.1903819084305
+      },
+      "sell": {
+        "count": 1,
+        "baseVolumeWei": "22992468651705560555",
+        "quoteVolumeRaw": "77450431397",
+        "wethVolume": 22.99246865170556,
+        "usdcVolume": 77450.431397,
+        "vwap": 3368.513080097417
+      },
+      "combined": {
+        "count": 3,
+        "baseVolumeWei": "26922987493625511297",
+        "quoteVolumeRaw": "90720611307",
+        "wethVolume": 26.922987493625513,
+        "usdcVolume": 90720.611307,
+        "vwap": 3369.6338984846943
+      }
+    },
+    {
+      "block": 23550024,
+      "timestamp": "2025-10-10T21:31:11Z",
+      "blockHash": "0xa60ed904f44ce1773bac5619c87e858b934483cf4e84fd3053f9e87f6c24204e",
+      "chainlink": 3571.890656,
+      "aggregateWeth1": 3427.590616,
+      "buy": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "sell": {
+        "count": 3,
+        "baseVolumeWei": "16120098255579529903",
+        "quoteVolumeRaw": "54099283165",
+        "wethVolume": 16.12009825557953,
+        "usdcVolume": 54099.283165,
+        "vwap": 3356.014480015655
+      },
+      "combined": {
+        "count": 3,
+        "baseVolumeWei": "16120098255579529903",
+        "quoteVolumeRaw": "54099283165",
+        "wethVolume": 16.12009825557953,
+        "usdcVolume": 54099.283165,
+        "vwap": 3356.014480015655
+      }
+    },
+    {
+      "block": 23550025,
+      "timestamp": "2025-10-10T21:31:23Z",
+      "blockHash": "0xe03dbc2b75d87accf9cea5ee1339e746c127c2091d3939ba52564ef05e3f2338",
+      "chainlink": 3597.535678,
+      "aggregateWeth1": 3427.590616,
+      "buy": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      }
+    },
+    {
+      "block": 23550026,
+      "timestamp": "2025-10-10T21:31:35Z",
+      "blockHash": "0xf6ce9802044672d899d9c51e15332592e007a5f702971aea6074a6c0fb017493",
+      "chainlink": 3597.535678,
+      "aggregateWeth1": 3412.885741,
+      "buy": {
+        "count": 1,
+        "baseVolumeWei": "1933689179484564595",
+        "quoteVolumeRaw": "6500000000",
+        "wethVolume": 1.9336891794845645,
+        "usdcVolume": 6500.0,
+        "vwap": 3361.4502625145838
+      },
+      "sell": {
+        "count": 1,
+        "baseVolumeWei": "456856920267581004",
+        "quoteVolumeRaw": "1526036762",
+        "wethVolume": 0.456856920267581,
+        "usdcVolume": 1526.036762,
+        "vwap": 3340.2947275181923
+      },
+      "combined": {
+        "count": 2,
+        "baseVolumeWei": "2390546099752145599",
+        "quoteVolumeRaw": "8026036762",
+        "wethVolume": 2.3905460997521457,
+        "usdcVolume": 8026.036762,
+        "vwap": 3357.4072312732847
+      }
+    },
+    {
+      "block": 23550027,
+      "timestamp": "2025-10-10T21:31:47Z",
+      "blockHash": "0x4b775b366cb1814b022d30362c689dd6f9e448afba4106a3f9bbb9a756ff8c87",
+      "chainlink": 3597.535678,
+      "aggregateWeth1": 3406.515985,
+      "buy": {
+        "count": 1,
+        "baseVolumeWei": "24476958405975304990",
+        "quoteVolumeRaw": "81465285948",
+        "wethVolume": 24.476958405975306,
+        "usdcVolume": 81465.285948,
+        "vwap": 3328.243836379308
+      },
+      "sell": {
+        "count": 1,
+        "baseVolumeWei": "30181107468643222922",
+        "quoteVolumeRaw": "100000000000",
+        "wethVolume": 30.181107468643223,
+        "usdcVolume": 100000.0,
+        "vwap": 3313.3310334584435
+      },
+      "combined": {
+        "count": 2,
+        "baseVolumeWei": "54658065874618527912",
+        "quoteVolumeRaw": "181465285948",
+        "wethVolume": 54.65806587461853,
+        "usdcVolume": 181465.285948,
+        "vwap": 3320.0092803186203
+      }
+    },
+    {
+      "block": 23550028,
+      "timestamp": "2025-10-10T21:31:59Z",
+      "blockHash": "0xf381379e6c97705388706550b8f0ff87244f105a8c9d93311ebaf9522d7409a1",
+      "chainlink": 3597.535678,
+      "aggregateWeth1": 3427.541331,
+      "buy": {
+        "count": 4,
+        "baseVolumeWei": "46202319798740957296",
+        "quoteVolumeRaw": "155895443573",
+        "wethVolume": 46.20231979874096,
+        "usdcVolume": 155895.443573,
+        "vwap": 3374.1908253110755
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 4,
+        "baseVolumeWei": "46202319798740957296",
+        "quoteVolumeRaw": "155895443573",
+        "wethVolume": 46.20231979874096,
+        "usdcVolume": 155895.443573,
+        "vwap": 3374.1908253110755
+      }
+    },
+    {
+      "block": 23550029,
+      "timestamp": "2025-10-10T21:32:23Z",
+      "blockHash": "0x63c5bc426e2183aa5378331ede70d4a0d394bf21356e060de9b5257f41fb3deb",
+      "chainlink": 3678.722542,
+      "aggregateWeth1": 3419.877856,
+      "buy": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      }
+    },
+    {
+      "block": 23550030,
+      "timestamp": "2025-10-10T21:32:35Z",
+      "blockHash": "0x653c79d5945626d12fbbb2465d9b93e96bd008cd189b56c600d5b709ba0f579a",
+      "chainlink": 3678.722542,
+      "aggregateWeth1": 3472.546794,
+      "buy": {
+        "count": 7,
+        "baseVolumeWei": "23951114497784995489",
+        "quoteVolumeRaw": "81105754794",
+        "wethVolume": 23.951114497784996,
+        "usdcVolume": 81105.754794,
+        "vwap": 3386.3039985676105
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 7,
+        "baseVolumeWei": "23951114497784995489",
+        "quoteVolumeRaw": "81105754794",
+        "wethVolume": 23.951114497784996,
+        "usdcVolume": 81105.754794,
+        "vwap": 3386.3039985676105
+      }
+    },
+    {
+      "block": 23550031,
+      "timestamp": "2025-10-10T21:32:47Z",
+      "blockHash": "0x982ab0dbfd5af14afa0d2e4a564499a596791bc564ba7a5afc632db9dea76eb2",
+      "chainlink": 3733.468374,
+      "aggregateWeth1": 3452.162264,
+      "buy": {
+        "count": 2,
+        "baseVolumeWei": "2733257100354360165",
+        "quoteVolumeRaw": "9192320886",
+        "wethVolume": 2.73325710035436,
+        "usdcVolume": 9192.320886,
+        "vwap": 3363.138024889147
+      },
+      "sell": {
+        "count": 1,
+        "baseVolumeWei": "31643075231194980352",
+        "quoteVolumeRaw": "106603978544",
+        "wethVolume": 31.64307523119498,
+        "usdcVolume": 106603.978544,
+        "vwap": 3368.9512718064025
+      },
+      "combined": {
+        "count": 3,
+        "baseVolumeWei": "34376332331549340517",
+        "quoteVolumeRaw": "115796299430",
+        "wethVolume": 34.37633233154934,
+        "usdcVolume": 115796.29943,
+        "vwap": 3368.489061403633
+      }
+    },
+    {
+      "block": 23550032,
+      "timestamp": "2025-10-10T21:32:59Z",
+      "blockHash": "0xf9d0149adcf674aa8d2103274f8e28c8a240c3e245e0a1c1fba3408c1b99d4e9",
+      "chainlink": 3733.468374,
+      "aggregateWeth1": 3452.162264,
+      "buy": {
+        "count": 2,
+        "baseVolumeWei": "28537887062075131819",
+        "quoteVolumeRaw": "96373863709",
+        "wethVolume": 28.537887062075132,
+        "usdcVolume": 96373.863709,
+        "vwap": 3377.049726890053
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 2,
+        "baseVolumeWei": "28537887062075131819",
+        "quoteVolumeRaw": "96373863709",
+        "wethVolume": 28.537887062075132,
+        "usdcVolume": 96373.863709,
+        "vwap": 3377.049726890053
+      }
+    },
+    {
+      "block": 23550033,
+      "timestamp": "2025-10-10T21:33:11Z",
+      "blockHash": "0x75843612a2d94fe4f766b7de7ad46958f791a5af3dbcf6883eab02d231fc9edd",
+      "chainlink": 3733.468374,
+      "aggregateWeth1": 3472.214965,
+      "buy": {
+        "count": 1,
+        "baseVolumeWei": "2501768894549171279",
+        "quoteVolumeRaw": "8433443851",
+        "wethVolume": 2.5017688945491714,
+        "usdcVolume": 8433.443851,
+        "vwap": 3370.992368389703
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 1,
+        "baseVolumeWei": "2501768894549171279",
+        "quoteVolumeRaw": "8433443851",
+        "wethVolume": 2.5017688945491714,
+        "usdcVolume": 8433.443851,
+        "vwap": 3370.992368389703
+      }
+    },
+    {
+      "block": 23550034,
+      "timestamp": "2025-10-10T21:33:23Z",
+      "blockHash": "0x0864725f945a13f69c4d5f5682919670f2aa78867856a637a2bafe396af1c0e1",
+      "chainlink": 3733.468374,
+      "aggregateWeth1": 3429.571612,
+      "buy": {
+        "count": 2,
+        "baseVolumeWei": "181566924352587526600",
+        "quoteVolumeRaw": "620037150563",
+        "wethVolume": 181.56692435258753,
+        "usdcVolume": 620037.150563,
+        "vwap": 3414.9234656800186
+      },
+      "sell": {
+        "count": 4,
+        "baseVolumeWei": "192213039279146304574",
+        "quoteVolumeRaw": "653480409491",
+        "wethVolume": 192.2130392791463,
+        "usdcVolume": 653480.409491,
+        "vwap": 3399.771482422513
+      },
+      "combined": {
+        "count": 6,
+        "baseVolumeWei": "373779963631733831174",
+        "quoteVolumeRaw": "1273517560054",
+        "wethVolume": 373.77996363173384,
+        "usdcVolume": 1273517.560054,
+        "vwap": 3407.1316923470285
+      }
+    },
+    {
+      "block": 23550035,
+      "timestamp": "2025-10-10T21:33:35Z",
+      "blockHash": "0x6800d8b533e34f802056dbf34a39b7646b5f7f47fe265441da96a3440d063911",
+      "chainlink": 3733.468374,
+      "aggregateWeth1": 3429.571612,
+      "buy": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      }
+    },
+    {
+      "block": 23550036,
+      "timestamp": "2025-10-10T21:33:47Z",
+      "blockHash": "0x77ef9d28e537c7a72c81b56fed2a47b51c2ef0e80c87645087d8d934597a76d3",
+      "chainlink": 3733.468374,
+      "aggregateWeth1": 3428.815175,
+      "buy": {
+        "count": 3,
+        "baseVolumeWei": "18676795640743628694",
+        "quoteVolumeRaw": "63222932068",
+        "wethVolume": 18.676795640743627,
+        "usdcVolume": 63222.932068,
+        "vwap": 3385.1059509415254
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 3,
+        "baseVolumeWei": "18676795640743628694",
+        "quoteVolumeRaw": "63222932068",
+        "wethVolume": 18.676795640743627,
+        "usdcVolume": 63222.932068,
+        "vwap": 3385.1059509415254
+      }
+    },
+    {
+      "block": 23550037,
+      "timestamp": "2025-10-10T21:33:59Z",
+      "blockHash": "0xba5e45930288fd837f7addf7181e3ae62237e920cc9bf5a22446a713af8a17a8",
+      "chainlink": 3733.468374,
+      "aggregateWeth1": 3452.861853,
+      "buy": {
+        "count": 1,
+        "baseVolumeWei": "2544951082015576824",
+        "quoteVolumeRaw": "8572258680",
+        "wethVolume": 2.5449510820155767,
+        "usdcVolume": 8572.25868,
+        "vwap": 3368.3392740149857
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 1,
+        "baseVolumeWei": "2544951082015576824",
+        "quoteVolumeRaw": "8572258680",
+        "wethVolume": 2.5449510820155767,
+        "usdcVolume": 8572.25868,
+        "vwap": 3368.3392740149857
+      }
+    },
+    {
+      "block": 23550038,
+      "timestamp": "2025-10-10T21:34:11Z",
+      "blockHash": "0x54f017a6d21e71ec2c6418efa471df30f726a1c4afbcc9be9d1e5d40a9c2ca55",
+      "chainlink": 3733.468374,
+      "aggregateWeth1": 3452.861853,
+      "buy": {
+        "count": 2,
+        "baseVolumeWei": "140881054281960401567",
+        "quoteVolumeRaw": "480010726808",
+        "wethVolume": 140.8810542819604,
+        "usdcVolume": 480010.726808,
+        "vwap": 3407.2056690270283
+      },
+      "sell": {
+        "count": 1,
+        "baseVolumeWei": "25457347910312822043",
+        "quoteVolumeRaw": "87024117780",
+        "wethVolume": 25.457347910312823,
+        "usdcVolume": 87024.11778,
+        "vwap": 3418.428270163459
+      },
+      "combined": {
+        "count": 3,
+        "baseVolumeWei": "166338402192273223610",
+        "quoteVolumeRaw": "567034844588",
+        "wethVolume": 166.33840219227324,
+        "usdcVolume": 567034.844588,
+        "vwap": 3408.923237897616
+      }
+    },
+    {
+      "block": 23550039,
+      "timestamp": "2025-10-10T21:34:23Z",
+      "blockHash": "0xa3baad57884847c33a9411eff0607ae734f92d9f99fc9e613d131da62046363f",
+      "chainlink": 3733.468374,
+      "aggregateWeth1": 3412.179907,
+      "buy": {
+        "count": 1,
+        "baseVolumeWei": "623550804110088491",
+        "quoteVolumeRaw": "2122279898",
+        "wethVolume": 0.6235508041100885,
+        "usdcVolume": 2122.279898,
+        "vwap": 3403.539669921281
+      },
+      "sell": {
+        "count": 2,
+        "baseVolumeWei": "71626827960962564096",
+        "quoteVolumeRaw": "243204012626",
+        "wethVolume": 71.62682796096256,
+        "usdcVolume": 243204.012626,
+        "vwap": 3395.4318451537315
+      },
+      "combined": {
+        "count": 3,
+        "baseVolumeWei": "72250378765072652587",
+        "quoteVolumeRaw": "245326292524",
+        "wethVolume": 72.25037876507265,
+        "usdcVolume": 245326.292524,
+        "vwap": 3395.5018190519972
+      }
+    },
+    {
+      "block": 23550040,
+      "timestamp": "2025-10-10T21:34:35Z",
+      "blockHash": "0x66cb0c74ec21b199e79ef98995d8f6d032c812f1a3efce9f0d6fd45557428199",
+      "chainlink": 3733.468374,
+      "aggregateWeth1": 3412.179907,
+      "buy": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      }
+    },
+    {
+      "block": 23550041,
+      "timestamp": "2025-10-10T21:34:47Z",
+      "blockHash": "0x4f5756cedbed7c705b5be457770825260d44a41ce51cf4330cb6665819b9c4c7",
+      "chainlink": 3733.468374,
+      "aggregateWeth1": 3424.14264,
+      "buy": {
+        "count": 4,
+        "baseVolumeWei": "16165972788000830722",
+        "quoteVolumeRaw": "54745883023",
+        "wethVolume": 16.16597278800083,
+        "usdcVolume": 54745.883023,
+        "vwap": 3386.4886289821698
+      },
+      "sell": {
+        "count": 1,
+        "baseVolumeWei": "12224342948629135360",
+        "quoteVolumeRaw": "41386325867",
+        "wethVolume": 12.224342948629136,
+        "usdcVolume": 41386.325867,
+        "vwap": 3385.56649146048
+      },
+      "combined": {
+        "count": 5,
+        "baseVolumeWei": "28390315736629966082",
+        "quoteVolumeRaw": "96132208890",
+        "wethVolume": 28.390315736629965,
+        "usdcVolume": 96132.20889,
+        "vwap": 3386.0915736829083
+      }
+    },
+    {
+      "block": 23550042,
+      "timestamp": "2025-10-10T21:34:59Z",
+      "blockHash": "0x2de25d84f1f1b53e21ec3f1d98508072c90f7fe12512db0696fd810321448f12",
+      "chainlink": 3733.468374,
+      "aggregateWeth1": 3424.14264,
+      "buy": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "sell": {
+        "count": 2,
+        "baseVolumeWei": "42051255130837880832",
+        "quoteVolumeRaw": "142082606365",
+        "wethVolume": 42.05125513083788,
+        "usdcVolume": 142082.606365,
+        "vwap": 3378.795850990072
+      },
+      "combined": {
+        "count": 2,
+        "baseVolumeWei": "42051255130837880832",
+        "quoteVolumeRaw": "142082606365",
+        "wethVolume": 42.05125513083788,
+        "usdcVolume": 142082.606365,
+        "vwap": 3378.795850990072
+      }
+    },
+    {
+      "block": 23550043,
+      "timestamp": "2025-10-10T21:35:11Z",
+      "blockHash": "0x70b1df2a45be963d29d69e0a264f44465671c99f4a03f7bf7f75a428c8525aba",
+      "chainlink": 3733.468374,
+      "aggregateWeth1": 3424.14264,
+      "buy": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      }
+    },
+    {
+      "block": 23550044,
+      "timestamp": "2025-10-10T21:35:23Z",
+      "blockHash": "0x2742795d478dfa176d81f5595fe2a49f658f23fcf85ce7886ead8c83c7816d01",
+      "chainlink": 3765.112534,
+      "aggregateWeth1": 3422.473543,
+      "buy": {
+        "count": 3,
+        "baseVolumeWei": "5516101094068617747",
+        "quoteVolumeRaw": "18620348348",
+        "wethVolume": 5.516101094068618,
+        "usdcVolume": 18620.348348,
+        "vwap": 3375.6358033434494
+      },
+      "sell": {
+        "count": 1,
+        "baseVolumeWei": "29783838875308015790",
+        "quoteVolumeRaw": "100000000000",
+        "wethVolume": 29.783838875308017,
+        "usdcVolume": 100000.0,
+        "vwap": 3357.5255499687773
+      },
+      "combined": {
+        "count": 4,
+        "baseVolumeWei": "35299939969376633537",
+        "quoteVolumeRaw": "118620348348",
+        "wethVolume": 35.29993996937663,
+        "usdcVolume": 118620.348348,
+        "vwap": 3360.355526125693
+      }
+    },
+    {
+      "block": 23550045,
+      "timestamp": "2025-10-10T21:35:35Z",
+      "blockHash": "0x19803fadb3b4e7359e414820d09668d3d7d0c21af18438fe6b8aa94008313691",
+      "chainlink": 3765.112534,
+      "aggregateWeth1": 3422.473543,
+      "buy": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      }
+    },
+    {
+      "block": 23550046,
+      "timestamp": "2025-10-10T21:35:47Z",
+      "blockHash": "0x5710a8744490b651be03b37f67dacc8ff1345421b21606e660934081fdccaa60",
+      "chainlink": 3765.112534,
+      "aggregateWeth1": 3422.473543,
+      "buy": {
+        "count": 1,
+        "baseVolumeWei": "5975981230170766082",
+        "quoteVolumeRaw": "20057407534",
+        "wethVolume": 5.975981230170766,
+        "usdcVolume": 20057.407534,
+        "vwap": 3356.3371037272905
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 1,
+        "baseVolumeWei": "5975981230170766082",
+        "quoteVolumeRaw": "20057407534",
+        "wethVolume": 5.975981230170766,
+        "usdcVolume": 20057.407534,
+        "vwap": 3356.3371037272905
+      }
+    },
+    {
+      "block": 23550047,
+      "timestamp": "2025-10-10T21:35:59Z",
+      "blockHash": "0x0529acfb881cd619b21b67f1dcdf5fa38fd430eebf900bad86bf4514ba2d60d3",
+      "chainlink": 3765.112534,
+      "aggregateWeth1": 3436.496196,
+      "buy": {
+        "count": 5,
+        "baseVolumeWei": "201868821829303453390",
+        "quoteVolumeRaw": "686658878561",
+        "wethVolume": 201.86882182930344,
+        "usdcVolume": 686658.878561,
+        "vwap": 3401.510309212713
+      },
+      "sell": {
+        "count": 5,
+        "baseVolumeWei": "132815616473226646252",
+        "quoteVolumeRaw": "451378959581",
+        "wethVolume": 132.81561647322664,
+        "usdcVolume": 451378.959581,
+        "vwap": 3398.53830119435
+      },
+      "combined": {
+        "count": 10,
+        "baseVolumeWei": "334684438302530099642",
+        "quoteVolumeRaw": "1138037838142",
+        "wethVolume": 334.6844383025301,
+        "usdcVolume": 1138037.838142,
+        "vwap": 3400.3309024882046
+      }
+    },
+    {
+      "block": 23550048,
+      "timestamp": "2025-10-10T21:36:11Z",
+      "blockHash": "0x116ba99bc30cc6a7c906f3b4d9540265051d8f5a69b13f5a373c0e0270751911",
+      "chainlink": 3765.112534,
+      "aggregateWeth1": 3428.128679,
+      "buy": {
+        "count": 2,
+        "baseVolumeWei": "6617805967763764387",
+        "quoteVolumeRaw": "22469311045",
+        "wethVolume": 6.617805967763764,
+        "usdcVolume": 22469.311045,
+        "vwap": 3395.2810273451773
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 2,
+        "baseVolumeWei": "6617805967763764387",
+        "quoteVolumeRaw": "22469311045",
+        "wethVolume": 6.617805967763764,
+        "usdcVolume": 22469.311045,
+        "vwap": 3395.2810273451773
+      }
+    },
+    {
+      "block": 23550049,
+      "timestamp": "2025-10-10T21:36:23Z",
+      "blockHash": "0x30bf14c10dd695bfe950364a993324806cf0d050fe9da1ef124d3a056bb8c3ba",
+      "chainlink": 3765.112534,
+      "aggregateWeth1": 3428.218661,
+      "buy": {
+        "count": 2,
+        "baseVolumeWei": "3647861803458166309",
+        "quoteVolumeRaw": "12390340125",
+        "wethVolume": 3.6478618034581665,
+        "usdcVolume": 12390.340125,
+        "vwap": 3396.603487899125
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 2,
+        "baseVolumeWei": "3647861803458166309",
+        "quoteVolumeRaw": "12390340125",
+        "wethVolume": 3.6478618034581665,
+        "usdcVolume": 12390.340125,
+        "vwap": 3396.603487899125
+      }
+    },
+    {
+      "block": 23550050,
+      "timestamp": "2025-10-10T21:36:35Z",
+      "blockHash": "0xf949f80d941210e834c0e0fdbee7c521eb7e45b3d4ad8ee94f73d71bd5bd8d7a",
+      "chainlink": 3765.112534,
+      "aggregateWeth1": 3443.959096,
+      "buy": {
+        "count": 2,
+        "baseVolumeWei": "1754855834150837552",
+        "quoteVolumeRaw": "5970036106",
+        "wethVolume": 1.7548558341508376,
+        "usdcVolume": 5970.036106,
+        "vwap": 3402.0094356576355
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 2,
+        "baseVolumeWei": "1754855834150837552",
+        "quoteVolumeRaw": "5970036106",
+        "wethVolume": 1.7548558341508376,
+        "usdcVolume": 5970.036106,
+        "vwap": 3402.0094356576355
+      }
+    },
+    {
+      "block": 23550051,
+      "timestamp": "2025-10-10T21:36:47Z",
+      "blockHash": "0x9a067902a7dd04dde8e24ab492a5e39eb834eda42415960e600fb1da704215f6",
+      "chainlink": 3765.112534,
+      "aggregateWeth1": 3453.938672,
+      "buy": {
+        "count": 2,
+        "baseVolumeWei": "56365019717984273067",
+        "quoteVolumeRaw": "192974912361",
+        "wethVolume": 56.365019717984275,
+        "usdcVolume": 192974.912361,
+        "vwap": 3423.6644168054445
+      },
+      "sell": {
+        "count": 4,
+        "baseVolumeWei": "73591368671453040172",
+        "quoteVolumeRaw": "251273128411",
+        "wethVolume": 73.59136867145304,
+        "usdcVolume": 251273.128411,
+        "vwap": 3414.4374937882058
+      },
+      "combined": {
+        "count": 6,
+        "baseVolumeWei": "129956388389437313239",
+        "quoteVolumeRaw": "444248040772",
+        "wethVolume": 129.9563883894373,
+        "usdcVolume": 444248.040772,
+        "vwap": 3418.4394186204386
+      }
+    },
+    {
+      "block": 23550052,
+      "timestamp": "2025-10-10T21:36:59Z",
+      "blockHash": "0xb7e24770e9589fb7b4051dc6d497e49af45737a0d8b7bf553f9c2fe24e116947",
+      "chainlink": 3765.112534,
+      "aggregateWeth1": 3427.336913,
+      "buy": {
+        "count": 6,
+        "baseVolumeWei": "79160794019395490924",
+        "quoteVolumeRaw": "269964634674",
+        "wethVolume": 79.1607940193955,
+        "usdcVolume": 269964.634674,
+        "vwap": 3410.332577106982
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 6,
+        "baseVolumeWei": "79160794019395490924",
+        "quoteVolumeRaw": "269964634674",
+        "wethVolume": 79.1607940193955,
+        "usdcVolume": 269964.634674,
+        "vwap": 3410.332577106982
+      }
+    },
+    {
+      "block": 23550053,
+      "timestamp": "2025-10-10T21:37:11Z",
+      "blockHash": "0x2cd71716b88df1df1f7b5cafa0e9f21ecdb58a47b9ab7cb244db0c2d5a6f56ce",
+      "chainlink": 3753.530162,
+      "aggregateWeth1": 3430.622698,
+      "buy": {
+        "count": 2,
+        "baseVolumeWei": "3883702774680106926",
+        "quoteVolumeRaw": "13248816693",
+        "wethVolume": 3.8837027746801067,
+        "usdcVolume": 13248.816693,
+        "vwap": 3411.387910366359
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 2,
+        "baseVolumeWei": "3883702774680106926",
+        "quoteVolumeRaw": "13248816693",
+        "wethVolume": 3.8837027746801067,
+        "usdcVolume": 13248.816693,
+        "vwap": 3411.387910366359
+      }
+    },
+    {
+      "block": 23550054,
+      "timestamp": "2025-10-10T21:37:23Z",
+      "blockHash": "0xd36fd01e103f5d9ed0bffd4c867579d8b26c606175f7b0336e9f22f5ec81c56f",
+      "chainlink": 3753.530162,
+      "aggregateWeth1": 3616.96327,
+      "buy": {
+        "count": 5,
+        "baseVolumeWei": "478760683218735424981",
+        "quoteVolumeRaw": "1699173018337",
+        "wethVolume": 478.76068321873544,
+        "usdcVolume": 1699173.018337,
+        "vwap": 3549.1072635985115
+      },
+      "sell": {
+        "count": 5,
+        "baseVolumeWei": "301959451323710960024",
+        "quoteVolumeRaw": "1077917345824",
+        "wethVolume": 301.95945132371094,
+        "usdcVolume": 1077917.345824,
+        "vwap": 3569.7420335700485
+      },
+      "combined": {
+        "count": 10,
+        "baseVolumeWei": "780720134542446385005",
+        "quoteVolumeRaw": "2777090364161",
+        "wethVolume": 780.7201345424464,
+        "usdcVolume": 2777090.364161,
+        "vwap": 3557.0881821672992
+      }
+    },
+    {
+      "block": 23550055,
+      "timestamp": "2025-10-10T21:37:35Z",
+      "blockHash": "0x2452019483bab69eced7aabd6e3d707420727d7ff73a2aaad4c413a8739f90b0",
+      "chainlink": 3753.530162,
+      "aggregateWeth1": 3547.5589,
+      "buy": {
+        "count": 2,
+        "baseVolumeWei": "424598096874507858051",
+        "quoteVolumeRaw": "1510661450260",
+        "wethVolume": 424.59809687450786,
+        "usdcVolume": 1510661.45026,
+        "vwap": 3557.8620379602967
+      },
+      "sell": {
+        "count": 7,
+        "baseVolumeWei": "350589811660047039974",
+        "quoteVolumeRaw": "1244859690750",
+        "wethVolume": 350.589811660047,
+        "usdcVolume": 1244859.69075,
+        "vwap": 3550.758320259149
+      },
+      "combined": {
+        "count": 9,
+        "baseVolumeWei": "775187908534554898025",
+        "quoteVolumeRaw": "2755521141010",
+        "wethVolume": 775.1879085345549,
+        "usdcVolume": 2755521.14101,
+        "vwap": 3554.6492800940914
+      }
+    },
+    {
+      "block": 23550056,
+      "timestamp": "2025-10-10T21:37:47Z",
+      "blockHash": "0x586cad7573423a0ba640031639a7a80da903c76f920a96493b20345275c921ca",
+      "chainlink": 3753.530162,
+      "aggregateWeth1": 3715.823179,
+      "buy": {
+        "count": 6,
+        "baseVolumeWei": "407622015894512399984",
+        "quoteVolumeRaw": "1451117270960",
+        "wethVolume": 407.6220158945124,
+        "usdcVolume": 1451117.27096,
+        "vwap": 3559.95803557267
+      },
+      "sell": {
+        "count": 6,
+        "baseVolumeWei": "324300810384949406780",
+        "quoteVolumeRaw": "1148070082570",
+        "wethVolume": 324.3008103849494,
+        "usdcVolume": 1148070.08257,
+        "vwap": 3540.1394193471965
+      },
+      "combined": {
+        "count": 12,
+        "baseVolumeWei": "731922826279461806764",
+        "quoteVolumeRaw": "2599187353530",
+        "wethVolume": 731.9228262794618,
+        "usdcVolume": 2599187.35353,
+        "vwap": 3551.1767910590916
+      }
+    },
+    {
+      "block": 23550057,
+      "timestamp": "2025-10-10T21:37:59Z",
+      "blockHash": "0x08092f8d65f57268eba6300d6b6a8053aa10d25be871c6ebf23103275c24bfdc",
+      "chainlink": 3753.530162,
+      "aggregateWeth1": 3630.299117,
+      "buy": {
+        "count": 5,
+        "baseVolumeWei": "172408331833589247390",
+        "quoteVolumeRaw": "599977963140",
+        "wethVolume": 172.40833183358924,
+        "usdcVolume": 599977.96314,
+        "vwap": 3479.982415925853
+      },
+      "sell": {
+        "count": 6,
+        "baseVolumeWei": "189419303270711785128",
+        "quoteVolumeRaw": "668234286064",
+        "wethVolume": 189.4193032707118,
+        "usdcVolume": 668234.286064,
+        "vwap": 3527.804582350204
+      },
+      "combined": {
+        "count": 11,
+        "baseVolumeWei": "361827635104301032518",
+        "quoteVolumeRaw": "1268212249204",
+        "wethVolume": 361.827635104301,
+        "usdcVolume": 1268212.249204,
+        "vwap": 3505.0176552667767
+      }
+    },
+    {
+      "block": 23550058,
+      "timestamp": "2025-10-10T21:38:11Z",
+      "blockHash": "0x9180848de61680d21483518a6e73f7312533d3a31acadb5658c7000b1b3b812c",
+      "chainlink": 3753.530162,
+      "aggregateWeth1": 3713.718604,
+      "buy": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "sell": {
+        "count": 3,
+        "baseVolumeWei": "68570488318319294898",
+        "quoteVolumeRaw": "240383427496",
+        "wethVolume": 68.57048831831929,
+        "usdcVolume": 240383.427496,
+        "vwap": 3505.6397204011037
+      },
+      "combined": {
+        "count": 3,
+        "baseVolumeWei": "68570488318319294898",
+        "quoteVolumeRaw": "240383427496",
+        "wethVolume": 68.57048831831929,
+        "usdcVolume": 240383.427496,
+        "vwap": 3505.6397204011037
+      }
+    },
+    {
+      "block": 23550059,
+      "timestamp": "2025-10-10T21:38:23Z",
+      "blockHash": "0x705937e7284caefd14813565357cc8e751e758544082cb1dd191f036c820cda8",
+      "chainlink": 3753.530162,
+      "aggregateWeth1": 3534.71968,
+      "buy": {
+        "count": 1,
+        "baseVolumeWei": "333454125951434891",
+        "quoteVolumeRaw": "1160971588",
+        "wethVolume": 0.33345412595143487,
+        "usdcVolume": 1160.971588,
+        "vwap": 3481.653090023804
+      },
+      "sell": {
+        "count": 1,
+        "baseVolumeWei": "27389376712072417280",
+        "quoteVolumeRaw": "94955312138",
+        "wethVolume": 27.389376712072416,
+        "usdcVolume": 94955.312138,
+        "vwap": 3466.866483900181
+      },
+      "combined": {
+        "count": 2,
+        "baseVolumeWei": "27722830838023852171",
+        "quoteVolumeRaw": "96116283726",
+        "wethVolume": 27.722830838023853,
+        "usdcVolume": 96116.283726,
+        "vwap": 3467.044339287661
+      }
+    },
+    {
+      "block": 23550060,
+      "timestamp": "2025-10-10T21:38:35Z",
+      "blockHash": "0x9fcbc31c9f6018f087160d1733f76997dd57c225170f70651b24a65e80bbad4a",
+      "chainlink": 3753.530162,
+      "aggregateWeth1": 3578.454672,
+      "buy": {
+        "count": 4,
+        "baseVolumeWei": "34738105050330406474",
+        "quoteVolumeRaw": "120747907310",
+        "wethVolume": 34.738105050330404,
+        "usdcVolume": 120747.90731,
+        "vwap": 3475.949742654472
+      },
+      "sell": {
+        "count": 1,
+        "baseVolumeWei": "26489468856952107008",
+        "quoteVolumeRaw": "91886710711",
+        "wethVolume": 26.489468856952108,
+        "usdcVolume": 91886.710711,
+        "vwap": 3468.8015530701937
+      },
+      "combined": {
+        "count": 5,
+        "baseVolumeWei": "61227573907282513482",
+        "quoteVolumeRaw": "212634618021",
+        "wethVolume": 61.22757390728251,
+        "usdcVolume": 212634.618021,
+        "vwap": 3472.85715326553
+      }
+    },
+    {
+      "block": 23550061,
+      "timestamp": "2025-10-10T21:38:47Z",
+      "blockHash": "0xacf12460f5acd636be6c20e9ec1f3d822c96e4efb167ecd9ee0e84214e550d10",
+      "chainlink": 3706.320145,
+      "aggregateWeth1": 3587.832228,
+      "buy": {
+        "count": 2,
+        "baseVolumeWei": "19227325795667283067",
+        "quoteVolumeRaw": "66979762416",
+        "wethVolume": 19.227325795667284,
+        "usdcVolume": 66979.762416,
+        "vwap": 3483.5714091396594
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 2,
+        "baseVolumeWei": "19227325795667283067",
+        "quoteVolumeRaw": "66979762416",
+        "wethVolume": 19.227325795667284,
+        "usdcVolume": 66979.762416,
+        "vwap": 3483.5714091396594
+      }
+    },
+    {
+      "block": 23550062,
+      "timestamp": "2025-10-10T21:38:59Z",
+      "blockHash": "0x356b27fb45869698339d47e67df81f16e83614005250eecfa440e22f846e692a",
+      "chainlink": 3706.320145,
+      "aggregateWeth1": 3537.387439,
+      "buy": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "sell": {
+        "count": 1,
+        "baseVolumeWei": "22080547409548644352",
+        "quoteVolumeRaw": "76809809604",
+        "wethVolume": 22.080547409548643,
+        "usdcVolume": 76809.809604,
+        "vwap": 3478.618902844044
+      },
+      "combined": {
+        "count": 1,
+        "baseVolumeWei": "22080547409548644352",
+        "quoteVolumeRaw": "76809809604",
+        "wethVolume": 22.080547409548643,
+        "usdcVolume": 76809.809604,
+        "vwap": 3478.618902844044
+      }
+    },
+    {
+      "block": 23550063,
+      "timestamp": "2025-10-10T21:39:11Z",
+      "blockHash": "0x30d1873b59a4f9c194246af1685a7d4b08552ea512f936643b7b18b3a0a323d2",
+      "chainlink": 3706.320145,
+      "aggregateWeth1": 3536.914347,
+      "buy": {
+        "count": 1,
+        "baseVolumeWei": "22337416839572307557",
+        "quoteVolumeRaw": "78110098288",
+        "wethVolume": 22.337416839572306,
+        "usdcVolume": 78110.098288,
+        "vwap": 3496.8277150839776
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 1,
+        "baseVolumeWei": "22337416839572307557",
+        "quoteVolumeRaw": "78110098288",
+        "wethVolume": 22.337416839572306,
+        "usdcVolume": 78110.098288,
+        "vwap": 3496.8277150839776
+      }
+    },
+    {
+      "block": 23550064,
+      "timestamp": "2025-10-10T21:39:23Z",
+      "blockHash": "0xcfe47cbeab229be45173e7b54cb7e9f910507ad50c83afac4c6c24351c90bf06",
+      "chainlink": 3706.320145,
+      "aggregateWeth1": 3547.747973,
+      "buy": {
+        "count": 1,
+        "baseVolumeWei": "18151866966742448108",
+        "quoteVolumeRaw": "63180750708",
+        "wethVolume": 18.15186696674245,
+        "usdcVolume": 63180.750708,
+        "vwap": 3480.6750635490407
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 1,
+        "baseVolumeWei": "18151866966742448108",
+        "quoteVolumeRaw": "63180750708",
+        "wethVolume": 18.15186696674245,
+        "usdcVolume": 63180.750708,
+        "vwap": 3480.6750635490407
+      }
+    },
+    {
+      "block": 23550065,
+      "timestamp": "2025-10-10T21:39:35Z",
+      "blockHash": "0x0e4e28e6891e3def3faf424d0229fd411fcb3f70a0add36290d8ead30bd0a627",
+      "chainlink": 3706.320145,
+      "aggregateWeth1": 3536.882666,
+      "buy": {
+        "count": 4,
+        "baseVolumeWei": "47208601054264653663",
+        "quoteVolumeRaw": "165426957216",
+        "wethVolume": 47.208601054264655,
+        "usdcVolume": 165426.957216,
+        "vwap": 3504.1698656956055
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 4,
+        "baseVolumeWei": "47208601054264653663",
+        "quoteVolumeRaw": "165426957216",
+        "wethVolume": 47.208601054264655,
+        "usdcVolume": 165426.957216,
+        "vwap": 3504.1698656956055
+      }
+    },
+    {
+      "block": 23550066,
+      "timestamp": "2025-10-10T21:39:47Z",
+      "blockHash": "0x4b27505f5d3d993c363243ae815a1ba2ef0c84980e07364e914874d2e90c4751",
+      "chainlink": 3706.320145,
+      "aggregateWeth1": 3539.076881,
+      "buy": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "sell": {
+        "count": 1,
+        "baseVolumeWei": "34029689748627939328",
+        "quoteVolumeRaw": "119287554142",
+        "wethVolume": 34.02968974862794,
+        "usdcVolume": 119287.554142,
+        "vwap": 3505.3964647682283
+      },
+      "combined": {
+        "count": 1,
+        "baseVolumeWei": "34029689748627939328",
+        "quoteVolumeRaw": "119287554142",
+        "wethVolume": 34.02968974862794,
+        "usdcVolume": 119287.554142,
+        "vwap": 3505.3964647682283
+      }
+    },
+    {
+      "block": 23550067,
+      "timestamp": "2025-10-10T21:39:59Z",
+      "blockHash": "0xcd8e3bf9dd4ef20ad18f108e1b4c281530f8f06b35a7fdb2b57596ceea06abdc",
+      "chainlink": 3706.320145,
+      "aggregateWeth1": 3694.401185,
+      "buy": {
+        "count": 1,
+        "baseVolumeWei": "314550043115276289",
+        "quoteVolumeRaw": "1093007326",
+        "wethVolume": 0.3145500431152763,
+        "usdcVolume": 1093.007326,
+        "vwap": 3474.8280915015953
+      },
+      "sell": {
+        "count": 1,
+        "baseVolumeWei": "30380350234166095872",
+        "quoteVolumeRaw": "105791350261",
+        "wethVolume": 30.380350234166094,
+        "usdcVolume": 105791.350261,
+        "vwap": 3482.2294491531507
+      },
+      "combined": {
+        "count": 2,
+        "baseVolumeWei": "30694900277281372161",
+        "quoteVolumeRaw": "106884357587",
+        "wethVolume": 30.694900277281373,
+        "usdcVolume": 106884.357587,
+        "vwap": 3482.153602763445
+      }
+    },
+    {
+      "block": 23550068,
+      "timestamp": "2025-10-10T21:40:11Z",
+      "blockHash": "0xbc771e4a4cbac8b17d5bdafc8d8cb663daf356b60733a9631fb61fb9a298bdc1",
+      "chainlink": 3706.320145,
+      "aggregateWeth1": 3534.34259,
+      "buy": {
+        "count": 4,
+        "baseVolumeWei": "56201439785921495570",
+        "quoteVolumeRaw": "196441936927",
+        "wethVolume": 56.201439785921494,
+        "usdcVolume": 196441.936927,
+        "vwap": 3495.318583923696
+      },
+      "sell": {
+        "count": 0,
+        "baseVolumeWei": "0",
+        "quoteVolumeRaw": "0",
+        "wethVolume": 0.0,
+        "usdcVolume": 0.0,
+        "vwap": null
+      },
+      "combined": {
+        "count": 4,
+        "baseVolumeWei": "56201439785921495570",
+        "quoteVolumeRaw": "196441936927",
+        "wethVolume": 56.201439785921494,
+        "usdcVolume": 196441.936927,
+        "vwap": 3495.318583923696
+      }
+    },
+    {
+      "block": 23550069,
+      "timestamp": "2025-10-10T21:40:23Z",
+      "blockHash": "0xc9f70544ee18eb451a2623abeb753ef2b6267b719ac14689d64e79d37e6cbb5d",
+      "chainlink": 3706.320145,
+      "aggregateWeth1": 3536.358859,
+      "buy": {
+        "count": 1,
+        "baseVolumeWei": "4671323296288528592",
+        "quoteVolumeRaw": "16329542151",
+        "wethVolume": 4.671323296288529,
+        "usdcVolume": 16329.542151,
+        "vwap": 3495.69942289676
+      },
+      "sell": {
+        "count": 1,
+        "baseVolumeWei": "53471846660556054528",
+        "quoteVolumeRaw": "186767705368",
+        "wethVolume": 53.471846660556054,
+        "usdcVolume": 186767.705368,
+        "vwap": 3492.8231776549196
+      },
+      "combined": {
+        "count": 2,
+        "baseVolumeWei": "58143169956844583120",
+        "quoteVolumeRaw": "203097247519",
+        "wethVolume": 58.14316995684458,
+        "usdcVolume": 203097.247519,
+        "vwap": 3493.054260195036
+      }
+    }
+  ]
+}

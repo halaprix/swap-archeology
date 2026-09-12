@@ -1,0 +1,11 @@
+{
+  "statuses": {
+    "/": 200,
+    "/quote-lab": 200,
+    "/design-system": 200,
+    "/api/health": 503,
+    "/api/reports": 200
+  },
+  "reports": 268,
+  "unconfiguredQuoteStatus": 503
+}

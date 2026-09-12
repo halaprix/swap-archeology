@@ -1,0 +1,5730 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "oneinch_spot",
+      "label": "1inch Spot (OffchainOracle)",
+      "kind": "spot",
+      "description": "Liquidity-weighted DEX spot price from canonical 1inch OffchainOracle (getRate WETH/USDC, useWrappers=false)",
+      "address": "0x00000000000D6FFc74A8feb35aF5827bf57f6786"
+    },
+    {
+      "id": "uniswap_v3_twap_60",
+      "label": "Uniswap V3 TWAP (60s)",
+      "kind": "twap",
+      "description": "Uniswap V3 USDC/WETH 0.05% observation geometric TWAP (60-second window)",
+      "windowSeconds": 60,
+      "pool": "0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640"
+    },
+    {
+      "id": "uniswap_v3_twap_300",
+      "label": "Uniswap V3 TWAP (300s)",
+      "kind": "twap",
+      "description": "Uniswap V3 USDC/WETH 0.05% observation geometric TWAP (300-second window, default frontend comparison)",
+      "windowSeconds": 300,
+      "pool": "0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640"
+    }
+  ],
+  "rows": [
+    {
+      "block": 21921690,
+      "blockHash": "0xbd085bc06bb45f03ce21b3b996f0c682d6ec9d033cc3534d99af5a1a8072e3f1",
+      "timestamp": "2025-02-25T06:55:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2496.429121,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2481.483435,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2485.456788,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921691,
+      "blockHash": "0xec28ab697dc707ba3ded66f273aad0819b43e7f1f164047cd1eb07343637274d",
+      "timestamp": "2025-02-25T06:56:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2497.152339,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2481.483435,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2485.208267,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921692,
+      "blockHash": "0x1a5f92408f605a5243a51c52f2f933117e2bea945776376480c92908da29254e",
+      "timestamp": "2025-02-25T06:56:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2497.158968,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2481.979757,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2484.959771,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921693,
+      "blockHash": "0x14624c3e6cd8d319e142661887898f4bdf5f40c4ee920043d3329fdecf7aaf21",
+      "timestamp": "2025-02-25T06:56:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2497.164437,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2482.476177,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2484.959771,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921694,
+      "blockHash": "0xd9200bf01da4d37dd8995971aa7df6c080e2b0dbd05db52dd0f806ec33339df2",
+      "timestamp": "2025-02-25T06:56:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2497.163623,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2483.220995,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2484.7113,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921695,
+      "blockHash": "0xaffe54b63a050b57a88e2ed2c732a0d7691ade6ade9d885e278257ebdf4d13f4",
+      "timestamp": "2025-02-25T06:56:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2497.142576,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2483.717664,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2484.462854,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921696,
+      "blockHash": "0x030aa5252d3b04317e22f52617378f5adfd15091c518e49afb824889bf552d4b",
+      "timestamp": "2025-02-25T06:57:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2497.144562,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2484.214432,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2484.462854,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921697,
+      "blockHash": "0xb91c282f3b311663d537c53601781a99f593377e2f0a09e83da2343ce06d28d8",
+      "timestamp": "2025-02-25T06:57:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2496.891755,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2484.214432,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2484.214432,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921698,
+      "blockHash": "0x34ba192bcf5aa8aceca047278dcd14a29ebc5aa86fbff27f0673d23e2ad36a46",
+      "timestamp": "2025-02-25T06:57:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2496.855473,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2483.966036,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2484.214432,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921699,
+      "blockHash": "0x91b92f413ebadac29e0ff393ddb68ee65bcdf36f06df463dead6ec68cb50ecc9",
+      "timestamp": "2025-02-25T06:57:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2496.855533,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2483.966036,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2483.966036,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921700,
+      "blockHash": "0xfc6d34ca17bd92b696d09c5115c9666acc26be8923a8a1a209c8dcce982f5136",
+      "timestamp": "2025-02-25T06:57:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2496.831743,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2483.717664,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2483.966036,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921701,
+      "blockHash": "0x82f767e2e7702c80fc4da720d9e27d4f87466c2e15cbc777d824e68bd202eb78",
+      "timestamp": "2025-02-25T06:58:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2496.19324,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2483.469317,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2483.717664,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921702,
+      "blockHash": "0x459809a6bcd5dd111e918332e97f0590d3ef2836cabc51f8e203575cf06cf672",
+      "timestamp": "2025-02-25T06:58:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2495.892816,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2482.972698,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2483.469317,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921703,
+      "blockHash": "0x5b43bdc940bf06b8df18c9bc68ba783e04ad2d489c46287cde3bb287db322996",
+      "timestamp": "2025-02-25T06:58:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2495.902063,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2482.227955,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2483.220995,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921704,
+      "blockHash": "0xc07b83d9db6d7230fa69b6a0844904eed4a22f9cb3944b8fb20e3b70a4f6e987",
+      "timestamp": "2025-02-25T06:58:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2495.882526,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2481.483435,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2482.972698,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921705,
+      "blockHash": "0x9df88f9a5348b7257d6d3c47877197360c1dc71fb9de90d3f05c3da53328f26b",
+      "timestamp": "2025-02-25T06:58:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2495.899148,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2480.739139,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2482.724425,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921706,
+      "blockHash": "0xc1efe6c9ff5a07acdeca07b44450aab580dbe24be0962716d7998f636dfb09de",
+      "timestamp": "2025-02-25T06:59:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2495.899121,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2480.49109,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2482.724425,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921707,
+      "blockHash": "0x10e93fbf1b5b0793e37ff1ced200f84669eec0a5a534ba6582e071e6283566ed",
+      "timestamp": "2025-02-25T06:59:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2496.323749,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2480.243066,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2482.476177,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921708,
+      "blockHash": "0xa80c470370fbf508e010c7e47f06fb73e751bdced06b128173189fc7f1fa20fa",
+      "timestamp": "2025-02-25T06:59:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2496.413526,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2480.739139,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2482.476177,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921709,
+      "blockHash": "0x14d0f86f784840249ca1ba42b53ba59eb81aefbb8ca1b9af0d97b9f4c71147a2",
+      "timestamp": "2025-02-25T06:59:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2495.88929,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2481.235312,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2482.227955,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921710,
+      "blockHash": "0xa638c86f973b53fb011efce6727f8802d0a8e80dfb4c319722472e75225de81b",
+      "timestamp": "2025-02-25T06:59:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2495.889262,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2481.483435,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2482.227955,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921711,
+      "blockHash": "0xaaaaf16cb0fdfd9565d6a882ccaed0da21848c607daec7f8aead49f7d2688265",
+      "timestamp": "2025-02-25T07:00:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2496.154817,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2481.731584,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2482.227955,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921712,
+      "blockHash": "0x9c207147295ebba18caa409da00ca1c5b7ff35e3540890e3ced108de5f46e041",
+      "timestamp": "2025-02-25T07:00:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2495.616988,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2481.979757,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2482.227955,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921713,
+      "blockHash": "0xf1a8485855e19272ae124e28a1059a6186c44e871e130f85e1f0849fe338232e",
+      "timestamp": "2025-02-25T07:00:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2495.618098,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2481.731584,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2482.227955,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921714,
+      "blockHash": "0xadae910335da8486f41ae461c2776fbf5863cb0da5080bc172ae67bc2647ef32",
+      "timestamp": "2025-02-25T07:00:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2494.005736,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2481.483435,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2482.227955,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921715,
+      "blockHash": "0xb6d9d97ccba377693bbb39e5f30bd3b739b80b6dbfe6baa64bb3e911e76b6196",
+      "timestamp": "2025-02-25T07:00:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2494.014366,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2480.987213,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2482.227955,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921716,
+      "blockHash": "0x9fe33c55bd589d374bb4a61a0704939e00c66c00c6ed488800adb45572e2da71",
+      "timestamp": "2025-02-25T07:01:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2494.01303,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2480.49109,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2481.979757,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921717,
+      "blockHash": "0x0c2096123cc6becce07bca1d5a1779a43acaff0bf04205f6b159fd4fba1f6f1a",
+      "timestamp": "2025-02-25T07:01:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2494.023786,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2479.747091,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2481.731584,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921718,
+      "blockHash": "0x5d2fc3c22b05bbecda813100c46c1af4eace464fb1ef2f8ca6e1e9f940b8d8d2",
+      "timestamp": "2025-02-25T07:01:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2494.018753,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2479.499141,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2481.731584,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921719,
+      "blockHash": "0x8e78ca25ab8ae04ccbacaf1ddae0bf24c6380d7d01fe30725a376803f71b617f",
+      "timestamp": "2025-02-25T07:01:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2493.990879,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2479.003316,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2481.483435,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921720,
+      "blockHash": "0xc198cfd89d695f66e4e551ed3d06f51c24775891d4bff4c3085bd6d6d7176859",
+      "timestamp": "2025-02-25T07:01:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2493.986855,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2478.75544,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2481.235312,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921721,
+      "blockHash": "0xa126ff6116986a0ed46512e6751a51cf07097b57cf4941a0fe0bbd30691395bf",
+      "timestamp": "2025-02-25T07:02:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2493.743393,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2478.75544,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2480.987213,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921722,
+      "blockHash": "0x0cd6c9eadaabcf609a0ac99f28ae4f3f9a79f09535d25a51932a3ec4a93ccb9b",
+      "timestamp": "2025-02-25T07:02:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2492.975869,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2478.50759,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2480.739139,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921723,
+      "blockHash": "0x116622ac5df906183a4724a4293cf5331c13f17a884807cca625d84207ae7ead",
+      "timestamp": "2025-02-25T07:02:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2490.811748,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2478.011963,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2480.49109,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921724,
+      "blockHash": "0x458f9820e15c5058ac0358a74af2c1a2b0c80a84198b02b9d94387a51b4d1e7f",
+      "timestamp": "2025-02-25T07:02:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2491.317104,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2477.516434,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2480.243066,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921725,
+      "blockHash": "0xa5497b5ec85faa4f6699551c1ca6b6264eb0eab623ca63751d1807e483201ab6",
+      "timestamp": "2025-02-25T07:02:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2491.462402,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2476.773328,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2479.747091,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921726,
+      "blockHash": "0x6df69e2208e7895f730799a864fcf0ee1abc3aeb68faa3e5ca38d31ef3d985dc",
+      "timestamp": "2025-02-25T07:03:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2491.4625,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2475.782866,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2479.499141,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921727,
+      "blockHash": "0x82d6fb7c45aafa90ccd479935cc782738f87602f6f79e42d15c183a67975277a",
+      "timestamp": "2025-02-25T07:03:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2490.607737,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2475.04028,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2479.003316,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921728,
+      "blockHash": "0x25513ad0a47893ac2c48d5be63a2cbfcf7a0fa5b16298c2265293e7361cc0973",
+      "timestamp": "2025-02-25T07:03:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2490.704632,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2474.297917,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2478.75544,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921729,
+      "blockHash": "0xcdaed7193c9349ea4e991f9275ec06556db53fcf3d959e682ea577b71491f018",
+      "timestamp": "2025-02-25T07:03:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2491.81318,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2473.803131,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2478.50759,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921730,
+      "blockHash": "0x396b40181d92fb0b361319f0636b43523d4afdf19c6651e3d4c987a0ae520914",
+      "timestamp": "2025-02-25T07:03:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2491.713816,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2474.297917,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2478.50759,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921731,
+      "blockHash": "0x1793657133111be81c1313bda8fb907ef3200076af4aad8238f5bcb62878857a",
+      "timestamp": "2025-02-25T07:04:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2490.33403,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2474.545346,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2478.259764,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921732,
+      "blockHash": "0xc81b684111f0be825c84f23a05ce9c67a48276311b4d4c1d9839ae1db25c8565",
+      "timestamp": "2025-02-25T07:04:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2490.334345,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2474.792801,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2478.011963,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921733,
+      "blockHash": "0xb57938918b0d6f938d30e566d6507550cb28b3a149bd1f23e43c16ade3f4d2b6",
+      "timestamp": "2025-02-25T07:04:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2486.083187,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2475.04028,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2477.764186,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921734,
+      "blockHash": "0x6aadd5484717acb6fa23b9f0342b2b49d2cc0541d11bb4cdb5af117afeddfbee",
+      "timestamp": "2025-02-25T07:04:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2487.201111,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2473.803131,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2477.021006,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921735,
+      "blockHash": "0x54a7112afcb0eec476df8225b327a146b0ccc2b1181ffc31bab1f859dd4a516d",
+      "timestamp": "2025-02-25T07:04:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2486.750158,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2472.072161,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2476.525676,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921736,
+      "blockHash": "0xbfb80456a7ac42924a3d85e28b9ec6049496db017ad81981a1a158d0b6a9ca7a",
+      "timestamp": "2025-02-25T07:05:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2484.049538,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2470.836496,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2476.030445,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921737,
+      "blockHash": "0x9682f104c65d44bb9dddeed5bb64ceb668d565b23052715e53bea260407eb194",
+      "timestamp": "2025-02-25T07:05:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2485.601275,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2468.613855,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2475.287784,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921738,
+      "blockHash": "0x51183573c451c59fb3b4a30f03bfab4ede92a8924d5ddb3435d806a3bd15c159",
+      "timestamp": "2025-02-25T07:05:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2485.779521,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2467.873419,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2475.04028,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921739,
+      "blockHash": "0x591589e0e20a8c1800f6eff228497da58c13f5bf0aa34417994498c9389b41a8",
+      "timestamp": "2025-02-25T07:05:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2485.745038,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2468.120206,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2474.297917,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921740,
+      "blockHash": "0x87219380ebc2e55ee46d6dce8c835d9164a5acf809940911f1404a05aa72e065",
+      "timestamp": "2025-02-25T07:05:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2485.747567,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2467.626656,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2474.050511,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921741,
+      "blockHash": "0xec9ee08617d47090eb93c025e81a41482fcc195666b1cc6f83487af25b022580",
+      "timestamp": "2025-02-25T07:06:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2485.249307,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2467.379918,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2473.555776,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921742,
+      "blockHash": "0xeb5b2d045ecaade71bc221174db7d77b4e96b45118f6ce3a8402c1cda1e9c2bd",
+      "timestamp": "2025-02-25T07:06:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2483.500332,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2467.873419,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2473.061139,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921743,
+      "blockHash": "0x35d534fa7f7be044a0c659a30d02970ec679910255947e953b36a1181abd1eaa",
+      "timestamp": "2025-02-25T07:06:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2476.702454,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2466.639852,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2472.319369,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921744,
+      "blockHash": "0x90812212ae93bed4af1e3f585f02c9be2c4e8303e60a647343c59f4497b74d25",
+      "timestamp": "2025-02-25T07:06:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2477.053928,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2463.681807,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2471.330688,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921745,
+      "blockHash": "0x1fc46e9ea718da440a9518551b1a0b33e9956c7662c9a5711bbcbafbbd0c9e90",
+      "timestamp": "2025-02-25T07:06:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2461.65267,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2460.973383,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2470.342403,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921746,
+      "blockHash": "0xd2add21d7aa89f5f23a0af7f5bbaeea3f1d827a6a35dd8efa61b1d835034c79d",
+      "timestamp": "2025-02-25T07:07:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2463.984523,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2455.565462,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2468.860716,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921747,
+      "blockHash": "0xfe2cb846caf4b0a0d20d009ff0d9a52e6460fb0cc2ca84830cebe1270fe9af94",
+      "timestamp": "2025-02-25T07:07:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2461.004553,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2450.659484,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2467.379918,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921748,
+      "blockHash": "0xfb18e8b0a392d7bf01eaa668c6411469b35fb0a8f9bdbd1cb57df8b3273f9cb3",
+      "timestamp": "2025-02-25T07:07:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2462.329545,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2443.563221,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2465.406902,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921749,
+      "blockHash": "0x52aecce1a0730b5901f1fe8770dab937bd3aa0e1216c7a41d2e11396e77786b8",
+      "timestamp": "2025-02-25T07:07:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2462.370117,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2440.632851,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2463.928175,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921750,
+      "blockHash": "0xb4df024e4aa98eec73f783d1099ca87ce34457f6363b4a55addfbcaeb9da3800",
+      "timestamp": "2025-02-25T07:07:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2463.991878,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2437.705994,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2462.450336,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921751,
+      "blockHash": "0x88e275f1af8c80dc4ca4db43daaddf0c3082bdc5b7f6606e58fbecca91629a31",
+      "timestamp": "2025-02-25T07:08:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2465.744188,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2437.949764,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2461.21948,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921752,
+      "blockHash": "0x1fbb103f1ce85d738d479a49d8db6a1dca77f2c4faef41c63ab435518e7a6243",
+      "timestamp": "2025-02-25T07:08:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2466.182982,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2438.437379,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2459.989239,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921753,
+      "blockHash": "0x8791161aaa74673607552702e7e9a3aabd56e92c738ac9703e648f2466a49eef",
+      "timestamp": "2025-02-25T07:08:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2466.315051,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2441.60925,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2459.00549,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921754,
+      "blockHash": "0xae611b39396657a49d032624f60279afba141032adbdc47f410cc394c97cef53",
+      "timestamp": "2025-02-25T07:08:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2463.874954,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2443.074582,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2457.776356,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921755,
+      "blockHash": "0x84dff0a85e11bbd775c32975bfbd4979515495d6d901136d56a449f89ba4af83",
+      "timestamp": "2025-02-25T07:08:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2464.10732,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2442.830299,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2456.302206,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921756,
+      "blockHash": "0x34c6197c8a2880b6a671b2c0ff5040469fcc3313086d9bd6d515e15affc7ff6d",
+      "timestamp": "2025-02-25T07:09:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2464.133993,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2442.097596,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2454.82894,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921757,
+      "blockHash": "0x4279cc0347a2ea8c59577c8d3d3c17989f92969d94768afd28966f40358edad2",
+      "timestamp": "2025-02-25T07:09:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2465.655911,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2441.121001,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2453.356558,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921758,
+      "blockHash": "0x47fa774939a1823bc23026a15f73d9185a4aa87bcf28f2299c75b808a34d6565",
+      "timestamp": "2025-02-25T07:09:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2465.655102,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2440.632851,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2452.130248,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921759,
+      "blockHash": "0x74134c43e65181c3c7ab3414ab7bae6d91d606db4133dfcebc845e9109b654ff",
+      "timestamp": "2025-02-25T07:09:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2464.291652,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2440.388812,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2451.149641,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921760,
+      "blockHash": "0xb3cd1f2300b1720ec9ad595b5bae85796750ae46b953d129cd64c085855fbaad",
+      "timestamp": "2025-02-25T07:09:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2463.586155,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2440.388812,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2449.924434,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921761,
+      "blockHash": "0xa796f92131acffca7cd97f6d6739a850e3a09cdcb64eb14533b2408e4f4d14f6",
+      "timestamp": "2025-02-25T07:10:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2463.821138,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2440.632851,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2448.699839,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921762,
+      "blockHash": "0x35629b86e2170413af3b9eca5255baf2e8f2b5f6eae55494e3d395fb94ca51be",
+      "timestamp": "2025-02-25T07:10:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2463.864356,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2440.388812,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2447.720604,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921763,
+      "blockHash": "0x6f277298207273ba60fa1e0e41469dfabe8f19892bb95987e29bd68a274f2e67",
+      "timestamp": "2025-02-25T07:10:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2463.377049,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2439.4129,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2446.49711,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921764,
+      "blockHash": "0x8b313336077f1532e9f300706c4511dfa32f1c3778ad3c07b9c8fbd5627e9536",
+      "timestamp": "2025-02-25T07:10:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2458.97682,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2437.218526,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2445.029726,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921765,
+      "blockHash": "0x324da10c12d0a7c0b926ad371b3c74fae3a07209b0ea3ed69e609eb3b22580c8",
+      "timestamp": "2025-02-25T07:10:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2448.722911,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2436.243882,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2443.563221,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921766,
+      "blockHash": "0xa7f00e23df149f767673bb0c9ec457e202796bc1a11e36dde8ba6abacbfaffb6",
+      "timestamp": "2025-02-25T07:11:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2453.186871,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2430.890304,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2441.365114,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921767,
+      "blockHash": "0x5e1a5f190fbaca7c54ce023cfa8bdfe37f235ee8b4783f36a0a23b616acac4df",
+      "timestamp": "2025-02-25T07:11:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2449.531206,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2428.217929,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2439.656841,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921768,
+      "blockHash": "0x4d6680f68021b3d0c42d3f7531e8bf6913c666072f16ccd6cc593e618151b1da",
+      "timestamp": "2025-02-25T07:11:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2452.483964,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2423.851286,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2437.949764,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921769,
+      "blockHash": "0xf9c9437bd64082456fce2009a07cb21ec76b79c2d06a05feb4266d03b6663e7e",
+      "timestamp": "2025-02-25T07:11:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2455.360485,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2421.67091,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2436.487506,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921770,
+      "blockHash": "0x8cce10695d0d74f707413b236bc1dfd732d6d95fcf33b71665275d0cfc77628f",
+      "timestamp": "2025-02-25T07:11:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2455.316221,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2419.976418,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2435.513155,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921771,
+      "blockHash": "0xf66cff60e333109e3e59b8bd9fdcda3f537e3fa0797f9360c115146ee54a7d70",
+      "timestamp": "2025-02-25T07:12:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2455.54217,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2422.155268,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2434.782647,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921772,
+      "blockHash": "0x2c89c95030a6ab7da8238ce0be28fdb73664fa8c739c8d73fdecf3bc78ee597d",
+      "timestamp": "2025-02-25T07:12:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2456.387092,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2423.366588,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2434.295764,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921773,
+      "blockHash": "0x1a582e2598f9f3a89bdc2701f18d29d0d738d132487b259c80699fd89d88a4c3",
+      "timestamp": "2025-02-25T07:12:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2456.263116,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2426.276228,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2434.295764,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921774,
+      "blockHash": "0x2124b764962bf049a20bc13eb19fd7ad27509e335855ea9fd9e83bd36487a2a5",
+      "timestamp": "2025-02-25T07:12:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2456.304749,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2427.004184,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2433.808978,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921775,
+      "blockHash": "0x7b0ce9ecd99a05492f1ec4ba9a78b3ed4cc2e851006306aee0d01d28665b10e1",
+      "timestamp": "2025-02-25T07:12:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2456.291803,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2427.489609,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2433.322289,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921776,
+      "blockHash": "0xf2e5c880903f4db518d29a05a4e8985d95734719ea95abde89696429b59a3154",
+      "timestamp": "2025-02-25T07:13:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2456.364153,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2428.217929,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2432.835697,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921777,
+      "blockHash": "0xfb0ac4205c965d9cc6e89c99d2466f7e5220ba8846a8c6ea0aa08a0a5d8a581d",
+      "timestamp": "2025-02-25T07:13:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2456.362942,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2428.217929,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2432.105993,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921778,
+      "blockHash": "0x5596d48bd616442d2c8ab0f096aaac1c05c946e0ab507f1a6db4c226dba8433c",
+      "timestamp": "2025-02-25T07:13:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2454.089794,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2427.975131,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2431.619644,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921779,
+      "blockHash": "0xf9a90aa4459c434b3303b4b73ef3d05c460a4c849c43a73470af8d2c53a3cd24",
+      "timestamp": "2025-02-25T07:13:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2448.841195,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2427.004184,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2430.64724,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921780,
+      "blockHash": "0x8dd409716717ef6ce0641b6640ae845b22a4ab295e0467069e6233176408ebb7",
+      "timestamp": "2025-02-25T07:13:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2450.796573,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2425.063454,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2429.918191,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921781,
+      "blockHash": "0x4d5c0262d3dbd88436791139b44e5c35c5fc41ca5c8ce82669905df37fa9fe86",
+      "timestamp": "2025-02-25T07:14:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2454.64708,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2423.366588,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2429.189362,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921782,
+      "blockHash": "0x78c1a512606dd5e4626036b75bae843c6cfb31fcc442f694a788f91bde97def8",
+      "timestamp": "2025-02-25T07:14:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2454.625374,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2422.639724,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2428.46075,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921783,
+      "blockHash": "0x06d8fa1686a746a59f6fea3b7ac42d56d48317ec0f937dba665d5663abf7a6d0",
+      "timestamp": "2025-02-25T07:14:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2454.740904,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2421.913077,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2427.732358,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921784,
+      "blockHash": "0xe35a84719afa260748a73cf703eebb2b533dfadd60900fb15443ebbdc976109b",
+      "timestamp": "2025-02-25T07:14:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2454.72496,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2423.608925,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2427.246884,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921785,
+      "blockHash": "0x8b3b08347d1d62f08b1472e95a9031ef258fd1e5096217d96aab591e83cc089a",
+      "timestamp": "2025-02-25T07:14:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2454.613198,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2425.791046,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2427.004184,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921786,
+      "blockHash": "0x1f72c4cffdac98d7b96bbe00e8339f8d0f76d7e4ecee681aa4abc08cfb399a39",
+      "timestamp": "2025-02-25T07:15:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2452.918699,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2427.004184,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2426.276228,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921787,
+      "blockHash": "0x2fa18e2e826479d9a79f62b1281ae3da9ba320a6d5a9922dda362bd307254483",
+      "timestamp": "2025-02-25T07:15:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2455.350099,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2425.30596,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2425.548491,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921788,
+      "blockHash": "0x0734a3438c8aeb2e1802a90456ea71825d123644523ba8537cc8d5ffefd693a2",
+      "timestamp": "2025-02-25T07:15:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2426.925807,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2425.791046,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2425.063454,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921789,
+      "blockHash": "0x8d6a7912bf84a662e62e4230f3f7f5af6ff6eefad0ee2141a99ca5264aaed886",
+      "timestamp": "2025-02-25T07:15:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2426.951376,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2425.30596,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2424.820972,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921790,
+      "blockHash": "0x40af119dcb0a8b5f6c2939d8eae4a1d887db60fe856debd163f59f09a49effc0",
+      "timestamp": "2025-02-25T07:15:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2427.503413,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2425.30596,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2424.820972,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921791,
+      "blockHash": "0x5c8990627ada53d8d93e30b54dc4de24d27eb238c93f880785783610e7a35c32",
+      "timestamp": "2025-02-25T07:16:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2434.043735,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2426.276228,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2425.548491,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921792,
+      "blockHash": "0xcce829fa65aea9f95b0a546a5234577961e0e3217569aea489ddc3093367177e",
+      "timestamp": "2025-02-25T07:16:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2434.925338,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2430.161183,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2426.033625,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921793,
+      "blockHash": "0x250765791eee70f06d8cfedf419d9be062d923449a2045c046a8b40b89b037f9",
+      "timestamp": "2025-02-25T07:16:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2434.601016,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2432.592438,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2427.004184,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921794,
+      "blockHash": "0x0f08323087be5b98303b00a9d038ef2491ef6f01f766e011a11aa2cbe79c4ff3",
+      "timestamp": "2025-02-25T07:16:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2434.639705,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2434.052358,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2427.489609,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921795,
+      "blockHash": "0x887c51d00ce1fdfda59a76633c3466e20f847c2a82570c03ad1329661902eca6",
+      "timestamp": "2025-02-25T07:16:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2434.575976,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2435.756706,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2427.975131,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921796,
+      "blockHash": "0x7c65527e8729cc31cbd6458ea932c7a70e3fbd0c0f0d6d41fa795ec80e5445fc",
+      "timestamp": "2025-02-25T07:17:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2434.696351,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2436.731155,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2428.46075,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921797,
+      "blockHash": "0xa1a60efa274af9904abe161d516c2670b247a4ff6df517a1e600e1eaf725a839",
+      "timestamp": "2025-02-25T07:17:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2434.367358,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2436.974828,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2428.703597,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921798,
+      "blockHash": "0x4b97487675b2dd16cf6c11354bcdaa82fca6658942a5fdd2831542ea17b1ea56",
+      "timestamp": "2025-02-25T07:17:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2434.432397,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2436.731155,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2428.946467,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921799,
+      "blockHash": "0x657b411c5adb527021182abe056cb215491708f27e72dd180dfd9a70b8c7460d",
+      "timestamp": "2025-02-25T07:17:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2435.234231,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2437.462248,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2429.43228,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921800,
+      "blockHash": "0x2b04d89531a4b44e55739ce963541239ff7a1f0a83c357d5910297601578ece5",
+      "timestamp": "2025-02-25T07:17:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2434.148323,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2437.949764,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2429.918191,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921801,
+      "blockHash": "0x98d8916b0893b507316077ebe318568a63d677ceb64760e786d4225b4d7d0e7e",
+      "timestamp": "2025-02-25T07:18:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2432.642331,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2438.193559,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2430.404199,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921802,
+      "blockHash": "0x7d57a7f8437e1039f470c8873e60668b68bfe262474a35181c8e432a5da6c5e2",
+      "timestamp": "2025-02-25T07:18:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2432.993619,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2436.487506,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2430.404199,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921803,
+      "blockHash": "0xd64104b293a56e60e0690179682c7b37316e32ef3266f2bdf8093b40166db8d3",
+      "timestamp": "2025-02-25T07:18:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2433.022091,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2435.513155,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2430.404199,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921804,
+      "blockHash": "0x5d7bc4c974be789f476e2e59b292076b526c270a1c6e74e01fe1029e3c977b63",
+      "timestamp": "2025-02-25T07:18:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2432.767993,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2434.539193,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2430.890304,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921805,
+      "blockHash": "0x55fa56e9740374fceedad8ee3651d3c4543e867521ab7ca1ffced1c09ee16b3b",
+      "timestamp": "2025-02-25T07:18:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2432.642827,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2433.565621,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2431.619644,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921806,
+      "blockHash": "0x0b7f6a787baf27ac68233745112daaa0777af279d1133802d5a5a337e85276ed",
+      "timestamp": "2025-02-25T07:19:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2432.732227,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2432.349203,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2432.105993,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921807,
+      "blockHash": "0x6612408e558f1ae8a00c2e2a9c05eaccf05674fe6879b7b4f43fc25d34ad0005",
+      "timestamp": "2025-02-25T07:19:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2432.692222,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2432.592438,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2432.349203,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921808,
+      "blockHash": "0x1c92c3498ce23dfadb33a0ce66161c195013738546e6cc08f7bc9752d9773cd5",
+      "timestamp": "2025-02-25T07:19:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2432.740273,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2432.105993,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2432.592438,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921809,
+      "blockHash": "0x533af38bdb71feacc444c45a9bb408f8b9bef7261a42a48c05016fe7743a9f3b",
+      "timestamp": "2025-02-25T07:19:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2432.716843,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2431.862806,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2432.592438,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921810,
+      "blockHash": "0x43a4457b677ccbcf003c5bd4fa63d781f36f1ebbee00ed9f013be7fd63134f69",
+      "timestamp": "2025-02-25T07:19:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2432.723013,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2431.619644,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2432.835697,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921811,
+      "blockHash": "0xdf1c72e70b1360ea7c4628eb9d67f2c2b8f045ae87afea2413614cf5fdb647d7",
+      "timestamp": "2025-02-25T07:20:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2432.600332,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2432.105993,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2433.078981,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921812,
+      "blockHash": "0x6a577cc2b766727d06699dd140e74691a23d891020171ae97a9065c16253e1b1",
+      "timestamp": "2025-02-25T07:20:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2432.564166,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2431.376507,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2433.565621,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921813,
+      "blockHash": "0xc9af5187be0c5e5ce072e9debf067853f197403dad06dfd61ca7783a4bc7c606",
+      "timestamp": "2025-02-25T07:20:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2432.570684,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2430.64724,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2433.565621,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921814,
+      "blockHash": "0x226dce01f5633a47d99a819cfdc7ef748217516f23289d3a0fc93ec38bd4a412",
+      "timestamp": "2025-02-25T07:20:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2432.71829,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2429.43228,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2433.565621,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921815,
+      "blockHash": "0x9ebc5b4462d8c0b0100e7e37e2cc38d9cb6560143b6bc34fd078d344b44f97d1",
+      "timestamp": "2025-02-25T07:20:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2432.724576,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2429.43228,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2433.565621,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921816,
+      "blockHash": "0x267287ed38481c3fa5c33a84ea3b3a04d014b606f512a36d0afbdb8fa772d63c",
+      "timestamp": "2025-02-25T07:21:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2432.726374,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2429.918191,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2433.808978,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921817,
+      "blockHash": "0x784c45efdae34e1606433122620ae6ba1a3773ffa636bd941307bff2b4f30180",
+      "timestamp": "2025-02-25T07:21:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2432.726374,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2430.64724,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2433.565621,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921818,
+      "blockHash": "0x004099bc223f26abc85944953ddcc24be25af9fcf24f0137676b4f9de9a63b55",
+      "timestamp": "2025-02-25T07:21:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2432.705891,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2431.862806,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2433.322289,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921819,
+      "blockHash": "0x4ad0fd57e395712e83a4b0cf826164ac63c8ae5351290fdbb4ab1749e6de35c9",
+      "timestamp": "2025-02-25T07:21:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2432.70277,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2432.835697,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2433.322289,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921820,
+      "blockHash": "0x6011969229dde655bc7cda288e53a6fe63490a8738261510350c2b86263d2beb",
+      "timestamp": "2025-02-25T07:21:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2432.671897,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2432.835697,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2433.078981,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921821,
+      "blockHash": "0xd011ebfaa2f57c3a019dff7ed7c52eb66a4ae584b399180310360bacefa0f434",
+      "timestamp": "2025-02-25T07:22:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2432.671897,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2432.349203,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2432.835697,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921822,
+      "blockHash": "0x494bf8748eeb9e70807728f089aa097f3faebee84f5df72e2f5ef9f8229df212",
+      "timestamp": "2025-02-25T07:22:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2431.726556,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2431.862806,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2432.592438,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921823,
+      "blockHash": "0x930bd710097f351cd43f282b96a27a7c2c252f074f2e6d1ee394174fc3cb2625",
+      "timestamp": "2025-02-25T07:22:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2430.053563,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2430.890304,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2432.349203,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921824,
+      "blockHash": "0x2d24805c40a1f17eae1ce5427b31587db771ec07082e688e895719455425ff81",
+      "timestamp": "2025-02-25T07:22:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2430.048275,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2429.675224,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2431.619644,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921825,
+      "blockHash": "0xb096fd67ac02e2d1b4062ee198fef44e8980fd8bf15055a291e7d87c47071cee",
+      "timestamp": "2025-02-25T07:22:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2427.236822,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2428.703597,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2431.133393,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921826,
+      "blockHash": "0x6cbe18e2a51b3dbd07a1656b559989ac025448b12c6aea934e5c400b03f2d1f8",
+      "timestamp": "2025-02-25T07:23:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2427.202099,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2426.761508,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2430.64724,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921827,
+      "blockHash": "0x7c902778ca37cb425f1d441866ab20da9d9911046b60b73923d1d95515cf479e",
+      "timestamp": "2025-02-25T07:23:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2427.214022,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2424.820972,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2430.161183,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921828,
+      "blockHash": "0x34d4210fbae401c309eea7ae02137b0bb0e57a17604f0c3ba62b9163fdbdb646",
+      "timestamp": "2025-02-25T07:23:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2425.881135,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2423.366588,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2429.918191,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921829,
+      "blockHash": "0xa443f0f9d8e48744e569e92ec225361dddc05ea1a63bd607af96ab087f02ab78",
+      "timestamp": "2025-02-25T07:23:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2422.890634,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2422.155268,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2429.189362,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921830,
+      "blockHash": "0xb2dc806e53b56e720b5538325a29fb4ee413868eb77f75e9a397ceca0583c456",
+      "timestamp": "2025-02-25T07:23:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2421.847974,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2420.218416,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2428.703597,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921831,
+      "blockHash": "0xe4290098be9214a013da51c15d7b2b0df20c86d309f872ebf233d39d17979433",
+      "timestamp": "2025-02-25T07:24:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2421.902912,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2418.52494,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2427.975131,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921832,
+      "blockHash": "0x15f3cf0eb61191543d58e85c5c8cba5068bb3fb637752ecae8e0fb6b4e11806b",
+      "timestamp": "2025-02-25T07:24:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2413.747436,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2417.316041,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2427.246884,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921833,
+      "blockHash": "0x6171a63f5237368a7d5ec6358f96284a64d8e8f17bc5dddecd82d6acc508fae1",
+      "timestamp": "2025-02-25T07:24:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2413.764765,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2413.451621,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2426.033625,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921834,
+      "blockHash": "0xf812fe1e570c9e71e01cf55ade68fd909ef074bdd33926ae093d597924e30f9f",
+      "timestamp": "2025-02-25T07:24:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2411.60136,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2410.075321,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2424.820972,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921835,
+      "blockHash": "0xc546c140d2b57751aab338c8fe8c0a37846fc2e9096533a70cbe6bb3f45b60d2",
+      "timestamp": "2025-02-25T07:24:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2407.290991,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2406.944415,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2423.608925,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921836,
+      "blockHash": "0xd67c94ac2fddb0c01b44d2106249975eb68784bff944e3db69eeb7030c88ad90",
+      "timestamp": "2025-02-25T07:25:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2394.252446,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2404.779248,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2422.397484,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921837,
+      "blockHash": "0xc4895d98d00b1683425fcc30727f676bd96a576adfd43fe9a5d23eea1962cf1d",
+      "timestamp": "2025-02-25T07:25:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2394.428202,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2396.377652,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2420.218416,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921838,
+      "blockHash": "0x7cdc0eaf26e3fe9182c3bff057e69e2fc7ef31f95c2385e04b04a1b687ddd9fe",
+      "timestamp": "2025-02-25T07:25:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2359.910552,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2393.503867,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2418.52494,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921839,
+      "blockHash": "0xd781291e49de18faeee3c2d525ce14f87be1d776978c0ffb4eebdf3386d810ba",
+      "timestamp": "2025-02-25T07:25:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2360.483922,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2377.759542,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2414.417146,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921840,
+      "blockHash": "0x4ae1353c1c50a295312c1bf3e90d0bdb845ffb5ab5d111a9ac97e0fe64c01cea",
+      "timestamp": "2025-02-25T07:25:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2360.299527,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2369.215424,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2411.521728,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921841,
+      "blockHash": "0x076a6707acc8678ab6bb669bd809be01352af7ec20e7a36c2a21dd9ec3812bdf",
+      "timestamp": "2025-02-25T07:26:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2360.631375,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2359.757963,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2408.388943,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921842,
+      "blockHash": "0x539292fdb684cb043510b26c4758c65517dd2bf3a664d204ba50fe051d048095",
+      "timestamp": "2025-02-25T07:26:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2379.75783,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2357.163786,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2405.500754,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921843,
+      "blockHash": "0xbd8611653b6a4450d31a1f2ca43c8a8b82a3cc96ef62f736625a71ee57ec62d9",
+      "timestamp": "2025-02-25T07:26:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2379.758488,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2346.815565,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2401.415081,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921844,
+      "blockHash": "0x1820b933d04d6004da581b6409b93025582dbed999383ff8f4c8e66a1353b18d",
+      "timestamp": "2025-02-25T07:26:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2376.009692,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2348.928544,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2397.576081,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921845,
+      "blockHash": "0x2b5b0f1936625668ba11873e0e42492886391b9747888385a8a847b19ac6426a",
+      "timestamp": "2025-02-25T07:26:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2363.328642,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2344.235616,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2393.743218,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921846,
+      "blockHash": "0x7236ccbf5f38e1d77296880133478ca0db7167b12d244c67c4ff8b9abc5e8564",
+      "timestamp": "2025-02-25T07:27:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2366.951568,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2340.956146,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2389.916482,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921847,
+      "blockHash": "0xe9ffc77f8c35c66ac0d54e6cce4fef10e01f4d0c3d5f19096ad2671a2b1094b1",
+      "timestamp": "2025-02-25T07:27:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2370.604456,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2336.045542,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2386.095864,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921848,
+      "blockHash": "0x413be48d65656c346365f3fa26e79f63f2a60fac59070d818cf05cc017350de4",
+      "timestamp": "2025-02-25T07:27:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2370.524423,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2338.382639,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2382.757834,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921849,
+      "blockHash": "0xc52b8de850795b1ff795915dd254b4780f27c138594ccad5be66f3e4b04b43bb",
+      "timestamp": "2025-02-25T07:27:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2380.762819,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2340.019998,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2379.662416,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921850,
+      "blockHash": "0xaeb69e4e5c71bd6350318d401aea4c2b058e25524bf09297c1c22d320f7cc66e",
+      "timestamp": "2025-02-25T07:27:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2380.833569,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2345.173451,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2377.046357,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921851,
+      "blockHash": "0xcf927c0785ac19ceccfd8a0d5ffe4eb69a1ba9d07924df394e250ef0286e179a",
+      "timestamp": "2025-02-25T07:28:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2378.824265,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2349.398353,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2374.433174,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921852,
+      "blockHash": "0xbb3954e79ba7aff4d734e629d329c18a5d5e3b940ffee85bef9b9f02fcd6dfb4",
+      "timestamp": "2025-02-25T07:28:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2377.070916,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2351.27853,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2371.585706,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921853,
+      "blockHash": "0xa5fe3b5a20d1317be4749743bfac4431ce92d696cc186ffc55fc81d08ae299cb",
+      "timestamp": "2025-02-25T07:28:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2381.239954,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2354.57246,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2369.215424,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921854,
+      "blockHash": "0x5966683cf1339f5868bf585f7ca5db2f3055e684db59fd4305e08e5d16c7fba8",
+      "timestamp": "2025-02-25T07:28:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2381.518077,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2357.871005,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2366.847511,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921855,
+      "blockHash": "0x627c2728609c2089342799d2bf572db09b4b98997f9a78849479552e686aced7",
+      "timestamp": "2025-02-25T07:28:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2385.595706,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2358.814295,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2364.718413,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921856,
+      "blockHash": "0x1d283b0dde28917163d70e332d201d12f8dbf9d19b290a9da607560e23a9f7e1",
+      "timestamp": "2025-02-25T07:29:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2388.991569,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2360.229938,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2362.827489,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921857,
+      "blockHash": "0x5307514e0bccb3e5a00a5162e0ebe90e1708d87314c7e6787390b0c3abf46bde",
+      "timestamp": "2025-02-25T07:29:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2389.023449,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2364.24554,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2360.938077,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921858,
+      "blockHash": "0xb30733fdd7b8cebf4d1a392ad9db30063c692938ab53b2fed86af8c2f631a990",
+      "timestamp": "2025-02-25T07:29:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2385.322816,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2365.427899,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2359.52201,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921859,
+      "blockHash": "0xe1923bab30f8db37b391bceb0eb8ac235602b735afc1bf4fe766b6065dc556d1",
+      "timestamp": "2025-02-25T07:29:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2385.302282,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2365.19138,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2357.871005,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921860,
+      "blockHash": "0x41646e6451058534b391e829d31b2044adeb7b521d8b0b7cad572fb061612146",
+      "timestamp": "2025-02-25T07:29:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2386.687768,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2363.772762,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2356.221156,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921861,
+      "blockHash": "0xaecda76eb9a1dd01bc35711c7d209280cf5b8f4306aff48c875624b4bf94e042",
+      "timestamp": "2025-02-25T07:30:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2386.809755,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2363.063772,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2354.57246,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921862,
+      "blockHash": "0x373ff1f51bee8245753bcae1c49d0af66d462f05858cbe9f2f2be2d759ecac55",
+      "timestamp": "2025-02-25T07:30:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2386.832528,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2361.882594,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2354.101617,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921863,
+      "blockHash": "0x83b1fb0f99dc466938fd218d356599a8051e549c2c1f43a4b55e07552a53dfd3",
+      "timestamp": "2025-02-25T07:30:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2382.244035,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2360.702007,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2353.160211,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921864,
+      "blockHash": "0xc4356e694df694bd083e862c7f344feb907cf7091e7f5aa4ef036e6953f68a59",
+      "timestamp": "2025-02-25T07:30:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2384.286022,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2361.882594,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2354.807918,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921865,
+      "blockHash": "0x2c3a19671b449f9cece14af920b74fa9e1081da408f644baa176e0cf8dcbb430",
+      "timestamp": "2025-02-25T07:30:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2384.417822,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2363.772762,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2355.043398,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921866,
+      "blockHash": "0x143764161590a38d579112cbec5ea8c86feab0f64b0097bc8ddf2015c99767e4",
+      "timestamp": "2025-02-25T07:31:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2390.897373,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2365.427899,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2355.749982,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921867,
+      "blockHash": "0x2614f1b3966236ab1154773f33632e409a2ecd062f7a3f4e5f665e17d9469a78",
+      "timestamp": "2025-02-25T07:31:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2390.977765,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2368.267975,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2356.221156,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921868,
+      "blockHash": "0x7469b22c92d4cf15c5139d668ce631e104a1aa0af3dd27629fef78d792e2e092",
+      "timestamp": "2025-02-25T07:31:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2390.995838,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2371.11146,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2358.106792,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921869,
+      "blockHash": "0x2437d19b255900d2d2a4063577a4649a42f74211f092120199d4efdb0239514f",
+      "timestamp": "2025-02-25T07:31:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2390.882473,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2373.483638,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2359.757963,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921870,
+      "blockHash": "0x96a314aa94efad54685b095ad6f6751b4a6590c17d18a1901bd5fc5f68c112c9",
+      "timestamp": "2025-02-25T07:31:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2390.867915,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2374.433174,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2361.174171,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921871,
+      "blockHash": "0x73ae2c7cce47412d4568a5ca496ec07771ad148cee0b86d94b7218b6bc15b559",
+      "timestamp": "2025-02-25T07:32:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2390.766888,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2374.908085,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2362.59123,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921872,
+      "blockHash": "0x00f56f6eab655c532d9b33b32caf99f75e8b6d4aaf6be47e3094ea7b15f9aa19",
+      "timestamp": "2025-02-25T07:32:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2390.868955,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2373.246314,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2363.772762,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921873,
+      "blockHash": "0x58b056de09aac09e711005993751bb10dbd55d1158650413706df4f7910b5ec2",
+      "timestamp": "2025-02-25T07:32:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2387.742117,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2371.348571,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2364.718413,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921874,
+      "blockHash": "0x38f204f2e4c468541cca7d79dbe1a2ce955d97fae5a7595bbd71457213694213",
+      "timestamp": "2025-02-25T07:32:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2385.180271,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2368.267975,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2365.427899,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921875,
+      "blockHash": "0xbf5f1761b213b431fcea53ecf2206e264dfb9c7fc8f7e953d8582f4ca5360aea",
+      "timestamp": "2025-02-25T07:32:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2384.803123,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2365.427899,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2365.19138,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921876,
+      "blockHash": "0xa6d5cc364392c792a69d393f3404d5609f7ec65bab202826721b17259f60b08e",
+      "timestamp": "2025-02-25T07:33:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2384.980728,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2362.118783,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2365.19138,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921877,
+      "blockHash": "0xeb255d19b2fa2aae90268a9a386cbf98a123a29fcfcec43892054cb81f4a532a",
+      "timestamp": "2025-02-25T07:33:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2381.986946,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2360.229938,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2365.664442,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921878,
+      "blockHash": "0xdcb21913a9a651bc8bb386726b62510edb3f229007452535af4dc0489b212ff8",
+      "timestamp": "2025-02-25T07:33:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2382.027295,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2356.928093,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2365.19138,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921879,
+      "blockHash": "0x3cf9e2890b131e832958ad1c86bc2dc76c378896084099d52f3be6c42c04c496",
+      "timestamp": "2025-02-25T07:33:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2382.026815,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2355.278903,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2364.954885,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921880,
+      "blockHash": "0xcc4249d6f4d25a7f73a027d39411c616091821bbdcce455832e97bbfc6172510",
+      "timestamp": "2025-02-25T07:33:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2377.202935,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2354.337027,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2364.24554,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921881,
+      "blockHash": "0x17ec448c801939df0c195e068ee58b7b2735c360dd446d8bce67cb8ecce1bb2b",
+      "timestamp": "2025-02-25T07:34:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2377.172886,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2353.395527,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2363.772762,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921882,
+      "blockHash": "0x853ff661e044c34dc05d4cb82b5ae02f67d861b482002081b2e9a2b3b8995136",
+      "timestamp": "2025-02-25T07:34:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2376.091778,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2351.513658,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2363.063772,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921883,
+      "blockHash": "0xf18f29e8ed8a9ec9b3fc0bdb358a19122b2ec515072111c606db16af42a3b941",
+      "timestamp": "2025-02-25T07:34:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2376.089671,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2350.338254,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2362.118783,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921884,
+      "blockHash": "0x9e10437f19467aaa32116b3e454ecde7cf0706ff8fca9b5bec356ba63fea8601",
+      "timestamp": "2025-02-25T07:34:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2373.102021,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2348.693675,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2361.64643,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921885,
+      "blockHash": "0x6ede2ee65d02c05fc6c6fa1eb11f6b5d7e78fb7d778d179d872ce89d90cf1f29",
+      "timestamp": "2025-02-25T07:34:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2373.012499,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2346.580907,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2360.938077,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921886,
+      "blockHash": "0x47599d845ae99590847f703dc4daefe42625907b2b597c603137134eb90e23c4",
+      "timestamp": "2025-02-25T07:35:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2373.012366,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2344.235616,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2359.993938,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921887,
+      "blockHash": "0xb0bb69e1affbd0e2abde6b16d3fded7ac37178a5a25e27f8a6406c91ffd82065",
+      "timestamp": "2025-02-25T07:35:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2372.832136,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2342.595307,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2359.286082,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921888,
+      "blockHash": "0x9d2772ef9ac4e9024168f1a73747bc990090f92525195e8da88532cba7bf8d67",
+      "timestamp": "2025-02-25T07:35:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2372.809164,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2340.488025,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2358.106792,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921889,
+      "blockHash": "0x3231a7163e4f35f5983426dc2cfceae348000028b839c9c3e808e6d549a6927a",
+      "timestamp": "2025-02-25T07:35:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2372.829054,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2338.148824,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2356.692423,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921890,
+      "blockHash": "0xf71420366332467bb0a105eed91cf41475cfde6e6b4f095c05303c3229e87dc2",
+      "timestamp": "2025-02-25T07:35:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2372.86261,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2336.746426,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2355.514431,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921891,
+      "blockHash": "0x5bb1532c038e26870d2e91e2675ec3f549d2339ed1e0edd5fb40e827dd59656f",
+      "timestamp": "2025-02-25T07:36:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2376.378411,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2336.279147,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2354.101617,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921892,
+      "blockHash": "0xe7e13bde5aa4c7a307663bcd3c58d0f90126e44e1ffde443c07b9e73ccfaab27",
+      "timestamp": "2025-02-25T07:36:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2376.641061,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2338.850339,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2353.395527,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921893,
+      "blockHash": "0x7e17ddf735214c4fb336fd5c316d0711f56ba87ce2237cc03e68facd591c4234",
+      "timestamp": "2025-02-25T07:36:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2374.384616,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2343.532486,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2352.454404,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921894,
+      "blockHash": "0xf7c2ffaa5452ceeb4954ec607607ad3f20f975dc51e630bd4ce4998066a6de62",
+      "timestamp": "2025-02-25T07:36:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2377.451149,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2346.580907,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2351.513658,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921895,
+      "blockHash": "0x7cb063e54f7e0522e78d35f1313e00f065f767dd78494926b96b1aa219a51c5a",
+      "timestamp": "2025-02-25T07:36:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2377.320119,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2351.043426,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2350.808345,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921896,
+      "blockHash": "0xaf2bf9ab61e363b6dcdd59e9ece0c9ae461a60b0d8b5db7df05e4f394d151ef3",
+      "timestamp": "2025-02-25T07:37:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2377.289474,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2352.924919,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2349.868256,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921897,
+      "blockHash": "0x7db9313cd0953939c144859de05bab624d6a0c9938fc1df07a7bb6f14ca9fd60",
+      "timestamp": "2025-02-25T07:37:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2371.368785,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2351.983984,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2349.163437,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921898,
+      "blockHash": "0x743c5a749320eb984a4d182ef04957df8b5193c5ffdbfb2f320d9caaad190c30",
+      "timestamp": "2025-02-25T07:37:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2368.295043,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2348.224006,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2347.989208,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921899,
+      "blockHash": "0xe708b8b28211c6bbc479ffbf5a334f8b9842db70112c71949cd3f5c23d9f4193",
+      "timestamp": "2025-02-25T07:37:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2369.871179,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2345.642509,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2347.050247,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921900,
+      "blockHash": "0x8c0d37db7391448761cd578f3b9d54048d76f1aa70b5a5fd4d8d50776d04d21f",
+      "timestamp": "2025-02-25T07:37:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2369.903288,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2341.190242,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2345.877073,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921901,
+      "blockHash": "0x01e5288eabf724c0c3a3b1281dc62d20ffdd8eb75a7da33b4c829eee6c54bdb9",
+      "timestamp": "2025-02-25T07:38:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2369.989337,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2339.084224,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2345.173451,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921902,
+      "blockHash": "0x3e557732ed1d25a3752eef552f8d578562da2d15d6c7043f4b3c5460298d8823",
+      "timestamp": "2025-02-25T07:38:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2374.011575,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2338.148824,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2344.704487,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921903,
+      "blockHash": "0x14b138bdfee44a6a344483f6f6a14495d7c12e022df598227522b2d88eca274a",
+      "timestamp": "2025-02-25T07:38:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2372.247891,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2340.019998,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2344.47004,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921904,
+      "blockHash": "0xe0d14b3197c1dace252befabfdfd22a7fafe9579ef153bdecc6c2671dac64e45",
+      "timestamp": "2025-02-25T07:38:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2373.555053,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2341.658503,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2344.235616,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921905,
+      "blockHash": "0xc80a2dadfa046ecd6b3479a29bd072acd97274e4750177383c0ab4588f7c8a42",
+      "timestamp": "2025-02-25T07:38:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2377.521146,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2344.938957,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2344.001216,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921906,
+      "blockHash": "0x2ecfbd001ae8b4221976cb7a93bf5b77348ceb545ee82fcf07718d5cd45b45c9",
+      "timestamp": "2025-02-25T07:39:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2380.553056,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2347.51968,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2344.001216,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921907,
+      "blockHash": "0xc2bcff96bbd7d861cfc9252068f4a084958c5df4d3b79cde74ea84db97dc3511",
+      "timestamp": "2025-02-25T07:39:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2383.833674,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2351.983984,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2344.704487,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921908,
+      "blockHash": "0x6745fa2567ef0b43ea7ec49f4632b04c0265f5ba659c8d531c594751b1c0b0c0",
+      "timestamp": "2025-02-25T07:39:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2383.886328,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2355.043398,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2345.407968,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921909,
+      "blockHash": "0x602490e4e215ebbad6bfa0e90e5e2c37a7cc3731ef2377fb655096cd08fe7552",
+      "timestamp": "2025-02-25T07:39:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2383.858341,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2359.286082,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2346.346272,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921910,
+      "blockHash": "0x5071b91393eeb2da908343a0ac4cd8bd5ecd42da766a8a58fd668b02ea41b2a1",
+      "timestamp": "2025-02-25T07:39:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2383.952146,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2361.882594,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2347.284952,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921911,
+      "blockHash": "0x433aac512e1d84c034c616e73ee2fb757d7a9f2aa403400f38798a6715184c02",
+      "timestamp": "2025-02-25T07:40:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2388.154111,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2365.427899,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2348.224006,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921912,
+      "blockHash": "0x88c3238f739adbf7c52f7aba077fd8182583650746a5dd10c38e9379acfbf79b",
+      "timestamp": "2025-02-25T07:40:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2388.04694,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2367.084196,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2349.633293,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921913,
+      "blockHash": "0x8d65fe26a373401494358fccad48c27b78267c20d20e754914bb196ba8227ed0",
+      "timestamp": "2025-02-25T07:40:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2388.11675,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2367.794392,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2351.043426,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921914,
+      "blockHash": "0x65a7b93310dd74fa4cc84b9c18aed3b86503ed74c2fef854dac27ef631414c30",
+      "timestamp": "2025-02-25T07:40:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2388.104441,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2368.741652,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2352.454404,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921915,
+      "blockHash": "0x417e68d957c2110048b3b6cf270e7f060ec13008f93b81d29897c3d7f9c02318",
+      "timestamp": "2025-02-25T07:40:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2387.992871,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2369.92626,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2353.86623,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921916,
+      "blockHash": "0xd743c099f203406a1aaee2823e6e05c800662b9eb53660484f633eb5d6e93a4e",
+      "timestamp": "2025-02-25T07:41:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2388.083767,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2369.452345,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2354.807918,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921917,
+      "blockHash": "0xa9fa69f0de0717ad96acf56952c431acbce9a08a2e4516b98dcc212307aecbdc",
+      "timestamp": "2025-02-25T07:41:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2388.001881,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2368.978526,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2355.749982,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921918,
+      "blockHash": "0x446dd906cb3d897714db83fe31eaa3d8584ecc43e3207cac91be3cb7fb602fde",
+      "timestamp": "2025-02-25T07:41:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2387.795321,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2368.978526,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2355.985557,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921919,
+      "blockHash": "0x63605c9e6452751b3b15832e8ace989483c6d7290d5d258f8c252bbb921d7bc4",
+      "timestamp": "2025-02-25T07:41:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2382.284619,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2367.084196,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2356.456778,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921920,
+      "blockHash": "0x37c5ba813ce5e4d529375ad13367ba9bb7883a5d897a45ed14ccfd1370cd0d7e",
+      "timestamp": "2025-02-25T07:41:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2382.283347,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2363.536408,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2356.456778,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921921,
+      "blockHash": "0xf2a8cf718104826f09819f514a35ebf0c542ffd658efd3124f2e2b930415be5c",
+      "timestamp": "2025-02-25T07:42:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2382.098173,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2361.64643,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2356.692423,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921922,
+      "blockHash": "0x105c938ca01bd1fbdad67ad414fad23e16c567c0df6ecaf3b45e0e83e80857ea",
+      "timestamp": "2025-02-25T07:42:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2382.141232,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2357.871005,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2356.928093,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921923,
+      "blockHash": "0x8a96c6a3432f2a0382b6d202aec14543fe7700ea0f84448649143be9735a8631",
+      "timestamp": "2025-02-25T07:42:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2382.065565,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2355.278903,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2357.399502,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921924,
+      "blockHash": "0x842fd6fa2db8ba994fbeea40f61de7c7cd3d8802904a8dbdc7de5859327660ad",
+      "timestamp": "2025-02-25T07:42:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2382.08792,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2352.924919,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2357.871005,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921925,
+      "blockHash": "0x20374103d0281f1d54cc824e227c5230b44d4e1300fc9cd6fa35eb928d227a5f",
+      "timestamp": "2025-02-25T07:42:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2382.127001,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2352.68965,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2358.578437,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921926,
+      "blockHash": "0xb6716814200d271fd07bf5129372752acc6a9331d2d0649219c9a992055d939a",
+      "timestamp": "2025-02-25T07:43:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2381.960604,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2352.454404,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2359.286082,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921927,
+      "blockHash": "0x6ff3ae31cdfb35ae9d464fa6b52d1e4927af6b5cea633dbc4c11d224bf421b06",
+      "timestamp": "2025-02-25T07:43:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2382.174671,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2352.68965,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2359.757963,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921928,
+      "blockHash": "0x1d36c024da0c1feabed95b5a85040cc39b1ad4ae819c77c3ce6c5340af3241ae",
+      "timestamp": "2025-02-25T07:43:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2382.382179,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2353.630867,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2360.229938,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921929,
+      "blockHash": "0x80d43d65d7c090c84946a76afeabbf90e382e532328ebdd5f6edcf861e4dc7ca",
+      "timestamp": "2025-02-25T07:43:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2382.413042,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2356.221156,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2360.938077,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921930,
+      "blockHash": "0x0db8c4fbf8aab639927c8d4af80a80ca68bdef7e967f723481b1afc1b48a6f05",
+      "timestamp": "2025-02-25T07:43:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2386.671862,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2358.814295,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2361.410289,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921931,
+      "blockHash": "0xd5723e393702eb474504ee08a42b96ed9b18ece8e3301a12a590629a264be27b",
+      "timestamp": "2025-02-25T07:44:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2386.643841,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2362.118783,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2362.118783,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921932,
+      "blockHash": "0xad44140ea69d6b0b094a5febd9377047bfee20f8a890efc12a57b55b17dc9af8",
+      "timestamp": "2025-02-25T07:44:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2386.643841,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2365.19138,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2362.354995,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921933,
+      "blockHash": "0x5f50d951c0146cc624a50c7b586066d0c33f64e154806adc3cafa2ec0a70a162",
+      "timestamp": "2025-02-25T07:44:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2386.618671,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2367.084196,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2362.59123,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921934,
+      "blockHash": "0x5774e37e27e8084c2095459c5f6a829b91ef91dac06774c070482140c0904c67",
+      "timestamp": "2025-02-25T07:44:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2386.640855,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2367.557636,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2362.59123,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921935,
+      "blockHash": "0x6f2af3d11738996158eb479d294dee51d42126735331865fc03432c63d740132",
+      "timestamp": "2025-02-25T07:45:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2386.563999,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2367.084196,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2362.59123,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921936,
+      "blockHash": "0xd4c51a3b2cc2d0b67cb904abcb1f71631068b78794e28913db92ffaaabadac55",
+      "timestamp": "2025-02-25T07:45:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2386.635535,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2366.137599,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2362.118783,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921937,
+      "blockHash": "0x08795df5f34ab552160a0e03b92458152f19cf9b1732aeeaca5816b073953b1e",
+      "timestamp": "2025-02-25T07:45:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2386.68678,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2366.137599,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2362.118783,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921938,
+      "blockHash": "0x7c666fac844aef9727dc232a51dfed89afff7db1769d09fff66adce9ae582641",
+      "timestamp": "2025-02-25T07:45:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2390.183761,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2367.320904,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2362.118783,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921939,
+      "blockHash": "0x9246d5aa17211b53162568f33a4dc5d7b8d6309a77a61797010266ee4b778420",
+      "timestamp": "2025-02-25T07:45:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2393.956539,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2368.504801,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2362.354995,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921940,
+      "blockHash": "0xbd68dc90e73c8d22bf40099206534c1e66038d1e86407d91108e899fa3cd1dbd",
+      "timestamp": "2025-02-25T07:46:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2394.147551,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2370.637308,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2362.827489,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921941,
+      "blockHash": "0x500a43ed50c86d3f0e9f2bd4711514a58a18e641c758fbec6e07854e854dbea6",
+      "timestamp": "2025-02-25T07:46:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2394.061445,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2374.908085,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2363.300078,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921942,
+      "blockHash": "0xd2a126d5bad860c51d209cc26617f1467f6045a9fd35b987d861ae9cecbc1776",
+      "timestamp": "2025-02-25T07:46:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2393.990856,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2377.52179,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2364.009139,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921943,
+      "blockHash": "0x871941424dd2a5d5b0e9f0dd6675ae7d84185aafc1af00b897d65f17cb6396db",
+      "timestamp": "2025-02-25T07:46:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2393.904433,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2378.710789,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2364.481965,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921944,
+      "blockHash": "0x19520540e3cde8c0c121bb149a4cd3be951d132dd7aba6533ed926bd70261408",
+      "timestamp": "2025-02-25T07:46:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2393.920151,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2378.472942,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2365.19138,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921945,
+      "blockHash": "0xa9423d3be24f1d5a853fbb0a741ebd5e020453c30f742328d019a38653b36d1e",
+      "timestamp": "2025-02-25T07:47:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2393.919372,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2377.759542,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2366.137599,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921946,
+      "blockHash": "0xc918d999b35a7712c3f1a7660a3a7fd66e8aa351629ad54d579c2275117415e9",
+      "timestamp": "2025-02-25T07:47:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2394.043136,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2375.38309,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2366.847511,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921947,
+      "blockHash": "0xcb8e90dfa3181f00c1b50160ecae7b0bc863f5cad7f30d705e7f10f8db28f39f",
+      "timestamp": "2025-02-25T07:47:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.10446,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2375.145575,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2368.031171,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921948,
+      "blockHash": "0x75d0764432aa89ea81d7d6bf621ac4ef6db6849965288a4a7661e6f8ffac5be5",
+      "timestamp": "2025-02-25T07:47:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.108473,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2376.571019,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2369.215424,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921949,
+      "blockHash": "0x2b652d5c4173416c727bccadd6fc1dddce7c24b841089afc3cef39da74e31886",
+      "timestamp": "2025-02-25T07:47:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.099239,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2378.472942,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2370.400268,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921950,
+      "blockHash": "0x01838bc8afceac38cd6b451722f1408c65650e6e325b430f099faa322a7ee945",
+      "timestamp": "2025-02-25T07:48:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.071393,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2380.376386,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2371.585706,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921951,
+      "blockHash": "0xb7883c33e3a03038867d160c4430bf8118f12e3d9fb9e89d8b574c9a51e0882e",
+      "timestamp": "2025-02-25T07:48:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.007874,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2381.804969,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2372.771736,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921952,
+      "blockHash": "0xc868a3d15a0011b8bafd7c169f2f911af3852132453c9dfb376ab07d741f702a",
+      "timestamp": "2025-02-25T07:48:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.056885,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2381.09057,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2373.483638,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921953,
+      "blockHash": "0x7e70cb330dfc06c45884ca2772d550ba27663c663262bedf4e3f12d84499973c",
+      "timestamp": "2025-02-25T07:48:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.137783,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2380.376386,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2374.195755,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921954,
+      "blockHash": "0xa37597a35ad3154c3082d94c03e3e8215fa4ddf1f99eb131095c1489116b38f4",
+      "timestamp": "2025-02-25T07:48:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.178277,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2380.852485,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2374.908085,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921955,
+      "blockHash": "0xbd8be98a528d54b4d742f14a64d1e4eba74ddf73f78489e96cb7585a1211e27b",
+      "timestamp": "2025-02-25T07:49:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.291492,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2380.852485,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2375.38309,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921956,
+      "blockHash": "0x01f48669b4d7edbe192dbf16ca322c7985dbf44eb53e50391221597b09a019d5",
+      "timestamp": "2025-02-25T07:49:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.187522,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2382.99611,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2376.333386,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921957,
+      "blockHash": "0x9761420e7ed5fe868eeb2c56f4e91dd170165487db0134ab428db52c471a8fdb",
+      "timestamp": "2025-02-25T07:49:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.396405,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2384.903174,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2377.046357,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921958,
+      "blockHash": "0xa680d9ad81dcd98939d648047c1b77add6f10d94aec37fcb7bca0ad48cc9d075",
+      "timestamp": "2025-02-25T07:49:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.420023,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2386.811764,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2377.997318,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921959,
+      "blockHash": "0xf856648528424dd2de3a87016fe17919536d594ed3eb320438d85d3da0952ea8",
+      "timestamp": "2025-02-25T07:49:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.197809,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2386.811764,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2378.710789,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921960,
+      "blockHash": "0xefc0a2c347793bc650bd61bca82045b273628075c3bb2d04ef743cafad783438",
+      "timestamp": "2025-02-25T07:50:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2399.199952,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2385.141664,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2378.94866,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921961,
+      "blockHash": "0xd0082abda3ccce6b4acba2e85e21af13e627e9f91cd42e1eb68148ad4af1115a",
+      "timestamp": "2025-02-25T07:50:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2399.195226,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2382.519582,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2379.662416,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921962,
+      "blockHash": "0x1a53ad92a10d115292bf5b0585c6edfd4be2ada21c9601b54013fbea111c8c37",
+      "timestamp": "2025-02-25T07:50:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2399.139815,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2381.328679,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2380.138372,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921963,
+      "blockHash": "0x3a762c5bb5c27a5f641f6cb7dc6028680c48a4a5ad66d0704f7de4fd45f18216",
+      "timestamp": "2025-02-25T07:50:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2399.139815,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2378.235118,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2380.138372,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921964,
+      "blockHash": "0x252e1a1e5438e61ee255c47cedc2d8d4cf204e3fe4c76db5f1551bfb16bcc9f2",
+      "timestamp": "2025-02-25T07:50:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2399.086737,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2376.095776,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2380.138372,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921965,
+      "blockHash": "0x6da3f8544aaa7861858353c5ff61dc7b0b29cb248c5eebaac6cecf989ea6cdb5",
+      "timestamp": "2025-02-25T07:51:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2392.720791,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2376.571019,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2380.138372,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921966,
+      "blockHash": "0xf31fd45cd552d18e947f89a647b992c69a5094c9acee611e898c220a9144678e",
+      "timestamp": "2025-02-25T07:51:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2392.668175,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2377.046357,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2379.900382,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921967,
+      "blockHash": "0x0022b83401f5f20718af4ec05a429e4c74d2900e5a5a4a6fc008acf5b2d2d78c",
+      "timestamp": "2025-02-25T07:51:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2392.629864,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2377.284062,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2379.900382,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921968,
+      "blockHash": "0xd5381360e28acc6ebe6d9ff1f623ab906d64f307dba3b6ceaceca36f2b94e40e",
+      "timestamp": "2025-02-25T07:51:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2392.589844,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2377.759542,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2379.900382,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921969,
+      "blockHash": "0x4796f3419c5421f984e0b8bb2e0c8cb5b57764c112cb7d8fc36ead7ef990ecc9",
+      "timestamp": "2025-02-25T07:51:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2392.679569,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2377.759542,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2380.138372,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921970,
+      "blockHash": "0x2685c16a975b86e9e88e4dbdd048da248c56bae13968f55ed7eaab2fc55bfe67",
+      "timestamp": "2025-02-25T07:52:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2395.793083,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2377.284062,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2380.138372,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921971,
+      "blockHash": "0x967fafd7143bcc0d56c8bc5e18f175fd2f0ccffc898f2953e663f39ad276628a",
+      "timestamp": "2025-02-25T07:52:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2395.905772,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2376.808676,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2380.376386,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921972,
+      "blockHash": "0x99d264d84941a8c1c990b16ed89a245eb4a9221a9c9ae713ebb07fd4367ab98f",
+      "timestamp": "2025-02-25T07:52:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2395.910267,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2377.52179,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2380.376386,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921973,
+      "blockHash": "0x2e74f7d0519f697f889f5cfb23254c7a1046ff0aac68e2e921e0351e12e2a75e",
+      "timestamp": "2025-02-25T07:52:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2395.903163,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2378.710789,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2380.376386,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921974,
+      "blockHash": "0x32b101c3006a22640c744dac107750bd27c7d9b8f64665f9733bc39217d8288e",
+      "timestamp": "2025-02-25T07:52:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2395.901482,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2380.376386,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2380.376386,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921975,
+      "blockHash": "0xfc9e13b12ad7b852faabd6299a819444522db06a5f8a382b18d67da765e8715e",
+      "timestamp": "2025-02-25T07:53:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2395.898419,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2382.281354,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2380.376386,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921976,
+      "blockHash": "0x994838fa1c086bf38ab446daf238cc5e200053eb7c129b293fd57324f4ca6823",
+      "timestamp": "2025-02-25T07:53:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.052343,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2382.757834,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2380.376386,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921977,
+      "blockHash": "0x2f220bb23e8596a74e0d86a74a4d71a611c26c296e9371f4add7c7bad9bcfade",
+      "timestamp": "2025-02-25T07:53:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.147981,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2382.99611,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2380.852485,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921978,
+      "blockHash": "0x196561c6d59095d84b2cb84529bb2cab766599d53ebc2995cbd179f162cd145b",
+      "timestamp": "2025-02-25T07:53:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.185629,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2383.472733,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2381.09057,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921979,
+      "blockHash": "0x6526d2ce3651538a39277ef99e532f0e745ef7177c84c6780a81491c8b3ba42b",
+      "timestamp": "2025-02-25T07:53:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.224711,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2384.426265,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2381.09057,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921980,
+      "blockHash": "0x981c045ec7e5c636331fbd4ac17691a8a86de68a22effd8a57e6ae69a2a7279b",
+      "timestamp": "2025-02-25T07:54:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.147548,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2385.618716,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2381.328679,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921981,
+      "blockHash": "0x1dc6e949e8124f9d97c2df6d1fe15a938bb86006fc7feed5eff11f11eca14946",
+      "timestamp": "2025-02-25T07:54:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.150661,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2386.095864,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2381.09057,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921982,
+      "blockHash": "0x89806f270bf7d021de8b030b7061d85b8999703ac2276898ca18ae081802716d",
+      "timestamp": "2025-02-25T07:54:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.115303,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2386.095864,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2381.09057,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921983,
+      "blockHash": "0xf4926747eb628dc38f4b7faf8bcd77288a2614f3fd794bb56be26d5411f4ced7",
+      "timestamp": "2025-02-25T07:54:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2395.923735,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2385.618716,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2380.852485,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921984,
+      "blockHash": "0x63cc064afdab387f2eb7ddc50823f7177a0b409708f5711cbf38adb73a6874e2",
+      "timestamp": "2025-02-25T07:54:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.61333,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2384.187846,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2380.614424,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921985,
+      "blockHash": "0x940289c60a6327cd1556a54e246128842fca7acc076cc682179ed117f2d5e788",
+      "timestamp": "2025-02-25T07:55:11Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.68546,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2382.519582,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2380.852485,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921986,
+      "blockHash": "0x6772cc3c30d6ddb9b9d00585384239ef726e0d6d36416cfe26bd4ab4ec066173",
+      "timestamp": "2025-02-25T07:55:23Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.477221,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2382.281354,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2381.09057,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921987,
+      "blockHash": "0x6147698da1a554316976b330f416d2d194a70511b5f732ebedbbb6635c3fe2c4",
+      "timestamp": "2025-02-25T07:55:35Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.479267,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2381.328679,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2381.09057,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921988,
+      "blockHash": "0xab8e99fc69ff7efc1a94d1eda3f8994bb83eda2c70ff1271a449186ac44dfa18",
+      "timestamp": "2025-02-25T07:55:47Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.539605,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2380.614424,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2381.328679,
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "block": 21921989,
+      "blockHash": "0x8b13549839cb773bca6a2290b7173e3fa7a1304adb9579a141d7eeeb1152cf59",
+      "timestamp": "2025-02-25T07:55:59Z",
+      "values": {
+        "oneinch_spot": {
+          "price": 2396.462662,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_60": {
+          "price": 2379.424473,
+          "status": "ok"
+        },
+        "uniswap_v3_twap_300": {
+          "price": 2381.328679,
+          "status": "ok"
+        }
+      }
+    }
+  ]
+}

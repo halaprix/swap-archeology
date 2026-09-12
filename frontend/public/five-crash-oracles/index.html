@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Binance ETH Crashes: Oracle & Reference Sweep</title>
+<style>
+  :root {
+    --bg-dark: #0f172a;
+    --card-bg: #1e293b;
+    --border: #334155;
+    --text: #f8fafc;
+    --text-muted: #94a3b8;
+    --primary: #38bdf8;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text);
+    margin: 0;
+    padding: 24px;
+    line-height: 1.5;
+  }
+  .container { max-width: 1240px; margin: 0 auto; }
+  header { margin-bottom: 24px; border-bottom: 1px solid var(--border); padding-bottom: 16px; }
+  h1 { margin: 0 0 8px 0; font-size: 26px; color: #fff; }
+  .meta { color: var(--text-muted); font-size: 13px; display: flex; gap: 16px; flex-wrap: wrap; }
+  .caveat-box {
+    background: rgba(245, 158, 11, 0.08);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    font-size: 12px;
+    color: #fcd34d;
+  }
+  .caveat-box strong { color: #fbbf24; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border); }
+  th { background: #182234; color: var(--text-muted); font-weight: 600; }
+  tr:hover { background: rgba(255,255,255,0.02); }
+  .table-box { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 24px; }
+  .badge-drop { background: #7f1d1d; color: #fca5a5; padding: 2px 6px; border-radius: 4px; font-weight: 600; font-size: 11px; }
+  .btn-group { display: flex; gap: 8px; margin-top: 12px; }
+  .btn { background: #334155; color: #fff; padding: 6px 12px; border-radius: 4px; text-decoration: none; font-size: 12px; border: 1px solid var(--border); }
+  .btn:hover { background: #475569; }
+  .btn-sm { background: #1e3a8a; color: #bfdbfe; padding: 4px 8px; border-radius: 4px; text-decoration: none; font-size: 11px; }
+  .btn-sm:hover { background: #1d4ed8; }
+  code { font-family: ui-monospace, SFMono-Regular, monospace; font-size: 12px; }
+  a { color: var(--primary); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Historical 5 Binance ETH Crashes: Oracle Sweep</h1>
+    <div class="meta">
+      <span><strong>Scope:</strong> 5 ranked independent ETH crashes (2024-08-16..2026-09-08, min 7d apart)</span>
+      <span><strong>Windows:</strong> 24h (-12h to +12h around trough) &bull; 145 targets every 600s</span>
+      <span><strong>Total Target Pins:</strong> 725 blocks</span>
+      <span><strong>Generated UTC:</strong> 2026-09-09T21:13:00.041196+00:00</span>
+    </div>
+    <div class="btn-group">
+      <a class="btn" href="five-crash-oracles.json" download>Download Full JSON (725 Pins)</a>
+      <a class="btn" href="five-crash-oracles.csv" download>Download Full CSV</a>
+      <a class="btn" href="raw-evidence.json" download>Download Raw Multicall Evidence</a>
+    </div>
+  </header>
+
+  <div class="caveat-box">
+    <strong>Methodological Caveats:</strong>
+    <ul style="margin: 4px 0 0 16px; padding: 0;">
+      <li>Sample counts (145 discrete points per 24h window, 725 total) do not constitute continuous duration monitoring; 10-minute sampling can miss transient spikes or intra-block drops.</li>
+      <li>Prices are size-independent reference/oracle rates, not executable routes with size-dependent slippage or market impact.</li>
+      <li>Binance ETHUSDC minute candles match the most recent completed candle (completion_time = openTime + 60 &le; block.timestamp); missing data fails closed to null without USDT fallback.</li>
+    </ul>
+  </div>
+
+  <div class="table-box">
+    <table>
+      <thead>
+        <tr>
+          <th>Crash ID</th>
+          <th>Date</th>
+          <th>Trough (UTC)</th>
+          <th>Hour Span</th>
+          <th>Drop %</th>
+          <th>1i vs CL (Max Neg)</th>
+          <th>UniV3 300s (Max Neg)</th>
+          <th>Binance (Max Neg)</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong><a href='crash-1.html'>crash-1</a></strong></td><td>2025-02-03</td><td><code>2025-02-03T01:56:59Z</code></td><td>$2823.50 &rarr; $2400.00</td><td><span class='badge-drop'>-15.00%</span></td><td><code>-2.21%</code></td><td><code>-7.00%</code></td><td><code>-2.12%</code></td><td><a class='btn-sm' href='crash-1.html'>View Report &rarr;</a></td></tr><tr><td><strong><a href='crash-2.html'>crash-2</a></strong></td><td>2025-02-25</td><td><code>2025-02-25T07:25:59Z</code></td><td>$2480.72 &rarr; $2313.49</td><td><span class='badge-drop'>-6.74%</span></td><td><code>-0.38%</code></td><td><code>-0.50%</code></td><td><code>-0.44%</code></td><td><a class='btn-sm' href='crash-2.html'>View Report &rarr;</a></td></tr><tr><td><strong><a href='crash-3.html'>crash-3</a></strong></td><td>2025-04-07</td><td><code>2025-04-07T06:54:59Z</code></td><td>$1540.37 &rarr; $1411.01</td><td><span class='badge-drop'>-8.40%</span></td><td><code>-1.15%</code></td><td><code>-0.56%</code></td><td><code>-0.48%</code></td><td><a class='btn-sm' href='crash-3.html'>View Report &rarr;</a></td></tr><tr><td><strong><a href='crash-4.html'>crash-4</a></strong></td><td>2025-06-21</td><td><code>2025-06-21T21:31:59Z</code></td><td>$2403.64 &rarr; $2245.00</td><td><span class='badge-drop'>-6.60%</span></td><td><code>-0.57%</code></td><td><code>-0.96%</code></td><td><code>-0.47%</code></td><td><a class='btn-sm' href='crash-4.html'>View Report &rarr;</a></td></tr><tr><td><strong><a href='crash-5.html'>crash-5</a></strong></td><td>2025-10-10</td><td><code>2025-10-10T21:20:59Z</code></td><td>$3871.31 &rarr; $3435.00</td><td><span class='badge-drop'>-11.27%</span></td><td><code>-4.67%</code></td><td><code>-6.62%</code></td><td><code>-0.39%</code></td><td><a class='btn-sm' href='crash-5.html'>View Report &rarr;</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>

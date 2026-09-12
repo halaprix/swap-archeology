@@ -1,0 +1,39 @@
+{
+  "quoteId": "f3990934b3ca874526d950facec2f58ba33e794ae3047fd4d8c00ac71489b50d",
+  "inputRaw": "1000123456",
+  "outputRaw": "1000428737",
+  "reload": true,
+  "mobileLayout": {
+    "nav": [
+      {
+        "text": "Historical",
+        "left": 24,
+        "right": 91.46875
+      },
+      {
+        "text": "Quote Lab",
+        "left": 95.46875,
+        "right": 173.75
+      },
+      {
+        "text": "Design System",
+        "left": 177.75,
+        "right": 279.171875
+      }
+    ],
+    "cols": [
+      {
+        "left": 24,
+        "right": 351
+      },
+      {
+        "left": 24,
+        "right": 351
+      }
+    ],
+    "width": 390
+  },
+  "amountFilterCount": 5,
+  "noMatch": true,
+  "dualFilter": true
+}

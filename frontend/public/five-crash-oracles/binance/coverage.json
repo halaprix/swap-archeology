@@ -1,0 +1,326 @@
+{
+  "universeStartUtc": "2024-08-16T00:00:00Z",
+  "universeEndUtc": "2026-09-08T23:59:59Z",
+  "universeTotalDays": 754,
+  "universeTotalHours": 18096,
+  "universeCompleteHours": 18096,
+  "coverageComplete": true,
+  "leadingPartialMonth": {
+    "month": "2024-08",
+    "startDateUtc": "2024-08-16T00:00:00Z",
+    "hoursIncluded": 384,
+    "hoursExcludedPrior": 360,
+    "exclusionReason": "Deployment compatibility: 1inch spot aggregator OffchainOracle deployed Aug 15 2024 (block 20535992); prior dates lack uniform deployment coverage"
+  },
+  "trailingPartialMonth": {
+    "month": "2026-09",
+    "endDateUtc": "2026-09-08T23:59:59Z",
+    "daysIncluded": 8,
+    "hoursIncluded": 192,
+    "sourceType": "daily_archives"
+  },
+  "monthlyArchivesCount": 25,
+  "dailyArchivesCount": 8,
+  "totalHourlyArchivesCount": 33,
+  "archiveVerification": "SHA256 verified against official .CHECKSUM files from data.binance.vision",
+  "archiveTimestampHandling": "Microsecond timestamps (>=1e14) converted to integer seconds via raw // 1_000_000; millisecond timestamps converted via raw // 1_000",
+  "archives": [
+    {
+      "name": "ETHUSDT-1h-2024-08.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-08.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 41335,
+      "sha256": "d908255a48978f6acb769c4b856a3307c58a8c19dbf2b3b7f10067245d5e8b89",
+      "checksumVerified": true,
+      "candleCount": 744
+    },
+    {
+      "name": "ETHUSDT-1h-2024-09.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-09.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 39572,
+      "sha256": "bfbdda97d03abac469199120ec3c2f1305e2d5947e9155ff84dbeafe33cd4a67",
+      "checksumVerified": true,
+      "candleCount": 720
+    },
+    {
+      "name": "ETHUSDT-1h-2024-10.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-10.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 41095,
+      "sha256": "cbb13664485b6c9a6365da7ae23299b722ab5926a6aed516add486ef501883bc",
+      "checksumVerified": true,
+      "candleCount": 744
+    },
+    {
+      "name": "ETHUSDT-1h-2024-11.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-11.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 40916,
+      "sha256": "29cd30419b86d5dff5467a7a81d43e492aaaeb3669db216ab8badaad5fe610ec",
+      "checksumVerified": true,
+      "candleCount": 720
+    },
+    {
+      "name": "ETHUSDT-1h-2024-12.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-12.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 42106,
+      "sha256": "84312b7dc2b5c903853c78d94f587ef1d24b7960d7bd95f5bfe3afc3db006203",
+      "checksumVerified": true,
+      "candleCount": 744
+    },
+    {
+      "name": "ETHUSDT-1h-2025-01.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-01.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 42253,
+      "sha256": "f7350a6f3b51de466a0db52ba890cf296d4faeb6e84811b9606f87ad39ccf3ec",
+      "checksumVerified": true,
+      "candleCount": 744
+    },
+    {
+      "name": "ETHUSDT-1h-2025-02.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-02.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 38410,
+      "sha256": "40c2f73850422d47ca7d044959cecc39ff3416f6e3c88f30636da4a01a0b6e31",
+      "checksumVerified": true,
+      "candleCount": 672
+    },
+    {
+      "name": "ETHUSDT-1h-2025-03.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-03.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 41867,
+      "sha256": "dc32ecad498d19f8663633196ec84cbd480595c89aa1ae6062c0fa0b8d9bd11d",
+      "checksumVerified": true,
+      "candleCount": 744
+    },
+    {
+      "name": "ETHUSDT-1h-2025-04.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-04.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 40375,
+      "sha256": "73f39799fae1ba4ef291c6785b934a6c817426ef8ef60e1bdf42078efd27893d",
+      "checksumVerified": true,
+      "candleCount": 720
+    },
+    {
+      "name": "ETHUSDT-1h-2025-05.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-05.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 42206,
+      "sha256": "720a319face496acff79d8e6279b9b03f31495097d555c74daa076cd66421bee",
+      "checksumVerified": true,
+      "candleCount": 744
+    },
+    {
+      "name": "ETHUSDT-1h-2025-06.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-06.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 40653,
+      "sha256": "780788805b48a094886590d939ef45372db2ee053aa5d464f8e135121df2b8eb",
+      "checksumVerified": true,
+      "candleCount": 720
+    },
+    {
+      "name": "ETHUSDT-1h-2025-07.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-07.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 42467,
+      "sha256": "d5c4c2482004a49b479ff5bfbdb885b25035ace24e5f95edd8057507718df366",
+      "checksumVerified": true,
+      "candleCount": 744
+    },
+    {
+      "name": "ETHUSDT-1h-2025-08.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-08.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 43041,
+      "sha256": "1ebdd24f8e1df5369518b721fdb0bfaaca9892ae71499b82783194573f804cad",
+      "checksumVerified": true,
+      "candleCount": 744
+    },
+    {
+      "name": "ETHUSDT-1h-2025-09.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-09.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 40873,
+      "sha256": "f83ffff284b408574a4571e83fabc5c641e20edc71818912541cc38ec7e1be43",
+      "checksumVerified": true,
+      "candleCount": 720
+    },
+    {
+      "name": "ETHUSDT-1h-2025-10.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-10.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 42832,
+      "sha256": "f3668059619d772ae8f7167d82666dcc6e2f88f17e6fd66a4a8098c9cd8ba042",
+      "checksumVerified": true,
+      "candleCount": 744
+    },
+    {
+      "name": "ETHUSDT-1h-2025-11.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-11.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 41327,
+      "sha256": "3c0171cdd5eef1ece36c818ace3a07cc48e331cb9d991488a8db917bc496b78d",
+      "checksumVerified": true,
+      "candleCount": 720
+    },
+    {
+      "name": "ETHUSDT-1h-2025-12.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2025-12.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 42005,
+      "sha256": "7a7a35ce7b9be9bafa0a00c47370acc57a48329a3289c21cb19f1185f6430fdb",
+      "checksumVerified": true,
+      "candleCount": 744
+    },
+    {
+      "name": "ETHUSDT-1h-2026-01.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2026-01.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 41945,
+      "sha256": "eb060da7fb1adc65c7999f7d1f4f3b004edf2335311bb32d05a86f9577c21106",
+      "checksumVerified": true,
+      "candleCount": 744
+    },
+    {
+      "name": "ETHUSDT-1h-2026-02.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2026-02.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 38274,
+      "sha256": "8c8c6e664688497711832add90349b8617caf7e8892f085e97fe4290989fe78b",
+      "checksumVerified": true,
+      "candleCount": 672
+    },
+    {
+      "name": "ETHUSDT-1h-2026-03.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2026-03.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 41894,
+      "sha256": "0bf4dc37f2b201a8891f63dd76164742ed7d4fa24c24065a2e7709f34488ff74",
+      "checksumVerified": true,
+      "candleCount": 744
+    },
+    {
+      "name": "ETHUSDT-1h-2026-04.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2026-04.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 40057,
+      "sha256": "46d62ed100717d8195bce4c07a41dc7606f41abc491ca71f9bfe653d2b92bfc0",
+      "checksumVerified": true,
+      "candleCount": 720
+    },
+    {
+      "name": "ETHUSDT-1h-2026-05.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2026-05.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 41042,
+      "sha256": "8c4cef22ad7046183621f1a41155e91301780a3c9f377d7770763027b08e2462",
+      "checksumVerified": true,
+      "candleCount": 744
+    },
+    {
+      "name": "ETHUSDT-1h-2026-06.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2026-06.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 40134,
+      "sha256": "e24954ab4ada9dc5f6bbf9ac30275d459a5729fb522f045f627296b4ad7ee985",
+      "checksumVerified": true,
+      "candleCount": 720
+    },
+    {
+      "name": "ETHUSDT-1h-2026-07.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2026-07.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 40988,
+      "sha256": "5e8c974c008689943b473ccc5890707d0c2cd0b7e71bdb28c0ad65a87abde338",
+      "checksumVerified": true,
+      "candleCount": 744
+    },
+    {
+      "name": "ETHUSDT-1h-2026-08.zip",
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2026-08.zip",
+      "type": "monthly_1h",
+      "sizeBytes": 40869,
+      "sha256": "ebac99df5b1d9c84c56ea8f7a86daf09bcb43f8fdbded0049fec5205ab977dcc",
+      "checksumVerified": true,
+      "candleCount": 744
+    },
+    {
+      "name": "ETHUSDT-1h-2026-09-01.zip",
+      "url": "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1h/ETHUSDT-1h-2026-09-01.zip",
+      "type": "daily_1h",
+      "sizeBytes": 1512,
+      "sha256": "575f3c644797a90c3b342fe00af004926a6d6a01cf75eace7a08a4a00a52e8c4",
+      "checksumVerified": true,
+      "candleCount": 24
+    },
+    {
+      "name": "ETHUSDT-1h-2026-09-02.zip",
+      "url": "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1h/ETHUSDT-1h-2026-09-02.zip",
+      "type": "daily_1h",
+      "sizeBytes": 1523,
+      "sha256": "0530cfc5e7b0c48509b6d887dbbee5f9ff1802269a616dab786b2565b33576e2",
+      "checksumVerified": true,
+      "candleCount": 24
+    },
+    {
+      "name": "ETHUSDT-1h-2026-09-03.zip",
+      "url": "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1h/ETHUSDT-1h-2026-09-03.zip",
+      "type": "daily_1h",
+      "sizeBytes": 1553,
+      "sha256": "1c536c15410819349569b0f4c815a4d01c100986ce8a60f85a27397534f4fcc2",
+      "checksumVerified": true,
+      "candleCount": 24
+    },
+    {
+      "name": "ETHUSDT-1h-2026-09-04.zip",
+      "url": "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1h/ETHUSDT-1h-2026-09-04.zip",
+      "type": "daily_1h",
+      "sizeBytes": 1538,
+      "sha256": "11bfc126fc2ef8f3bcffd3fed687782152f3862550dd940a4b4dfaf4e3f4ad58",
+      "checksumVerified": true,
+      "candleCount": 24
+    },
+    {
+      "name": "ETHUSDT-1h-2026-09-05.zip",
+      "url": "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1h/ETHUSDT-1h-2026-09-05.zip",
+      "type": "daily_1h",
+      "sizeBytes": 1467,
+      "sha256": "62bf61fea6200a851204ca68117b5b5521fb267b2768a8bd49f1174b90d48589",
+      "checksumVerified": true,
+      "candleCount": 24
+    },
+    {
+      "name": "ETHUSDT-1h-2026-09-06.zip",
+      "url": "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1h/ETHUSDT-1h-2026-09-06.zip",
+      "type": "daily_1h",
+      "sizeBytes": 1535,
+      "sha256": "be0d1240ef958d5a4f5f6d9a782a541a54b3e631c477af8d443d0f42a0107a6d",
+      "checksumVerified": true,
+      "candleCount": 24
+    },
+    {
+      "name": "ETHUSDT-1h-2026-09-07.zip",
+      "url": "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1h/ETHUSDT-1h-2026-09-07.zip",
+      "type": "daily_1h",
+      "sizeBytes": 1508,
+      "sha256": "14c54bbc5c9fb34a8d838e76e8cf4883647c778b2371c81e1c319359b9076c5f",
+      "checksumVerified": true,
+      "candleCount": 24
+    },
+    {
+      "name": "ETHUSDT-1h-2026-09-08.zip",
+      "url": "https://data.binance.vision/data/spot/daily/klines/ETHUSDT/1h/ETHUSDT-1h-2026-09-08.zip",
+      "type": "daily_1h",
+      "sizeBytes": 1515,
+      "sha256": "64207bed341dfaa66cd330146f748db663f1f01fb23a2ad86c536c81e456459c",
+      "checksumVerified": true,
+      "candleCount": 24
+    }
+  ]
+}

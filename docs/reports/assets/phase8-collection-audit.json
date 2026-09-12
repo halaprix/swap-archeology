@@ -1,0 +1,18 @@
+{
+  "blocks": 13509,
+  "records": 1519500,
+  "record_counts_by_family": {
+    "curve": 63228,
+    "lido": 13509,
+    "maker_sky_psm": 13509,
+    "origin_arm": 13509,
+    "uniswap_v2": 142740,
+    "uniswap_v3": 375267,
+    "uniswap_v4": 534291,
+    "fluid_dex": 363447
+  },
+  "already_qualified_records": 4258,
+  "errors": [],
+  "seconds": 73.03,
+  "scope": "Collection artifact identities and pool uniqueness; no new quote qualification"
+}

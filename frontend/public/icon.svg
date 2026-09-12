@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
+  <!-- Archaeological Layers / Route Archeology Symbol -->
+  <rect width="32" height="32" rx="6" fill="#0f766e"/>
+  <!-- Stratum 1 -->
+  <path d="M6 10L16 6L26 10L16 14L6 10Z" stroke="#99f6e4" stroke-width="1.5" stroke-linejoin="round" fill="#115e59"/>
+  <!-- Stratum 2 (Split route layer) -->
+  <path d="M6 16L16 12L26 16L16 20L6 16Z" stroke="#f0fdfa" stroke-width="1.5" stroke-linejoin="round" fill="#0d9488"/>
+  <!-- Stratum 3 (Base pinned block) -->
+  <path d="M6 22L16 18L26 22L16 26L6 22Z" stroke="#ffffff" stroke-width="1.75" stroke-linejoin="round" fill="#134e4a"/>
+  <!-- Precision Route Axis -->
+  <circle cx="16" cy="12" r="1.5" fill="#ffffff"/>
+  <circle cx="21" cy="18" r="1.25" fill="#99f6e4"/>
+  <circle cx="11" cy="18" r="1.25" fill="#99f6e4"/>
+</svg>

@@ -1,0 +1,67 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "id": "input",
+        "x": 28
+      },
+      {
+        "id": "step-0",
+        "x": 260
+      },
+      {
+        "id": "step-1",
+        "x": 260
+      },
+      {
+        "id": "step-2",
+        "x": 590
+      },
+      {
+        "id": "output",
+        "x": 920
+      }
+    ],
+    "edges": [
+      {
+        "from": "input",
+        "to": "step-0",
+        "share": "250000"
+      },
+      {
+        "from": "input",
+        "to": "step-1",
+        "share": "750000"
+      },
+      {
+        "from": "step-1",
+        "to": "step-2",
+        "share": "750000"
+      },
+      {
+        "from": "step-0",
+        "to": "output",
+        "share": "250000"
+      },
+      {
+        "from": "step-2",
+        "to": "output",
+        "share": "750000"
+      }
+    ]
+  },
+  "mobile": {
+    "scrollable": true,
+    "box": {
+      "x": 24,
+      "y": 2078.875,
+      "width": 342,
+      "height": 482,
+      "top": 2078.875,
+      "right": 366,
+      "bottom": 2560.875,
+      "left": 24
+    },
+    "viewport": 501
+  }
+}

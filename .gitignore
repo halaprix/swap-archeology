@@ -1,0 +1,54 @@
+# Credentials
+.env
+.env.*
+!.env.example
+*.pem
+
+# Python environments and generated files
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+/build/
+/dist/
+*.egg-info/
+
+# Local research state, archive mount and intermediates
+/data
+/data.local-backup/
+/outputs/
+/web-data/
+/.cache/
+
+# Copied reference archive: preserve locally; review provenance before distributing
+/evidence/
+/COPY_MANIFEST.json
+/SHA256SUMS
+
+# Local agent configuration (frontend/AGENTS.md remains project documentation)
+/.agents/
+/.codex/
+/skills-lock.json
+
+# Editor and OS state
+.DS_Store
+
+# Raw benchmark recordings retained locally
+/docs/reports/assets/phase8-model/
+
+# Private research handoffs and private-derived policy replay (retain locally)
+/START_HERE.md
+/signoff.md
+/docs/tasks/
+/docs/PLAN.md
+/docs/COMPLETION.md
+/scripts/simulate_rescue_policy.py
+/scripts/run_rescue_replay.py
+/scripts/collect_rescue_references.py
+/tests/test_simulate_rescue_policy.py
+/frontend/src/app/rescue-replay/
+/frontend/public/rescue-replay.json
+
+# Retained locally until GitHub authentication has workflow scope
+/.github/workflows/checks.yml

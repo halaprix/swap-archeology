@@ -1,0 +1,6524 @@
+{
+  "manifest": {
+    "run_timestamp_utc": "2026-09-09T20:23:46.390831+00:00",
+    "duration_seconds": 32.63,
+    "chain_id": 1,
+    "target_count": 145,
+    "interval_seconds": 600,
+    "anchor_block": {
+      "number": 25942178,
+      "hash": "0xdbbf7a8995e0fc960f980e137dea27e0d376e28a844d73d1e1d0a453f30476fc",
+      "timestamp": 1788985415,
+      "utc": "2026-09-09T20:23:35+00:00"
+    },
+    "window_start_utc": "2026-09-08T20:23:35+00:00",
+    "window_end_utc": "2026-09-09T20:23:35+00:00",
+    "deployment_verification": {
+      "1inch_offchain_oracle": {
+        "address": "0x00000000000D6FFc74A8feb35aF5827bf57f6786",
+        "bytecodeLength": 12150,
+        "sha256": "1d970f50ead50e1e8e495864aab57da9559993a4f04bc75178d73f1df5d261e1",
+        "hasCode": true
+      },
+      "uniswap_v3_usdc_weth_500": {
+        "address": "0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640",
+        "bytecodeLength": 22142,
+        "sha256": "92ba07e5b9a121271e3cb6ff1984114eab00dd64f05bd5701682da1a0f3d6afb",
+        "hasCode": true
+      },
+      "chainlink_eth_usd": {
+        "address": "0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419",
+        "bytecodeLength": 9571,
+        "sha256": "ed698309290de3517c7201fcad9a9dbd4b8cde4a72c9add23129201f299c6f2b",
+        "hasCode": true
+      },
+      "chainlink_usdc_usd": {
+        "address": "0x8fFfFfd4AfB6115b954Bd326cbe7B4BA576818f6",
+        "bytecodeLength": 9571,
+        "sha256": "53ca1c4d67c7b092f36c66e575874226de7e8eaada554f445f43fe2779743ec1",
+        "hasCode": true
+      },
+      "weth": {
+        "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "bytecodeLength": 3124,
+        "sha256": "5566bf50796faf93c9b6f6adacd3b32c70bfe16b48ffc59db6cd144cbdc89739",
+        "hasCode": true
+      },
+      "usdc": {
+        "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "bytecodeLength": 2186,
+        "sha256": "c1bcd4dc4f30c4dcf6c9fe462abeaf2efefc065dcb4dec74996e471f1ce219b4",
+        "hasCode": true
+      }
+    },
+    "status_counts": {
+      "chainlink": {
+        "ok": 145
+      },
+      "oneinch": {
+        "ok": 145
+      },
+      "univ3_twap_300": {
+        "ok": 145
+      },
+      "univ3_twap_60": {
+        "ok": 145
+      }
+    },
+    "timings": {
+      "total_seconds": 32.63,
+      "header_search_seconds": 27.73,
+      "multicall_queries_seconds": 4.44
+    },
+    "summary_gaps_vs_chainlink": {
+      "oneinch": {
+        "valid_count": 145,
+        "min_gap_bps": -39.68,
+        "max_gap_bps": 32.26,
+        "median_gap_bps": -10.27,
+        "min_abs_gap_bps": 0.17,
+        "max_abs_gap_bps": 39.68,
+        "median_abs_gap_bps": 13.53,
+        "count_gt_100bps": 0,
+        "count_gt_500bps": 0,
+        "worst_divergence": {
+          "target_index": 79,
+          "target_utc": "2026-09-09T09:33:35+00:00",
+          "block_number": 25938945,
+          "gap_bps": -39.68,
+          "abs_gap_bps": 39.68,
+          "chainlink_price": 2518.799334,
+          "source_price": 2508.805014,
+          "eth_age_seconds": 1956,
+          "usdc_age_seconds": 5580
+        }
+      },
+      "univ3_twap_300": {
+        "valid_count": 145,
+        "min_gap_bps": -43.06,
+        "max_gap_bps": 39.64,
+        "median_gap_bps": 0.64,
+        "min_abs_gap_bps": 0.06,
+        "max_abs_gap_bps": 43.06,
+        "median_abs_gap_bps": 11.25,
+        "count_gt_100bps": 0,
+        "count_gt_500bps": 0,
+        "worst_divergence": {
+          "target_index": 81,
+          "target_utc": "2026-09-09T09:53:35+00:00",
+          "block_number": 25939045,
+          "gap_bps": -43.06,
+          "abs_gap_bps": 43.06,
+          "chainlink_price": 2505.208419,
+          "source_price": 2494.420108,
+          "eth_age_seconds": 1056,
+          "usdc_age_seconds": 6780
+        }
+      },
+      "univ3_twap_60": {
+        "valid_count": 145,
+        "min_gap_bps": -42.07,
+        "max_gap_bps": 49.76,
+        "median_gap_bps": -0.15,
+        "min_abs_gap_bps": 0.06,
+        "max_abs_gap_bps": 49.76,
+        "median_abs_gap_bps": 11.53,
+        "count_gt_100bps": 0,
+        "count_gt_500bps": 0,
+        "worst_divergence": {
+          "target_index": 46,
+          "target_utc": "2026-09-09T04:03:35+00:00",
+          "block_number": 25937301,
+          "gap_bps": 49.76,
+          "abs_gap_bps": 49.76,
+          "chainlink_price": 2487.784059,
+          "source_price": 2500.16359,
+          "eth_age_seconds": 2904,
+          "usdc_age_seconds": 72192
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "target_index": 0,
+      "target_timestamp": 1788899015,
+      "target_utc": "2026-09-08T20:23:35+00:00",
+      "block_number": 25935010,
+      "block_hash": "0x1ca8236245ba013a265d4474db525871493f7e0a926a49d4c467b8d26523400d",
+      "block_timestamp": 1788899015,
+      "block_utc": "2026-09-08T20:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2490.638631,
+        "status": "ok",
+        "eth_usd": 2490.3142,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249031420000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788898295,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 720,
+        "usdc_age_seconds": 44592,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2483.473582,
+        "raw_rate": 2483473582,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2486.699765,
+        "arithmetic_mean_tick": 198133,
+        "delta_tick": 59440092,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2485.705334,
+        "arithmetic_mean_tick": 198137,
+        "delta_tick": 11888220,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 1,
+      "target_timestamp": 1788899615,
+      "target_utc": "2026-09-08T20:33:35+00:00",
+      "block_number": 25935060,
+      "block_hash": "0x38c6b2ae346e92afc660a59f6db90452141bcaabbeffbccde909bae000368bee",
+      "block_timestamp": 1788899615,
+      "block_utc": "2026-09-08T20:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2490.638631,
+        "status": "ok",
+        "eth_usd": 2490.3142,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249031420000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788898295,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1320,
+        "usdc_age_seconds": 45192,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2483.362853,
+        "raw_rate": 2483362853,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2485.456788,
+        "arithmetic_mean_tick": 198138,
+        "delta_tick": 59441472,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2484.462854,
+        "arithmetic_mean_tick": 198142,
+        "delta_tick": 11888556,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 2,
+      "target_timestamp": 1788900215,
+      "target_utc": "2026-09-08T20:43:35+00:00",
+      "block_number": 25935110,
+      "block_hash": "0xaa5b72d63a0ef7911cd2eea59b32c3dbb415c545b7befa55fceca37420243f44",
+      "block_timestamp": 1788900215,
+      "block_utc": "2026-09-08T20:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2490.638631,
+        "status": "ok",
+        "eth_usd": 2490.3142,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249031420000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788898295,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1920,
+        "usdc_age_seconds": 45792,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2482.932751,
+        "raw_rate": 2482932751,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2483.717664,
+        "arithmetic_mean_tick": 198145,
+        "delta_tick": 59443776,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2483.220995,
+        "arithmetic_mean_tick": 198147,
+        "delta_tick": 11888820,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 3,
+      "target_timestamp": 1788900815,
+      "target_utc": "2026-09-08T20:53:35+00:00",
+      "block_number": 25935160,
+      "block_hash": "0xae90e618dad2195d398161a3764856c64ce14edad21ff804746047652d47e931",
+      "block_timestamp": 1788900815,
+      "block_utc": "2026-09-08T20:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2490.638631,
+        "status": "ok",
+        "eth_usd": 2490.3142,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249031420000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788898295,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 2520,
+        "usdc_age_seconds": 46392,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2483.557068,
+        "raw_rate": 2483557068,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2484.462854,
+        "arithmetic_mean_tick": 198142,
+        "delta_tick": 59442876,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2484.959771,
+        "arithmetic_mean_tick": 198140,
+        "delta_tick": 11888436,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 4,
+      "target_timestamp": 1788901415,
+      "target_utc": "2026-09-08T21:03:35+00:00",
+      "block_number": 25935210,
+      "block_hash": "0x98bf3b9f28728609d1407d7ab005b80e663236f1e6ac04d4dba88b10862b788a",
+      "block_timestamp": 1788901415,
+      "block_utc": "2026-09-08T21:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2490.638631,
+        "status": "ok",
+        "eth_usd": 2490.3142,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249031420000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788898295,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 3120,
+        "usdc_age_seconds": 46992,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2483.426207,
+        "raw_rate": 2483426207,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2484.462854,
+        "arithmetic_mean_tick": 198142,
+        "delta_tick": 59442648,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2484.7113,
+        "arithmetic_mean_tick": 198141,
+        "delta_tick": 11888460,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 5,
+      "target_timestamp": 1788902015,
+      "target_utc": "2026-09-08T21:13:35+00:00",
+      "block_number": 25935260,
+      "block_hash": "0xc27a9b0804b69a62fb8f61ab32a8bdd96fcb196a1349a8027707a08c560fda2f",
+      "block_timestamp": 1788902015,
+      "block_utc": "2026-09-08T21:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2486.10384,
+        "status": "ok",
+        "eth_usd": 2485.78,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248578000000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788901931,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 84,
+        "usdc_age_seconds": 47592,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2483.860802,
+        "raw_rate": 2483860802,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2485.705334,
+        "arithmetic_mean_tick": 198137,
+        "delta_tick": 59441256,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2485.456788,
+        "arithmetic_mean_tick": 198138,
+        "delta_tick": 11888280,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 6,
+      "target_timestamp": 1788902615,
+      "target_utc": "2026-09-08T21:23:35+00:00",
+      "block_number": 25935310,
+      "block_hash": "0x2486b3101bad6a06ccac8d2b250b64008ed2eba3a5d893dce64d3629b863fc0c",
+      "block_timestamp": 1788902615,
+      "block_utc": "2026-09-08T21:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2486.10384,
+        "status": "ok",
+        "eth_usd": 2485.78,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248578000000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788901931,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 684,
+        "usdc_age_seconds": 48192,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2483.238942,
+        "raw_rate": 2483238942,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2484.959771,
+        "arithmetic_mean_tick": 198140,
+        "delta_tick": 59442000,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2483.966036,
+        "arithmetic_mean_tick": 198144,
+        "delta_tick": 11888652,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 7,
+      "target_timestamp": 1788903215,
+      "target_utc": "2026-09-08T21:33:35+00:00",
+      "block_number": 25935360,
+      "block_hash": "0x68c9044e90d8ed96a1a0942cf68be72f73be219243710127f668301746113c57",
+      "block_timestamp": 1788903215,
+      "block_utc": "2026-09-08T21:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2486.10384,
+        "status": "ok",
+        "eth_usd": 2485.78,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248578000000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788901931,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1284,
+        "usdc_age_seconds": 48792,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2482.736686,
+        "raw_rate": 2482736686,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2484.214432,
+        "arithmetic_mean_tick": 198143,
+        "delta_tick": 59443080,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2483.220995,
+        "arithmetic_mean_tick": 198147,
+        "delta_tick": 11888832,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 8,
+      "target_timestamp": 1788903815,
+      "target_utc": "2026-09-08T21:43:35+00:00",
+      "block_number": 25935410,
+      "block_hash": "0xde3a8ea7cd616fcf7cd39b6b10d92c417c2caf8a7bda1fb06ef356467d37f512",
+      "block_timestamp": 1788903815,
+      "block_utc": "2026-09-08T21:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2486.10384,
+        "status": "ok",
+        "eth_usd": 2485.78,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248578000000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788901931,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1884,
+        "usdc_age_seconds": 49392,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2482.708722,
+        "raw_rate": 2482708722,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2482.724425,
+        "arithmetic_mean_tick": 198149,
+        "delta_tick": 59444940,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2482.724425,
+        "arithmetic_mean_tick": 198149,
+        "delta_tick": 11888976,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 9,
+      "target_timestamp": 1788904415,
+      "target_utc": "2026-09-08T21:53:35+00:00",
+      "block_number": 25935460,
+      "block_hash": "0x6fc6524d067c645e1f778e34575296abb86812994b43f9aa42cb509f4751c2ba",
+      "block_timestamp": 1788904415,
+      "block_utc": "2026-09-08T21:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2486.10384,
+        "status": "ok",
+        "eth_usd": 2485.78,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248578000000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788901931,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 2484,
+        "usdc_age_seconds": 49992,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2482.237972,
+        "raw_rate": 2482237972,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2482.476177,
+        "arithmetic_mean_tick": 198150,
+        "delta_tick": 59445204,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2480.739139,
+        "arithmetic_mean_tick": 198157,
+        "delta_tick": 11889420,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 10,
+      "target_timestamp": 1788905015,
+      "target_utc": "2026-09-08T22:03:35+00:00",
+      "block_number": 25935510,
+      "block_hash": "0xc70ac3e817ae944d73ba3b424341ef94f7c55d2d7bccc457d2cc9bcbde522382",
+      "block_timestamp": 1788905015,
+      "block_utc": "2026-09-08T22:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2486.10384,
+        "status": "ok",
+        "eth_usd": 2485.78,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248578000000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788901931,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 3084,
+        "usdc_age_seconds": 50592,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2484.350817,
+        "raw_rate": 2484350817,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2483.469317,
+        "arithmetic_mean_tick": 198146,
+        "delta_tick": 59443812,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2486.202499,
+        "arithmetic_mean_tick": 198135,
+        "delta_tick": 11888148,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 11,
+      "target_timestamp": 1788905615,
+      "target_utc": "2026-09-08T22:13:35+00:00",
+      "block_number": 25935560,
+      "block_hash": "0xe1b7895dd1066bb7bea2244ac54246019204f968ae50dd42306e624b09eba25c",
+      "block_timestamp": 1788905615,
+      "block_utc": "2026-09-08T22:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2483.243067,
+        "status": "ok",
+        "eth_usd": 2482.9196,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248291960000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788905567,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 48,
+        "usdc_age_seconds": 51192,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2482.794074,
+        "raw_rate": 2482794074,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2483.220995,
+        "arithmetic_mean_tick": 198147,
+        "delta_tick": 59444208,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2482.724425,
+        "arithmetic_mean_tick": 198149,
+        "delta_tick": 11888940,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 12,
+      "target_timestamp": 1788906215,
+      "target_utc": "2026-09-08T22:23:35+00:00",
+      "block_number": 25935610,
+      "block_hash": "0x95625cb28766c5bd54cb5f69da75b4fd19726d588db00b0b26bb1f2810ad2f5a",
+      "block_timestamp": 1788906215,
+      "block_utc": "2026-09-08T22:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2483.243067,
+        "status": "ok",
+        "eth_usd": 2482.9196,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248291960000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788905567,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 648,
+        "usdc_age_seconds": 51792,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2483.546863,
+        "raw_rate": 2483546863,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2484.959771,
+        "arithmetic_mean_tick": 198140,
+        "delta_tick": 59442168,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2485.456788,
+        "arithmetic_mean_tick": 198138,
+        "delta_tick": 11888280,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 13,
+      "target_timestamp": 1788906815,
+      "target_utc": "2026-09-08T22:33:35+00:00",
+      "block_number": 25935658,
+      "block_hash": "0xd7f640aff86d5cf9470425d4c206540d4158b97136a64bf5cf29cbb5f92edead",
+      "block_timestamp": 1788906815,
+      "block_utc": "2026-09-08T22:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2483.243067,
+        "status": "ok",
+        "eth_usd": 2482.9196,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248291960000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788905567,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1248,
+        "usdc_age_seconds": 52392,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2483.618706,
+        "raw_rate": 2483618706,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2484.959771,
+        "arithmetic_mean_tick": 198140,
+        "delta_tick": 59442144,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2484.7113,
+        "arithmetic_mean_tick": 198141,
+        "delta_tick": 11888460,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 14,
+      "target_timestamp": 1788907415,
+      "target_utc": "2026-09-08T22:43:35+00:00",
+      "block_number": 25935708,
+      "block_hash": "0xbbe5568a01441a60ef5214859e6c29946e3805ca9162283e1a644ab1dacab37e",
+      "block_timestamp": 1788907415,
+      "block_utc": "2026-09-08T22:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2483.243067,
+        "status": "ok",
+        "eth_usd": 2482.9196,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248291960000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788905567,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1848,
+        "usdc_age_seconds": 52992,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2483.917531,
+        "raw_rate": 2483917531,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2484.7113,
+        "arithmetic_mean_tick": 198141,
+        "delta_tick": 59442456,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2485.953904,
+        "arithmetic_mean_tick": 198136,
+        "delta_tick": 11888208,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 15,
+      "target_timestamp": 1788908015,
+      "target_utc": "2026-09-08T22:53:35+00:00",
+      "block_number": 25935758,
+      "block_hash": "0x7ba54ae298188b156fcf812784df7541ad0e54e6674050491cdac8d9f7e8a56b",
+      "block_timestamp": 1788908015,
+      "block_utc": "2026-09-08T22:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2483.243067,
+        "status": "ok",
+        "eth_usd": 2482.9196,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248291960000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788905567,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 2448,
+        "usdc_age_seconds": 53592,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2484.192728,
+        "raw_rate": 2484192728,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2486.45112,
+        "arithmetic_mean_tick": 198134,
+        "delta_tick": 59440404,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2486.948435,
+        "arithmetic_mean_tick": 198132,
+        "delta_tick": 11887920,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 16,
+      "target_timestamp": 1788908615,
+      "target_utc": "2026-09-08T23:03:35+00:00",
+      "block_number": 25935808,
+      "block_hash": "0x8d03c9ef78ed323f1aedd9ab6915d98042ac3cf9b03f05ee85f64ef8a9e8b176",
+      "block_timestamp": 1788908615,
+      "block_utc": "2026-09-08T23:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2483.243067,
+        "status": "ok",
+        "eth_usd": 2482.9196,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248291960000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788905567,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 3048,
+        "usdc_age_seconds": 54192,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2485.198679,
+        "raw_rate": 2485198679,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2489.187584,
+        "arithmetic_mean_tick": 198123,
+        "delta_tick": 59436924,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2489.187584,
+        "arithmetic_mean_tick": 198123,
+        "delta_tick": 11887404,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 17,
+      "target_timestamp": 1788909215,
+      "target_utc": "2026-09-08T23:13:35+00:00",
+      "block_number": 25935858,
+      "block_hash": "0xf02a3ab866807ff9685b49051089e8e6868dfeb49ec3600b210b03062aaec3aa",
+      "block_timestamp": 1788909215,
+      "block_utc": "2026-09-08T23:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2486.403592,
+        "status": "ok",
+        "eth_usd": 2486.0797134,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248607971340,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788909191,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 24,
+        "usdc_age_seconds": 54792,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2484.059192,
+        "raw_rate": 2484059192,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2486.699765,
+        "arithmetic_mean_tick": 198133,
+        "delta_tick": 59439984,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2485.705334,
+        "arithmetic_mean_tick": 198137,
+        "delta_tick": 11888232,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 18,
+      "target_timestamp": 1788909815,
+      "target_utc": "2026-09-08T23:23:35+00:00",
+      "block_number": 25935908,
+      "block_hash": "0x7790f02ff6f88f871d87eb4b508e2c129513651d3f3b3ddfbd74124c57c9e492",
+      "block_timestamp": 1788909815,
+      "block_utc": "2026-09-08T23:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2486.403592,
+        "status": "ok",
+        "eth_usd": 2486.0797134,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248607971340,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788909191,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 624,
+        "usdc_age_seconds": 55392,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2483.4086,
+        "raw_rate": 2483408600,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2484.462854,
+        "arithmetic_mean_tick": 198142,
+        "delta_tick": 59442636,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2484.214432,
+        "arithmetic_mean_tick": 198143,
+        "delta_tick": 11888580,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 19,
+      "target_timestamp": 1788910415,
+      "target_utc": "2026-09-08T23:33:35+00:00",
+      "block_number": 25935958,
+      "block_hash": "0x10d11850dfc6102d67a5d3fcdd566249c2c93c34ecfa2f9c76c86255e9401882",
+      "block_timestamp": 1788910415,
+      "block_utc": "2026-09-08T23:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2486.403592,
+        "status": "ok",
+        "eth_usd": 2486.0797134,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248607971340,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788909191,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1224,
+        "usdc_age_seconds": 55992,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2482.877099,
+        "raw_rate": 2482877099,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2484.214432,
+        "arithmetic_mean_tick": 198143,
+        "delta_tick": 59443188,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2484.214432,
+        "arithmetic_mean_tick": 198143,
+        "delta_tick": 11888628,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 20,
+      "target_timestamp": 1788911015,
+      "target_utc": "2026-09-08T23:43:35+00:00",
+      "block_number": 25936007,
+      "block_hash": "0x98445f644853778eec09f420ca9c240d98ceb34e6e555016a93687cd9093919d",
+      "block_timestamp": 1788911015,
+      "block_utc": "2026-09-08T23:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2486.403592,
+        "status": "ok",
+        "eth_usd": 2486.0797134,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248607971340,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788909191,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1824,
+        "usdc_age_seconds": 56592,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2483.328831,
+        "raw_rate": 2483328831,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2484.7113,
+        "arithmetic_mean_tick": 198141,
+        "delta_tick": 59442300,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2484.7113,
+        "arithmetic_mean_tick": 198141,
+        "delta_tick": 11888460,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 21,
+      "target_timestamp": 1788911615,
+      "target_utc": "2026-09-08T23:53:35+00:00",
+      "block_number": 25936057,
+      "block_hash": "0xf9b5d5af398e6abb10828ce5b5721845fa15696a9de970315ec668b2795b1bf8",
+      "block_timestamp": 1788911615,
+      "block_utc": "2026-09-08T23:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2486.403592,
+        "status": "ok",
+        "eth_usd": 2486.0797134,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248607971340,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788909191,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 2424,
+        "usdc_age_seconds": 57192,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2483.370814,
+        "raw_rate": 2483370814,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2485.208267,
+        "arithmetic_mean_tick": 198139,
+        "delta_tick": 59441772,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2485.208267,
+        "arithmetic_mean_tick": 198139,
+        "delta_tick": 11888340,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 22,
+      "target_timestamp": 1788912215,
+      "target_utc": "2026-09-09T00:03:35+00:00",
+      "block_number": 25936107,
+      "block_hash": "0x123b5b652598bf631f2bfb50aafba7fa15b321105b5ff68cd283caf5fd42d57c",
+      "block_timestamp": 1788912215,
+      "block_utc": "2026-09-09T00:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2486.403592,
+        "status": "ok",
+        "eth_usd": 2486.0797134,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248607971340,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788909191,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 3024,
+        "usdc_age_seconds": 57792,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2484.868907,
+        "raw_rate": 2484868907,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2485.705334,
+        "arithmetic_mean_tick": 198137,
+        "delta_tick": 59441232,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2487.19713,
+        "arithmetic_mean_tick": 198131,
+        "delta_tick": 11887860,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 23,
+      "target_timestamp": 1788912815,
+      "target_utc": "2026-09-09T00:13:35+00:00",
+      "block_number": 25936157,
+      "block_hash": "0x7aa4cbddf271a4609dadedac9d61ed5a3e594217b29dd81a7fbc417101f83e4a",
+      "block_timestamp": 1788912815,
+      "block_utc": "2026-09-09T00:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2486.403592,
+        "status": "ok",
+        "eth_usd": 2486.0797134,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248607971340,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788909191,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 3624,
+        "usdc_age_seconds": 58392,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2488.56151,
+        "raw_rate": 2488561510,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2492.674713,
+        "arithmetic_mean_tick": 198109,
+        "delta_tick": 59432952,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2493.671932,
+        "arithmetic_mean_tick": 198105,
+        "delta_tick": 11886300,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 24,
+      "target_timestamp": 1788913415,
+      "target_utc": "2026-09-09T00:23:35+00:00",
+      "block_number": 25936207,
+      "block_hash": "0x4ac028da6a87f9818b8275e379afc52d01ef1422409800646ffda7a293f8865b",
+      "block_timestamp": 1788913415,
+      "block_utc": "2026-09-09T00:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.0999,
+        "status": "ok",
+        "eth_usd": 2493.77501845,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249377501845,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788912851,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 564,
+        "usdc_age_seconds": 58992,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2488.521544,
+        "raw_rate": 2488521544,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2493.173272,
+        "arithmetic_mean_tick": 198107,
+        "delta_tick": 59432364,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2491.92706,
+        "arithmetic_mean_tick": 198112,
+        "delta_tick": 11886720,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 25,
+      "target_timestamp": 1788914015,
+      "target_utc": "2026-09-09T00:33:35+00:00",
+      "block_number": 25936256,
+      "block_hash": "0x14c5e1f43bdaedb2942c1dd2904490d16d5d44211b0cebf424f77c9c906a75c9",
+      "block_timestamp": 1788914015,
+      "block_utc": "2026-09-09T00:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.0999,
+        "status": "ok",
+        "eth_usd": 2493.77501845,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249377501845,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788912851,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1164,
+        "usdc_age_seconds": 59592,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2487.000523,
+        "raw_rate": 2487000523,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2490.432427,
+        "arithmetic_mean_tick": 198118,
+        "delta_tick": 59435508,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2489.934415,
+        "arithmetic_mean_tick": 198120,
+        "delta_tick": 11887212,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 26,
+      "target_timestamp": 1788914615,
+      "target_utc": "2026-09-09T00:43:35+00:00",
+      "block_number": 25936306,
+      "block_hash": "0x3cfde3805af4f3be7be5693642bd8381ecef142288557ef769632af7cf577257",
+      "block_timestamp": 1788914615,
+      "block_utc": "2026-09-09T00:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.0999,
+        "status": "ok",
+        "eth_usd": 2493.77501845,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249377501845,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788912851,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1764,
+        "usdc_age_seconds": 60192,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2487.311112,
+        "raw_rate": 2487311112,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2490.432427,
+        "arithmetic_mean_tick": 198118,
+        "delta_tick": 59435532,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2490.432427,
+        "arithmetic_mean_tick": 198118,
+        "delta_tick": 11887080,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 27,
+      "target_timestamp": 1788915215,
+      "target_utc": "2026-09-09T00:53:35+00:00",
+      "block_number": 25936356,
+      "block_hash": "0xf1b2ccfae32dbe1f6344c2b78c3d2a2b60ee40f984abb65abf63fc1e66f1ed39",
+      "block_timestamp": 1788915215,
+      "block_utc": "2026-09-09T00:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.0999,
+        "status": "ok",
+        "eth_usd": 2493.77501845,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249377501845,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788912851,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 2364,
+        "usdc_age_seconds": 60792,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2490.055191,
+        "raw_rate": 2490055191,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2495.667568,
+        "arithmetic_mean_tick": 198097,
+        "delta_tick": 59429328,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2495.418026,
+        "arithmetic_mean_tick": 198098,
+        "delta_tick": 11885880,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 28,
+      "target_timestamp": 1788915815,
+      "target_utc": "2026-09-09T01:03:35+00:00",
+      "block_number": 25936406,
+      "block_hash": "0x0c4e0c3286510f25d180878ca2e8b438a55caa347ae8196fd074b6720d2527b9",
+      "block_timestamp": 1788915815,
+      "block_utc": "2026-09-09T01:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.0999,
+        "status": "ok",
+        "eth_usd": 2493.77501845,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249377501845,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788912851,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 2964,
+        "usdc_age_seconds": 61392,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2490.72724,
+        "raw_rate": 2490727240,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2496.416343,
+        "arithmetic_mean_tick": 198094,
+        "delta_tick": 59428464,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2495.917135,
+        "arithmetic_mean_tick": 198096,
+        "delta_tick": 11885808,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 29,
+      "target_timestamp": 1788916415,
+      "target_utc": "2026-09-09T01:13:35+00:00",
+      "block_number": 25936456,
+      "block_hash": "0xa3245cc4a344f65270efd44e82560ec8e44b92ebc0d37642b5330be701b273ce",
+      "block_timestamp": 1788916415,
+      "block_utc": "2026-09-09T01:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.0999,
+        "status": "ok",
+        "eth_usd": 2493.77501845,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249377501845,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788912851,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 3564,
+        "usdc_age_seconds": 61992,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2490.556019,
+        "raw_rate": 2490556019,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2496.416343,
+        "arithmetic_mean_tick": 198094,
+        "delta_tick": 59428488,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2496.665985,
+        "arithmetic_mean_tick": 198093,
+        "delta_tick": 11885616,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 30,
+      "target_timestamp": 1788917015,
+      "target_utc": "2026-09-09T01:23:35+00:00",
+      "block_number": 25936506,
+      "block_hash": "0x51bffc342d35b6fe0ae6d077d83169a808e4954b8ddd54a89677af0737e7c958",
+      "block_timestamp": 1788917015,
+      "block_utc": "2026-09-09T01:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.83036,
+        "status": "ok",
+        "eth_usd": 2494.50538346,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249450538346,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788916487,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 528,
+        "usdc_age_seconds": 62592,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2489.49724,
+        "raw_rate": 2489497240,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2491.428749,
+        "arithmetic_mean_tick": 198114,
+        "delta_tick": 59434332,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2490.68147,
+        "arithmetic_mean_tick": 198117,
+        "delta_tick": 11887020,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 31,
+      "target_timestamp": 1788917615,
+      "target_utc": "2026-09-09T01:33:35+00:00",
+      "block_number": 25936556,
+      "block_hash": "0xa8f2c9a0497fd6087b08ac8caa846365d0d771c2c00d72f957b790f3c5d46df0",
+      "block_timestamp": 1788917615,
+      "block_utc": "2026-09-09T01:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.83036,
+        "status": "ok",
+        "eth_usd": 2494.50538346,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249450538346,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788916487,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1128,
+        "usdc_age_seconds": 63192,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2489.283591,
+        "raw_rate": 2489283591,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2492.176252,
+        "arithmetic_mean_tick": 198111,
+        "delta_tick": 59433336,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2491.677892,
+        "arithmetic_mean_tick": 198113,
+        "delta_tick": 11886780,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 32,
+      "target_timestamp": 1788918215,
+      "target_utc": "2026-09-09T01:43:35+00:00",
+      "block_number": 25936606,
+      "block_hash": "0x821fba1a92c6b0ec726c57c8f847c7ba582b3586c893740e8b0c7e77db4f769a",
+      "block_timestamp": 1788918215,
+      "block_utc": "2026-09-09T01:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.83036,
+        "status": "ok",
+        "eth_usd": 2494.50538346,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249450538346,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788916487,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1728,
+        "usdc_age_seconds": 63792,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2491.98479,
+        "raw_rate": 2491984790,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2497.165343,
+        "arithmetic_mean_tick": 198091,
+        "delta_tick": 59427456,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2496.416343,
+        "arithmetic_mean_tick": 198094,
+        "delta_tick": 11885640,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 33,
+      "target_timestamp": 1788918815,
+      "target_utc": "2026-09-09T01:53:35+00:00",
+      "block_number": 25936655,
+      "block_hash": "0x92d082fea45f90b90be19e41f827312d2dd7b7cf886c8e2b301da43f1e357bd4",
+      "block_timestamp": 1788918815,
+      "block_utc": "2026-09-09T01:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.83036,
+        "status": "ok",
+        "eth_usd": 2494.50538346,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249450538346,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788916487,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 2328,
+        "usdc_age_seconds": 64392,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2491.967488,
+        "raw_rate": 2491967488,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2497.914567,
+        "arithmetic_mean_tick": 198088,
+        "delta_tick": 59426556,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2496.915651,
+        "arithmetic_mean_tick": 198092,
+        "delta_tick": 11885520,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 34,
+      "target_timestamp": 1788919415,
+      "target_utc": "2026-09-09T02:03:35+00:00",
+      "block_number": 25936704,
+      "block_hash": "0x4f106ab16c6586389d1d51096f37cd8a94fc9ad52000c2a7f5b6eb385042825e",
+      "block_timestamp": 1788919415,
+      "block_utc": "2026-09-09T02:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.83036,
+        "status": "ok",
+        "eth_usd": 2494.50538346,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249450538346,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788916487,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 2928,
+        "usdc_age_seconds": 64992,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2492.392273,
+        "raw_rate": 2492392273,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2497.914567,
+        "arithmetic_mean_tick": 198088,
+        "delta_tick": 59426664,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2497.914567,
+        "arithmetic_mean_tick": 198088,
+        "delta_tick": 11885280,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 35,
+      "target_timestamp": 1788920015,
+      "target_utc": "2026-09-09T02:13:35+00:00",
+      "block_number": 25936753,
+      "block_hash": "0xa6c01c3818fada9e7e5ac95e41f9be6fe4416dfe3c66ebb992c9179dd0abf352",
+      "block_timestamp": 1788920015,
+      "block_utc": "2026-09-09T02:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.83036,
+        "status": "ok",
+        "eth_usd": 2494.50538346,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249450538346,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788916487,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 3528,
+        "usdc_age_seconds": 65592,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2491.620821,
+        "raw_rate": 2491620821,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2497.415059,
+        "arithmetic_mean_tick": 198090,
+        "delta_tick": 59427144,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2496.166726,
+        "arithmetic_mean_tick": 198095,
+        "delta_tick": 11885724,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 36,
+      "target_timestamp": 1788920615,
+      "target_utc": "2026-09-09T02:23:35+00:00",
+      "block_number": 25936803,
+      "block_hash": "0x1aa0ae4725dfe519821df9c9d689314fddea05c5f68714e2993e16e86d079fba",
+      "block_timestamp": 1788920615,
+      "block_utc": "2026-09-09T02:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.935227,
+        "status": "ok",
+        "eth_usd": 2494.61023656,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249461023656,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788920111,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 504,
+        "usdc_age_seconds": 66192,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2490.364569,
+        "raw_rate": 2490364569,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2493.173272,
+        "arithmetic_mean_tick": 198107,
+        "delta_tick": 59432124,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2492.674713,
+        "arithmetic_mean_tick": 198109,
+        "delta_tick": 11886540,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 37,
+      "target_timestamp": 1788921215,
+      "target_utc": "2026-09-09T02:33:35+00:00",
+      "block_number": 25936853,
+      "block_hash": "0xa2dcde768f02f711c61da905a483aa32a8fd7bc45e8038d4d3c14848adb96ae0",
+      "block_timestamp": 1788921215,
+      "block_utc": "2026-09-09T02:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.935227,
+        "status": "ok",
+        "eth_usd": 2494.61023656,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249461023656,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788920111,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1104,
+        "usdc_age_seconds": 66792,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2491.98652,
+        "raw_rate": 2491986520,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2495.917135,
+        "arithmetic_mean_tick": 198096,
+        "delta_tick": 59428800,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2495.917135,
+        "arithmetic_mean_tick": 198096,
+        "delta_tick": 11885760,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 38,
+      "target_timestamp": 1788921815,
+      "target_utc": "2026-09-09T02:43:35+00:00",
+      "block_number": 25936903,
+      "block_hash": "0x498079ac03a3946c36392ce65740fa82597d34a2266e60ebb93a6574895dcf49",
+      "block_timestamp": 1788921815,
+      "block_utc": "2026-09-09T02:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.935227,
+        "status": "ok",
+        "eth_usd": 2494.61023656,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249461023656,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788920111,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1704,
+        "usdc_age_seconds": 67392,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2491.945753,
+        "raw_rate": 2491945753,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2494.919017,
+        "arithmetic_mean_tick": 198100,
+        "delta_tick": 59430276,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2494.919017,
+        "arithmetic_mean_tick": 198100,
+        "delta_tick": 11886012,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 39,
+      "target_timestamp": 1788922415,
+      "target_utc": "2026-09-09T02:53:35+00:00",
+      "block_number": 25936953,
+      "block_hash": "0x4801cc36fd79fd303b6014c685b3ebfa37402b739de07bf11fbb0db5ad4f0a43",
+      "block_timestamp": 1788922415,
+      "block_utc": "2026-09-09T02:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.935227,
+        "status": "ok",
+        "eth_usd": 2494.61023656,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249461023656,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788920111,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 2304,
+        "usdc_age_seconds": 67992,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2491.992304,
+        "raw_rate": 2491992304,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2496.166726,
+        "arithmetic_mean_tick": 198095,
+        "delta_tick": 59428500,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2496.166726,
+        "arithmetic_mean_tick": 198095,
+        "delta_tick": 11885700,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 40,
+      "target_timestamp": 1788923015,
+      "target_utc": "2026-09-09T03:03:35+00:00",
+      "block_number": 25937003,
+      "block_hash": "0x8d516811af319b858fc2cf98eab2dfd1cbbb02c490dcbc15cc3f832d86b46ae6",
+      "block_timestamp": 1788923015,
+      "block_utc": "2026-09-09T03:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.935227,
+        "status": "ok",
+        "eth_usd": 2494.61023656,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249461023656,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788920111,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 2904,
+        "usdc_age_seconds": 68592,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2490.272177,
+        "raw_rate": 2490272177,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2494.170691,
+        "arithmetic_mean_tick": 198103,
+        "delta_tick": 59431128,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2492.42547,
+        "arithmetic_mean_tick": 198110,
+        "delta_tick": 11886600,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 41,
+      "target_timestamp": 1788923615,
+      "target_utc": "2026-09-09T03:13:35+00:00",
+      "block_number": 25937052,
+      "block_hash": "0x5226bc0c7602a36b51e3bffbc4684817a283095b274410546117676208882ed5",
+      "block_timestamp": 1788923615,
+      "block_utc": "2026-09-09T03:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.935227,
+        "status": "ok",
+        "eth_usd": 2494.61023656,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249461023656,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788920111,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 3504,
+        "usdc_age_seconds": 69192,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2488.617967,
+        "raw_rate": 2488617967,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2490.432427,
+        "arithmetic_mean_tick": 198118,
+        "delta_tick": 59435424,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2489.436503,
+        "arithmetic_mean_tick": 198122,
+        "delta_tick": 11887368,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 42,
+      "target_timestamp": 1788924215,
+      "target_utc": "2026-09-09T03:23:35+00:00",
+      "block_number": 25937102,
+      "block_hash": "0x13aa616682fb7b37ba2ce1c6c0d745fdff6a70e7f927190a6c86e2aafdb00f39",
+      "block_timestamp": 1788924215,
+      "block_utc": "2026-09-09T03:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2487.784059,
+        "status": "ok",
+        "eth_usd": 2487.46,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248746000000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788923711,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 504,
+        "usdc_age_seconds": 69792,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2488.610319,
+        "raw_rate": 2488610319,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2488.689821,
+        "arithmetic_mean_tick": 198125,
+        "delta_tick": 59437500,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2488.689821,
+        "arithmetic_mean_tick": 198125,
+        "delta_tick": 11887500,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 43,
+      "target_timestamp": 1788924815,
+      "target_utc": "2026-09-09T03:33:35+00:00",
+      "block_number": 25937152,
+      "block_hash": "0x9bda37db6e3daae20422a345018d151ef2e551921516eebaff0d68194208daf9",
+      "block_timestamp": 1788924815,
+      "block_utc": "2026-09-09T03:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2487.784059,
+        "status": "ok",
+        "eth_usd": 2487.46,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248746000000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788923711,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1104,
+        "usdc_age_seconds": 70392,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2488.416183,
+        "raw_rate": 2488416183,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2487.943363,
+        "arithmetic_mean_tick": 198128,
+        "delta_tick": 59438568,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2487.943363,
+        "arithmetic_mean_tick": 198128,
+        "delta_tick": 11887716,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 44,
+      "target_timestamp": 1788925415,
+      "target_utc": "2026-09-09T03:43:35+00:00",
+      "block_number": 25937201,
+      "block_hash": "0xef419394f8cb27240887f53647f872c81b7e0a7f120347dc7a87fbf3cf72d8ed",
+      "block_timestamp": 1788925415,
+      "block_utc": "2026-09-09T03:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2487.784059,
+        "status": "ok",
+        "eth_usd": 2487.46,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248746000000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788923711,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1704,
+        "usdc_age_seconds": 70992,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2489.115549,
+        "raw_rate": 2489115549,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2489.436503,
+        "arithmetic_mean_tick": 198122,
+        "delta_tick": 59436612,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2490.432427,
+        "arithmetic_mean_tick": 198118,
+        "delta_tick": 11887080,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 45,
+      "target_timestamp": 1788926015,
+      "target_utc": "2026-09-09T03:53:35+00:00",
+      "block_number": 25937251,
+      "block_hash": "0xdf1acf1f00862d642cfeddc47675d7055ada6f9588839f055fcf1981706a46d1",
+      "block_timestamp": 1788926015,
+      "block_utc": "2026-09-09T03:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2487.784059,
+        "status": "ok",
+        "eth_usd": 2487.46,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248746000000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788923711,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 2304,
+        "usdc_age_seconds": 71592,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2488.650548,
+        "raw_rate": 2488650548,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2490.183408,
+        "arithmetic_mean_tick": 198119,
+        "delta_tick": 59435868,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2488.440977,
+        "arithmetic_mean_tick": 198126,
+        "delta_tick": 11887572,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 46,
+      "target_timestamp": 1788926615,
+      "target_utc": "2026-09-09T04:03:35+00:00",
+      "block_number": 25937301,
+      "block_hash": "0xa029d6131773198e3673de05f399381c18aa1334f5da758b5a129a655e29b392",
+      "block_timestamp": 1788926615,
+      "block_utc": "2026-09-09T04:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2487.784059,
+        "status": "ok",
+        "eth_usd": 2487.46,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 248746000000,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788923711,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 2904,
+        "usdc_age_seconds": 72192,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2494.083434,
+        "raw_rate": 2494083434,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2494.170691,
+        "arithmetic_mean_tick": 198103,
+        "delta_tick": 59430972,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2500.16359,
+        "arithmetic_mean_tick": 198079,
+        "delta_tick": 11884776,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 47,
+      "target_timestamp": 1788927215,
+      "target_utc": "2026-09-09T04:13:35+00:00",
+      "block_number": 25937351,
+      "block_hash": "0x0640a291688860af34c1eb78ebecbd5ea619eadd0bd342180ccd6ef5eacb4714",
+      "block_timestamp": 1788927215,
+      "block_utc": "2026-09-09T04:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2501.923616,
+        "status": "ok",
+        "eth_usd": 2501.5977156,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 250159771560,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788926687,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 528,
+        "usdc_age_seconds": 72792,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2493.58769,
+        "raw_rate": 2493587690,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2496.915651,
+        "arithmetic_mean_tick": 198092,
+        "delta_tick": 59427636,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2496.416343,
+        "arithmetic_mean_tick": 198094,
+        "delta_tick": 11885676,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 48,
+      "target_timestamp": 1788927815,
+      "target_utc": "2026-09-09T04:23:35+00:00",
+      "block_number": 25937401,
+      "block_hash": "0xdaa53e653630adac3cbfa125fc223b80d483c89f79358e7dfdec05ae3e0d391f",
+      "block_timestamp": 1788927815,
+      "block_utc": "2026-09-09T04:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2501.923616,
+        "status": "ok",
+        "eth_usd": 2501.5977156,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 250159771560,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788926687,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1128,
+        "usdc_age_seconds": 73392,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2493.807513,
+        "raw_rate": 2493807513,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2496.166726,
+        "arithmetic_mean_tick": 198095,
+        "delta_tick": 59428776,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2497.664801,
+        "arithmetic_mean_tick": 198089,
+        "delta_tick": 11885376,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 49,
+      "target_timestamp": 1788928415,
+      "target_utc": "2026-09-09T04:33:35+00:00",
+      "block_number": 25937451,
+      "block_hash": "0xe54fb5ceea01aa3052a0d9af5a2b228e31b9237b8c23ac82d78a397e40c41503",
+      "block_timestamp": 1788928415,
+      "block_utc": "2026-09-09T04:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2501.923616,
+        "status": "ok",
+        "eth_usd": 2501.5977156,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 250159771560,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788926687,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1728,
+        "usdc_age_seconds": 73992,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2493.767726,
+        "raw_rate": 2493767726,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2497.664801,
+        "arithmetic_mean_tick": 198089,
+        "delta_tick": 59426952,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2496.915651,
+        "arithmetic_mean_tick": 198092,
+        "delta_tick": 11885520,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 50,
+      "target_timestamp": 1788929015,
+      "target_utc": "2026-09-09T04:43:35+00:00",
+      "block_number": 25937501,
+      "block_hash": "0xbc74fecdc0f9c618c1398cda0f6a428d6b530e5a8b040a0101a8bd26126439f4",
+      "block_timestamp": 1788929015,
+      "block_utc": "2026-09-09T04:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2501.923616,
+        "status": "ok",
+        "eth_usd": 2501.5977156,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 250159771560,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788926687,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 2328,
+        "usdc_age_seconds": 74592,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2493.839388,
+        "raw_rate": 2493839388,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2497.914567,
+        "arithmetic_mean_tick": 198088,
+        "delta_tick": 59426568,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2497.914567,
+        "arithmetic_mean_tick": 198088,
+        "delta_tick": 11885316,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 51,
+      "target_timestamp": 1788929615,
+      "target_utc": "2026-09-09T04:53:35+00:00",
+      "block_number": 25937551,
+      "block_hash": "0xd317baf63941537ec9160dd3eda4bacfd58d42c78242705a7ba510b6630277fe",
+      "block_timestamp": 1788929615,
+      "block_utc": "2026-09-09T04:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2501.923616,
+        "status": "ok",
+        "eth_usd": 2501.5977156,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 250159771560,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788926687,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 2928,
+        "usdc_age_seconds": 75192,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2503.160466,
+        "raw_rate": 2503160466,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2508.678187,
+        "arithmetic_mean_tick": 198045,
+        "delta_tick": 59413536,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2510.18377,
+        "arithmetic_mean_tick": 198039,
+        "delta_tick": 11882340,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 52,
+      "target_timestamp": 1788930215,
+      "target_utc": "2026-09-09T05:03:35+00:00",
+      "block_number": 25937601,
+      "block_hash": "0x0d85ffd4635988bc13282ac300628388067da8aec543f6b3b76f8845fb2d3f85",
+      "block_timestamp": 1788930215,
+      "block_utc": "2026-09-09T05:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2501.923616,
+        "status": "ok",
+        "eth_usd": 2501.5977156,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 250159771560,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788926687,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 3528,
+        "usdc_age_seconds": 75792,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2502.201303,
+        "raw_rate": 2502201303,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2507.925734,
+        "arithmetic_mean_tick": 198048,
+        "delta_tick": 59414436,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2506.421505,
+        "arithmetic_mean_tick": 198054,
+        "delta_tick": 11883288,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 53,
+      "target_timestamp": 1788930815,
+      "target_utc": "2026-09-09T05:13:35+00:00",
+      "block_number": 25937651,
+      "block_hash": "0x89e6a095f76a055bb380dba8fa9a6d054335e19c71cdd2790c669cbaef170ab3",
+      "block_timestamp": 1788930815,
+      "block_utc": "2026-09-09T05:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2504.682882,
+        "status": "ok",
+        "eth_usd": 2504.35662194,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 250435662194,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788930323,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 492,
+        "usdc_age_seconds": 76392,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2501.848269,
+        "raw_rate": 2501848269,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2505.16867,
+        "arithmetic_mean_tick": 198059,
+        "delta_tick": 59417700,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2505.16867,
+        "arithmetic_mean_tick": 198059,
+        "delta_tick": 11883540,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 54,
+      "target_timestamp": 1788931415,
+      "target_utc": "2026-09-09T05:23:35+00:00",
+      "block_number": 25937700,
+      "block_hash": "0x730e430addd3821f1c9ef74d6bb03dad70490a9a5016136b87b4d002f274c08c",
+      "block_timestamp": 1788931415,
+      "block_utc": "2026-09-09T05:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2504.682882,
+        "status": "ok",
+        "eth_usd": 2504.35662194,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 250435662194,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788930323,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1092,
+        "usdc_age_seconds": 76992,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2502.291156,
+        "raw_rate": 2502291156,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2508.176527,
+        "arithmetic_mean_tick": 198047,
+        "delta_tick": 59414352,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2505.920296,
+        "arithmetic_mean_tick": 198056,
+        "delta_tick": 11883360,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 55,
+      "target_timestamp": 1788932015,
+      "target_utc": "2026-09-09T05:33:35+00:00",
+      "block_number": 25937750,
+      "block_hash": "0x94e04c247aaf19b0c6d79b17e2778506216b6fd673754f5182c0f68812c59420",
+      "block_timestamp": 1788932015,
+      "block_utc": "2026-09-09T05:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2504.682882,
+        "status": "ok",
+        "eth_usd": 2504.35662194,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 250435662194,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788930323,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1692,
+        "usdc_age_seconds": 77592,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2497.522664,
+        "raw_rate": 2497522664,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2500.913714,
+        "arithmetic_mean_tick": 198076,
+        "delta_tick": 59423016,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2496.915651,
+        "arithmetic_mean_tick": 198092,
+        "delta_tick": 11885556,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 56,
+      "target_timestamp": 1788932615,
+      "target_utc": "2026-09-09T05:43:35+00:00",
+      "block_number": 25937800,
+      "block_hash": "0xdba823c8d695495e25b9870bbb82088dfe3484a95f4428c94b5f3822310bd6e8",
+      "block_timestamp": 1788932615,
+      "block_utc": "2026-09-09T05:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2504.682882,
+        "status": "ok",
+        "eth_usd": 2504.35662194,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 250435662194,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788930323,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 2292,
+        "usdc_age_seconds": 78192,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2495.729549,
+        "raw_rate": 2495729549,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2495.917135,
+        "arithmetic_mean_tick": 198096,
+        "delta_tick": 59428836,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2494.66955,
+        "arithmetic_mean_tick": 198101,
+        "delta_tick": 11886060,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 57,
+      "target_timestamp": 1788933215,
+      "target_utc": "2026-09-09T05:53:35+00:00",
+      "block_number": 25937850,
+      "block_hash": "0x0c5f54ab60bc67eef99c265accda1faeced24f7a72522e6b0a307e557b57ca91",
+      "block_timestamp": 1788933215,
+      "block_utc": "2026-09-09T05:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2491.785434,
+        "status": "ok",
+        "eth_usd": 2491.46085391,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249146085391,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788932807,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 408,
+        "usdc_age_seconds": 78792,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2493.653935,
+        "raw_rate": 2493653935,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2492.92398,
+        "arithmetic_mean_tick": 198108,
+        "delta_tick": 59432652,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2493.42259,
+        "arithmetic_mean_tick": 198106,
+        "delta_tick": 11886360,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 58,
+      "target_timestamp": 1788933815,
+      "target_utc": "2026-09-09T06:03:35+00:00",
+      "block_number": 25937899,
+      "block_hash": "0xfaa780dca371ffd2d7305f59d802aa94ee3d94639af625d4b85b10a32352f672",
+      "block_timestamp": 1788933815,
+      "block_utc": "2026-09-09T06:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2491.785434,
+        "status": "ok",
+        "eth_usd": 2491.46085391,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249146085391,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788932807,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1008,
+        "usdc_age_seconds": 79392,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2494.843818,
+        "raw_rate": 2494843818,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2495.667568,
+        "arithmetic_mean_tick": 198097,
+        "delta_tick": 59429388,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2495.418026,
+        "arithmetic_mean_tick": 198098,
+        "delta_tick": 11885880,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 59,
+      "target_timestamp": 1788934415,
+      "target_utc": "2026-09-09T06:13:35+00:00",
+      "block_number": 25937949,
+      "block_hash": "0xc37af1f1e0b0b7659adc463ce3db7aa9393494a503f4d828a9fb91f0dde185b2",
+      "block_timestamp": 1788934415,
+      "block_utc": "2026-09-09T06:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2491.785434,
+        "status": "ok",
+        "eth_usd": 2491.46085391,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249146085391,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788932807,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1608,
+        "usdc_age_seconds": 79992,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2496.418559,
+        "raw_rate": 2496418559,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2497.165343,
+        "arithmetic_mean_tick": 198091,
+        "delta_tick": 59427384,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2499.413691,
+        "arithmetic_mean_tick": 198082,
+        "delta_tick": 11884920,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 60,
+      "target_timestamp": 1788935015,
+      "target_utc": "2026-09-09T06:23:35+00:00",
+      "block_number": 25937999,
+      "block_hash": "0x7ee5e03f787fc15a338a34e5bb789784503bb9570b2bcb3a9a0521eeca386615",
+      "block_timestamp": 1788935015,
+      "block_utc": "2026-09-09T06:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2491.785434,
+        "status": "ok",
+        "eth_usd": 2491.46085391,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 249146085391,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788932807,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 2208,
+        "usdc_age_seconds": 80592,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2498.272895,
+        "raw_rate": 2498272895,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2501.664063,
+        "arithmetic_mean_tick": 198073,
+        "delta_tick": 59422164,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2502.164421,
+        "arithmetic_mean_tick": 198071,
+        "delta_tick": 11884296,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 61,
+      "target_timestamp": 1788935615,
+      "target_utc": "2026-09-09T06:33:35+00:00",
+      "block_number": 25938048,
+      "block_hash": "0xf143f9988199037938e4dff57aaf24301a4c26770aefc0ec64774954cbf2dbe4",
+      "block_timestamp": 1788935615,
+      "block_utc": "2026-09-09T06:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2504.286939,
+        "status": "ok",
+        "eth_usd": 2503.96073036,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 250396073036,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788935027,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 588,
+        "usdc_age_seconds": 81192,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2496.743707,
+        "raw_rate": 2496743707,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2500.16359,
+        "arithmetic_mean_tick": 198079,
+        "delta_tick": 59423748,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2499.663632,
+        "arithmetic_mean_tick": 198081,
+        "delta_tick": 11884884,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 62,
+      "target_timestamp": 1788936215,
+      "target_utc": "2026-09-09T06:43:35+00:00",
+      "block_number": 25938098,
+      "block_hash": "0x87c7000aff2c3f0cade833541757d4b2e733b3c88895335c1cb175e274e12aa8",
+      "block_timestamp": 1788936215,
+      "block_utc": "2026-09-09T06:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2504.286939,
+        "status": "ok",
+        "eth_usd": 2503.96073036,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 250396073036,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788935027,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1188,
+        "usdc_age_seconds": 81792,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2497.039645,
+        "raw_rate": 2497039645,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2500.663648,
+        "arithmetic_mean_tick": 198077,
+        "delta_tick": 59423124,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2500.663648,
+        "arithmetic_mean_tick": 198077,
+        "delta_tick": 11884620,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 63,
+      "target_timestamp": 1788936815,
+      "target_utc": "2026-09-09T06:53:35+00:00",
+      "block_number": 25938148,
+      "block_hash": "0xbf8c164bb44c47a7a777a2e6cae25b3d4658af3a8e9cb81f7db9ef49de93897f",
+      "block_timestamp": 1788936815,
+      "block_utc": "2026-09-09T06:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2504.286939,
+        "status": "ok",
+        "eth_usd": 2503.96073036,
+        "usdc_usd": 0.99986974,
+        "eth_raw_answer": 250396073036,
+        "usdc_raw_answer": 99986974,
+        "eth_updated_at": 1788935027,
+        "usdc_updated_at": 1788854423,
+        "eth_age_seconds": 1788,
+        "usdc_age_seconds": 82392,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2496.917869,
+        "raw_rate": 2496917869,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2500.16359,
+        "arithmetic_mean_tick": 198079,
+        "delta_tick": 59423808,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2499.413691,
+        "arithmetic_mean_tick": 198082,
+        "delta_tick": 11884920,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 64,
+      "target_timestamp": 1788937415,
+      "target_utc": "2026-09-09T07:03:35+00:00",
+      "block_number": 25938198,
+      "block_hash": "0xcc30a6813721a694cac4dc52f5bd934c45a5d737e703ace30b250b747d9af6cd",
+      "block_timestamp": 1788937415,
+      "block_utc": "2026-09-09T07:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2504.241982,
+        "status": "ok",
+        "eth_usd": 2503.96073036,
+        "usdc_usd": 0.99988769,
+        "eth_raw_answer": 250396073036,
+        "usdc_raw_answer": 99988769,
+        "eth_updated_at": 1788935027,
+        "usdc_updated_at": 1788937235,
+        "eth_age_seconds": 2388,
+        "usdc_age_seconds": 180,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2496.977824,
+        "raw_rate": 2496977824,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2500.413606,
+        "arithmetic_mean_tick": 198078,
+        "delta_tick": 59423592,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2500.16359,
+        "arithmetic_mean_tick": 198079,
+        "delta_tick": 11884740,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 65,
+      "target_timestamp": 1788938015,
+      "target_utc": "2026-09-09T07:13:35+00:00",
+      "block_number": 25938248,
+      "block_hash": "0xfafcdc385a84bda6e28ae94acf34fb85d73c24fc9d4efc89e712010a14db87a7",
+      "block_timestamp": 1788938015,
+      "block_utc": "2026-09-09T07:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2504.241982,
+        "status": "ok",
+        "eth_usd": 2503.96073036,
+        "usdc_usd": 0.99988769,
+        "eth_raw_answer": 250396073036,
+        "usdc_raw_answer": 99988769,
+        "eth_updated_at": 1788935027,
+        "usdc_updated_at": 1788937235,
+        "eth_age_seconds": 2988,
+        "usdc_age_seconds": 780,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2507.350614,
+        "raw_rate": 2507350614,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2513.951683,
+        "arithmetic_mean_tick": 198024,
+        "delta_tick": 59407464,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2513.448968,
+        "arithmetic_mean_tick": 198026,
+        "delta_tick": 11881584,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 66,
+      "target_timestamp": 1788938615,
+      "target_utc": "2026-09-09T07:23:35+00:00",
+      "block_number": 25938298,
+      "block_hash": "0x376ef44da85ce51d342889a9aa0353fffd1464dc094f4aa990c743223f400741",
+      "block_timestamp": 1788938615,
+      "block_utc": "2026-09-09T07:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2504.241982,
+        "status": "ok",
+        "eth_usd": 2503.96073036,
+        "usdc_usd": 0.99988769,
+        "eth_raw_answer": 250396073036,
+        "usdc_raw_answer": 99988769,
+        "eth_updated_at": 1788935027,
+        "usdc_updated_at": 1788937235,
+        "eth_age_seconds": 3588,
+        "usdc_age_seconds": 1380,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2505.72954,
+        "raw_rate": 2505729540,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2511.439113,
+        "arithmetic_mean_tick": 198034,
+        "delta_tick": 59410428,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2511.941426,
+        "arithmetic_mean_tick": 198032,
+        "delta_tick": 11881944,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 67,
+      "target_timestamp": 1788939215,
+      "target_utc": "2026-09-09T07:33:35+00:00",
+      "block_number": 25938347,
+      "block_hash": "0x2095a38459a5af2d74734d2d3cfc264f2d12d6c7266cf2c155c18618fccea527",
+      "block_timestamp": 1788939203,
+      "block_utc": "2026-09-09T07:33:23+00:00",
+      "diff_seconds": 12,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2511.535771,
+        "status": "ok",
+        "eth_usd": 2511.2537,
+        "usdc_usd": 0.99988769,
+        "eth_raw_answer": 251125370000,
+        "usdc_raw_answer": 99988769,
+        "eth_updated_at": 1788938639,
+        "usdc_updated_at": 1788937235,
+        "eth_age_seconds": 564,
+        "usdc_age_seconds": 1968,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2508.138878,
+        "raw_rate": 2508138878,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2514.705944,
+        "arithmetic_mean_tick": 198021,
+        "delta_tick": 59406444,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2514.705944,
+        "arithmetic_mean_tick": 198021,
+        "delta_tick": 11881260,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 68,
+      "target_timestamp": 1788939815,
+      "target_utc": "2026-09-09T07:43:35+00:00",
+      "block_number": 25938397,
+      "block_hash": "0xfc9edee23c4358cd2e2baae9b2f9f6c04d9279b61fc85d257450dcec1d3ba3df",
+      "block_timestamp": 1788939815,
+      "block_utc": "2026-09-09T07:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2511.535771,
+        "status": "ok",
+        "eth_usd": 2511.2537,
+        "usdc_usd": 0.99988769,
+        "eth_raw_answer": 251125370000,
+        "usdc_raw_answer": 99988769,
+        "eth_updated_at": 1788938639,
+        "usdc_updated_at": 1788937235,
+        "eth_age_seconds": 1176,
+        "usdc_age_seconds": 2580,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2507.432054,
+        "raw_rate": 2507432054,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2513.448968,
+        "arithmetic_mean_tick": 198026,
+        "delta_tick": 59407884,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2513.197648,
+        "arithmetic_mean_tick": 198027,
+        "delta_tick": 11881620,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 69,
+      "target_timestamp": 1788940415,
+      "target_utc": "2026-09-09T07:53:35+00:00",
+      "block_number": 25938447,
+      "block_hash": "0x7ae790faafcb59dd8173cdd43926bcfbf2565be875b1e07673a34ecd64e391ec",
+      "block_timestamp": 1788940415,
+      "block_utc": "2026-09-09T07:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2511.535771,
+        "status": "ok",
+        "eth_usd": 2511.2537,
+        "usdc_usd": 0.99988769,
+        "eth_raw_answer": 251125370000,
+        "usdc_raw_answer": 99988769,
+        "eth_updated_at": 1788938639,
+        "usdc_updated_at": 1788937235,
+        "eth_age_seconds": 1776,
+        "usdc_age_seconds": 3180,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2506.681249,
+        "raw_rate": 2506681249,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2511.187994,
+        "arithmetic_mean_tick": 198035,
+        "delta_tick": 59410560,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2510.685832,
+        "arithmetic_mean_tick": 198037,
+        "delta_tick": 11882244,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 70,
+      "target_timestamp": 1788941015,
+      "target_utc": "2026-09-09T08:03:35+00:00",
+      "block_number": 25938497,
+      "block_hash": "0x958420107c3cedc4adbfc1761ac367746156530b056bac903824147f46c3ab14",
+      "block_timestamp": 1788941015,
+      "block_utc": "2026-09-09T08:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2510.390245,
+        "status": "ok",
+        "eth_usd": 2510.10187611,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 251010187611,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788940823,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 192,
+        "usdc_age_seconds": 180,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2507.781056,
+        "raw_rate": 2507781056,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2511.187994,
+        "arithmetic_mean_tick": 198035,
+        "delta_tick": 59410524,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2514.705944,
+        "arithmetic_mean_tick": 198021,
+        "delta_tick": 11881272,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 71,
+      "target_timestamp": 1788941615,
+      "target_utc": "2026-09-09T08:13:35+00:00",
+      "block_number": 25938547,
+      "block_hash": "0x7d7eda515e0eb2fe504ea5d0c4bdfb1796e9f0d5109e97970f18b5022aec5021",
+      "block_timestamp": 1788941615,
+      "block_utc": "2026-09-09T08:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2510.390245,
+        "status": "ok",
+        "eth_usd": 2510.10187611,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 251010187611,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788940823,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 792,
+        "usdc_age_seconds": 780,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2510.470101,
+        "raw_rate": 2510470101,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2516.718413,
+        "arithmetic_mean_tick": 198013,
+        "delta_tick": 59404104,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2517.221782,
+        "arithmetic_mean_tick": 198011,
+        "delta_tick": 11880660,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 72,
+      "target_timestamp": 1788942215,
+      "target_utc": "2026-09-09T08:23:35+00:00",
+      "block_number": 25938597,
+      "block_hash": "0xe425789df1ae4e88ea99d45393ecbd3561f7e24d79649b67a19abf150f2ff8b7",
+      "block_timestamp": 1788942215,
+      "block_utc": "2026-09-09T08:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2510.390245,
+        "status": "ok",
+        "eth_usd": 2510.10187611,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 251010187611,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788940823,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1392,
+        "usdc_age_seconds": 1380,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2512.034677,
+        "raw_rate": 2512034677,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2517.473504,
+        "arithmetic_mean_tick": 198010,
+        "delta_tick": 59403288,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2518.984366,
+        "arithmetic_mean_tick": 198004,
+        "delta_tick": 11880240,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 73,
+      "target_timestamp": 1788942815,
+      "target_utc": "2026-09-09T08:33:35+00:00",
+      "block_number": 25938647,
+      "block_hash": "0x3550d9f0705c9bac702d965548acd9fd4a2c953f8c98788939dd16088748c01e",
+      "block_timestamp": 1788942815,
+      "block_utc": "2026-09-09T08:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2510.390245,
+        "status": "ok",
+        "eth_usd": 2510.10187611,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 251010187611,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788940823,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1992,
+        "usdc_age_seconds": 1980,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2513.529204,
+        "raw_rate": 2513529204,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2519.99211,
+        "arithmetic_mean_tick": 198000,
+        "delta_tick": 59400276,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2520.748184,
+        "arithmetic_mean_tick": 197997,
+        "delta_tick": 11879820,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 74,
+      "target_timestamp": 1788943415,
+      "target_utc": "2026-09-09T08:43:35+00:00",
+      "block_number": 25938696,
+      "block_hash": "0x5b2dd2319607aaf28a4e1f434235f8562a4937e88c258768f80fd5e0fc7048b6",
+      "block_timestamp": 1788943415,
+      "block_utc": "2026-09-09T08:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2510.390245,
+        "status": "ok",
+        "eth_usd": 2510.10187611,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 251010187611,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788940823,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 2592,
+        "usdc_age_seconds": 2580,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2513.218887,
+        "raw_rate": 2513218887,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2518.480644,
+        "arithmetic_mean_tick": 198006,
+        "delta_tick": 59401836,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2518.984366,
+        "arithmetic_mean_tick": 198004,
+        "delta_tick": 11880240,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 75,
+      "target_timestamp": 1788944015,
+      "target_utc": "2026-09-09T08:53:35+00:00",
+      "block_number": 25938746,
+      "block_hash": "0xa644bb1e24b014a45176526e859dc2bf3d9392a0292f8041600b7eaa874f8f13",
+      "block_timestamp": 1788944015,
+      "block_utc": "2026-09-09T08:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2510.390245,
+        "status": "ok",
+        "eth_usd": 2510.10187611,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 251010187611,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788940823,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 3192,
+        "usdc_age_seconds": 3180,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2512.770236,
+        "raw_rate": 2512770236,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2517.473504,
+        "arithmetic_mean_tick": 198010,
+        "delta_tick": 59403048,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2517.977024,
+        "arithmetic_mean_tick": 198008,
+        "delta_tick": 11880528,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 76,
+      "target_timestamp": 1788944615,
+      "target_utc": "2026-09-09T09:03:35+00:00",
+      "block_number": 25938796,
+      "block_hash": "0x7dad262b0b8921682fdb8032da1f4d87686f748d22bf3fc9127596bf4f48582c",
+      "block_timestamp": 1788944615,
+      "block_utc": "2026-09-09T09:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2518.799334,
+        "status": "ok",
+        "eth_usd": 2518.51,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 251851000000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788944459,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 156,
+        "usdc_age_seconds": 3780,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2513.675158,
+        "raw_rate": 2513675158,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2519.488188,
+        "arithmetic_mean_tick": 198002,
+        "delta_tick": 59400684,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2518.984366,
+        "arithmetic_mean_tick": 198004,
+        "delta_tick": 11880240,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 77,
+      "target_timestamp": 1788945215,
+      "target_utc": "2026-09-09T09:13:35+00:00",
+      "block_number": 25938845,
+      "block_hash": "0x262ac7f0b6ad1ce53e0f56a2ed3342a29eda5e05f37396482e9650f99d1bf390",
+      "block_timestamp": 1788945215,
+      "block_utc": "2026-09-09T09:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2518.799334,
+        "status": "ok",
+        "eth_usd": 2518.51,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 251851000000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788944459,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 756,
+        "usdc_age_seconds": 4380,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2511.372903,
+        "raw_rate": 2511372903,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2513.197648,
+        "arithmetic_mean_tick": 198027,
+        "delta_tick": 59408388,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2511.690257,
+        "arithmetic_mean_tick": 198033,
+        "delta_tick": 11881980,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 78,
+      "target_timestamp": 1788945815,
+      "target_utc": "2026-09-09T09:23:35+00:00",
+      "block_number": 25938895,
+      "block_hash": "0x8a4f163cfe4d89b9cb6d5314201928a0e2ce161e46ffac1acb2652e342085897",
+      "block_timestamp": 1788945815,
+      "block_utc": "2026-09-09T09:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2518.799334,
+        "status": "ok",
+        "eth_usd": 2518.51,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 251851000000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788944459,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1356,
+        "usdc_age_seconds": 4980,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2510.952082,
+        "raw_rate": 2510952082,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2511.187994,
+        "arithmetic_mean_tick": 198035,
+        "delta_tick": 59410560,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2510.685832,
+        "arithmetic_mean_tick": 198037,
+        "delta_tick": 11882220,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 79,
+      "target_timestamp": 1788946415,
+      "target_utc": "2026-09-09T09:33:35+00:00",
+      "block_number": 25938945,
+      "block_hash": "0x717460b487e68519a2f6b99aa1e66b2dacd08b87aac929a786df0c40d46eeb6e",
+      "block_timestamp": 1788946415,
+      "block_utc": "2026-09-09T09:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2518.799334,
+        "status": "ok",
+        "eth_usd": 2518.51,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 251851000000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788944459,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1956,
+        "usdc_age_seconds": 5580,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2508.805014,
+        "raw_rate": 2508805014,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2509.179948,
+        "arithmetic_mean_tick": 198043,
+        "delta_tick": 59412996,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2508.427344,
+        "arithmetic_mean_tick": 198046,
+        "delta_tick": 11882760,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 80,
+      "target_timestamp": 1788947015,
+      "target_utc": "2026-09-09T09:43:35+00:00",
+      "block_number": 25938995,
+      "block_hash": "0xb0675a6012e01719d4593ddbc684616a7d1cbcc88f854b02e7c07e8d64882130",
+      "block_timestamp": 1788947015,
+      "block_utc": "2026-09-09T09:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2505.208419,
+        "status": "ok",
+        "eth_usd": 2504.92064568,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 250492064568,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788946559,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 456,
+        "usdc_age_seconds": 6180,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2496.800033,
+        "raw_rate": 2496800033,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2499.913599,
+        "arithmetic_mean_tick": 198080,
+        "delta_tick": 59424288,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2495.917135,
+        "arithmetic_mean_tick": 198096,
+        "delta_tick": 11885808,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 81,
+      "target_timestamp": 1788947615,
+      "target_utc": "2026-09-09T09:53:35+00:00",
+      "block_number": 25939045,
+      "block_hash": "0x53843ee5d49d2b23fe9a7fdffb391275b4b817ff7d85896ac7fa93013d3ea916",
+      "block_timestamp": 1788947615,
+      "block_utc": "2026-09-09T09:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2505.208419,
+        "status": "ok",
+        "eth_usd": 2504.92064568,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 250492064568,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788946559,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1056,
+        "usdc_age_seconds": 6780,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2496.31516,
+        "raw_rate": 2496315160,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2494.420108,
+        "arithmetic_mean_tick": 198102,
+        "delta_tick": 59430840,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2494.66955,
+        "arithmetic_mean_tick": 198101,
+        "delta_tick": 11886060,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 82,
+      "target_timestamp": 1788948215,
+      "target_utc": "2026-09-09T10:03:35+00:00",
+      "block_number": 25939095,
+      "block_hash": "0x8b3f429b788726d864afc272ff90e4a54f1077cda7b90770dc5b4b2f044b7b50",
+      "block_timestamp": 1788948215,
+      "block_utc": "2026-09-09T10:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2492.642938,
+        "status": "ok",
+        "eth_usd": 2492.35660834,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249235660834,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788947735,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 480,
+        "usdc_age_seconds": 7380,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2493.963978,
+        "raw_rate": 2493963978,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2491.677892,
+        "arithmetic_mean_tick": 198113,
+        "delta_tick": 59434056,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2491.677892,
+        "arithmetic_mean_tick": 198113,
+        "delta_tick": 11886780,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 83,
+      "target_timestamp": 1788948815,
+      "target_utc": "2026-09-09T10:13:35+00:00",
+      "block_number": 25939145,
+      "block_hash": "0x6248e8233f921bf362a4db5446c7039641aa66fc918373df6562a6a5bd12f265",
+      "block_timestamp": 1788948815,
+      "block_utc": "2026-09-09T10:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2492.642938,
+        "status": "ok",
+        "eth_usd": 2492.35660834,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249235660834,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788947735,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1080,
+        "usdc_age_seconds": 7980,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2493.697733,
+        "raw_rate": 2493697733,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2491.92706,
+        "arithmetic_mean_tick": 198112,
+        "delta_tick": 59433684,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2491.92706,
+        "arithmetic_mean_tick": 198112,
+        "delta_tick": 11886720,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 84,
+      "target_timestamp": 1788949415,
+      "target_utc": "2026-09-09T10:23:35+00:00",
+      "block_number": 25939195,
+      "block_hash": "0x45b847d444e4aff23873be9b3831aafa8fd8068952e14fd8e5e97a2d8b2295b5",
+      "block_timestamp": 1788949415,
+      "block_utc": "2026-09-09T10:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2492.642938,
+        "status": "ok",
+        "eth_usd": 2492.35660834,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249235660834,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788947735,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1680,
+        "usdc_age_seconds": 8580,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2492.85851,
+        "raw_rate": 2492858510,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2491.179631,
+        "arithmetic_mean_tick": 198115,
+        "delta_tick": 59434656,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2491.92706,
+        "arithmetic_mean_tick": 198112,
+        "delta_tick": 11886720,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 85,
+      "target_timestamp": 1788950015,
+      "target_utc": "2026-09-09T10:33:35+00:00",
+      "block_number": 25939244,
+      "block_hash": "0xff3ea5f167f7e479e02f5c855964d1df5b47c021cf9117b28c734325b55ecb27",
+      "block_timestamp": 1788950015,
+      "block_utc": "2026-09-09T10:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2492.642938,
+        "status": "ok",
+        "eth_usd": 2492.35660834,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249235660834,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788947735,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 2280,
+        "usdc_age_seconds": 9180,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2492.874005,
+        "raw_rate": 2492874005,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2491.428749,
+        "arithmetic_mean_tick": 198114,
+        "delta_tick": 59434236,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2491.677892,
+        "arithmetic_mean_tick": 198113,
+        "delta_tick": 11886780,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 86,
+      "target_timestamp": 1788950615,
+      "target_utc": "2026-09-09T10:43:35+00:00",
+      "block_number": 25939294,
+      "block_hash": "0xff86c9bd4882de2f90f9903fcd2c313a0ce311de71ad46251ae48f9caca6e23e",
+      "block_timestamp": 1788950615,
+      "block_utc": "2026-09-09T10:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2492.642938,
+        "status": "ok",
+        "eth_usd": 2492.35660834,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249235660834,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788947735,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 2880,
+        "usdc_age_seconds": 9780,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2492.600371,
+        "raw_rate": 2492600371,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2491.677892,
+        "arithmetic_mean_tick": 198113,
+        "delta_tick": 59434044,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2490.68147,
+        "arithmetic_mean_tick": 198117,
+        "delta_tick": 11887020,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 87,
+      "target_timestamp": 1788951215,
+      "target_utc": "2026-09-09T10:53:35+00:00",
+      "block_number": 25939344,
+      "block_hash": "0x97381fa18ec1db104d39c02b3f2c620eabb6c46c67bf1171cd0ca3db5743dfc1",
+      "block_timestamp": 1788951215,
+      "block_utc": "2026-09-09T10:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2492.642938,
+        "status": "ok",
+        "eth_usd": 2492.35660834,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249235660834,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788947735,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 3480,
+        "usdc_age_seconds": 10380,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2486.879153,
+        "raw_rate": 2486879153,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2486.948435,
+        "arithmetic_mean_tick": 198132,
+        "delta_tick": 59439660,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2484.214432,
+        "arithmetic_mean_tick": 198143,
+        "delta_tick": 11888580,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 88,
+      "target_timestamp": 1788951815,
+      "target_utc": "2026-09-09T11:03:35+00:00",
+      "block_number": 25939394,
+      "block_hash": "0x08ce00ae77780eb4a31246c7f4a74e240b9e23bb8cd55d4222dcca085911b3f1",
+      "block_timestamp": 1788951815,
+      "block_utc": "2026-09-09T11:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2485.242719,
+        "status": "ok",
+        "eth_usd": 2484.95723901,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 248495723901,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788951359,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 456,
+        "usdc_age_seconds": 10980,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2486.838168,
+        "raw_rate": 2486838168,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2486.45112,
+        "arithmetic_mean_tick": 198134,
+        "delta_tick": 59440272,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2484.462854,
+        "arithmetic_mean_tick": 198142,
+        "delta_tick": 11888520,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 89,
+      "target_timestamp": 1788952415,
+      "target_utc": "2026-09-09T11:13:35+00:00",
+      "block_number": 25939444,
+      "block_hash": "0x126815e23a14bbd52e6f3155c9b56f82c1a7992023a972de64bc1146d183780d",
+      "block_timestamp": 1788952415,
+      "block_utc": "2026-09-09T11:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2485.242719,
+        "status": "ok",
+        "eth_usd": 2484.95723901,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 248495723901,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788951359,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1056,
+        "usdc_age_seconds": 11580,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2488.013962,
+        "raw_rate": 2488013962,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2485.953904,
+        "arithmetic_mean_tick": 198136,
+        "delta_tick": 59440944,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2486.699765,
+        "arithmetic_mean_tick": 198133,
+        "delta_tick": 11887980,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 90,
+      "target_timestamp": 1788953015,
+      "target_utc": "2026-09-09T11:23:35+00:00",
+      "block_number": 25939493,
+      "block_hash": "0xdcd7e866ee67e97127d5f16e3d7baac742e05620a2c748f1db6fc07fd23f5b50",
+      "block_timestamp": 1788953015,
+      "block_utc": "2026-09-09T11:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2485.242719,
+        "status": "ok",
+        "eth_usd": 2484.95723901,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 248495723901,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788951359,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1656,
+        "usdc_age_seconds": 12180,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2487.695684,
+        "raw_rate": 2487695684,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2485.456788,
+        "arithmetic_mean_tick": 198138,
+        "delta_tick": 59441604,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2485.705334,
+        "arithmetic_mean_tick": 198137,
+        "delta_tick": 11888244,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 91,
+      "target_timestamp": 1788953615,
+      "target_utc": "2026-09-09T11:33:35+00:00",
+      "block_number": 25939543,
+      "block_hash": "0x5af1b024e450cb0eb7cde3f5c5ff46eb95b4248b1cb0bac58539b74f3593f03d",
+      "block_timestamp": 1788953615,
+      "block_utc": "2026-09-09T11:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2485.242719,
+        "status": "ok",
+        "eth_usd": 2484.95723901,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 248495723901,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788951359,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 2256,
+        "usdc_age_seconds": 12780,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2490.338123,
+        "raw_rate": 2490338123,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2491.677892,
+        "arithmetic_mean_tick": 198113,
+        "delta_tick": 59434188,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2491.677892,
+        "arithmetic_mean_tick": 198113,
+        "delta_tick": 11886828,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 92,
+      "target_timestamp": 1788954215,
+      "target_utc": "2026-09-09T11:43:35+00:00",
+      "block_number": 25939593,
+      "block_hash": "0xb4c52c5ed74f570d596f96bbda483119be7aab4627a958a016d16b34d7862f20",
+      "block_timestamp": 1788954215,
+      "block_utc": "2026-09-09T11:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2485.242719,
+        "status": "ok",
+        "eth_usd": 2484.95723901,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 248495723901,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788951359,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 2856,
+        "usdc_age_seconds": 13380,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2490.983015,
+        "raw_rate": 2490983015,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2493.173272,
+        "arithmetic_mean_tick": 198107,
+        "delta_tick": 59432136,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2492.92398,
+        "arithmetic_mean_tick": 198108,
+        "delta_tick": 11886516,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 93,
+      "target_timestamp": 1788954815,
+      "target_utc": "2026-09-09T11:53:35+00:00",
+      "block_number": 25939643,
+      "block_hash": "0xce336a0ddc62c96580393f46c3876de2c11377de282de6b78748eeab93e9656c",
+      "block_timestamp": 1788954815,
+      "block_utc": "2026-09-09T11:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2498.53413,
+        "status": "ok",
+        "eth_usd": 2498.24712289,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249824712289,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788954575,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 240,
+        "usdc_age_seconds": 13980,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2498.427196,
+        "raw_rate": 2498427196,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2499.413691,
+        "arithmetic_mean_tick": 198082,
+        "delta_tick": 59424744,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2502.414637,
+        "arithmetic_mean_tick": 198070,
+        "delta_tick": 11884248,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 94,
+      "target_timestamp": 1788955415,
+      "target_utc": "2026-09-09T12:03:35+00:00",
+      "block_number": 25939693,
+      "block_hash": "0x5c48eb71ba3c4516191aca300eb571fc69d995c9f7e0be88d731eb93b2a90a22",
+      "block_timestamp": 1788955415,
+      "block_utc": "2026-09-09T12:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2498.53413,
+        "status": "ok",
+        "eth_usd": 2498.24712289,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249824712289,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788954575,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 840,
+        "usdc_age_seconds": 14580,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2498.35326,
+        "raw_rate": 2498353260,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2501.163805,
+        "arithmetic_mean_tick": 198075,
+        "delta_tick": 59422764,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2500.663648,
+        "arithmetic_mean_tick": 198077,
+        "delta_tick": 11884620,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 95,
+      "target_timestamp": 1788956015,
+      "target_utc": "2026-09-09T12:13:35+00:00",
+      "block_number": 25939742,
+      "block_hash": "0x8cf294c9818daa25b30b017fb3b8bfcef2da7ec1b36eca50434f30c968ad8aca",
+      "block_timestamp": 1788956015,
+      "block_utc": "2026-09-09T12:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2498.53413,
+        "status": "ok",
+        "eth_usd": 2498.24712289,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249824712289,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788954575,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1440,
+        "usdc_age_seconds": 15180,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2498.421759,
+        "raw_rate": 2498421759,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2501.664063,
+        "arithmetic_mean_tick": 198073,
+        "delta_tick": 59422008,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2501.413922,
+        "arithmetic_mean_tick": 198074,
+        "delta_tick": 11884440,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 96,
+      "target_timestamp": 1788956615,
+      "target_utc": "2026-09-09T12:23:35+00:00",
+      "block_number": 25939790,
+      "block_hash": "0x9ddbed33f2e43181398f54d6e844691ca8605fe07befafeaa9b6190a5855630d",
+      "block_timestamp": 1788956615,
+      "block_utc": "2026-09-09T12:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2498.53413,
+        "status": "ok",
+        "eth_usd": 2498.24712289,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249824712289,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788954575,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 2040,
+        "usdc_age_seconds": 15780,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2498.20903,
+        "raw_rate": 2498209030,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2500.16359,
+        "arithmetic_mean_tick": 198079,
+        "delta_tick": 59423868,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2500.663648,
+        "arithmetic_mean_tick": 198077,
+        "delta_tick": 11884668,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 97,
+      "target_timestamp": 1788957215,
+      "target_utc": "2026-09-09T12:33:35+00:00",
+      "block_number": 25939840,
+      "block_hash": "0x43b30456b60d6da3746dc5126f2ff916d11d29240bc5d6162fc1477cce325e8b",
+      "block_timestamp": 1788957215,
+      "block_utc": "2026-09-09T12:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2498.53413,
+        "status": "ok",
+        "eth_usd": 2498.24712289,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249824712289,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788954575,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 2640,
+        "usdc_age_seconds": 16380,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2499.720631,
+        "raw_rate": 2499720631,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2501.91423,
+        "arithmetic_mean_tick": 198072,
+        "delta_tick": 59421840,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2504.166853,
+        "arithmetic_mean_tick": 198063,
+        "delta_tick": 11883804,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 98,
+      "target_timestamp": 1788957815,
+      "target_utc": "2026-09-09T12:43:35+00:00",
+      "block_number": 25939890,
+      "block_hash": "0x70f40da63e4f39e9f463a3a24950e274861eac612b4ade6fae8c6f14e01b916e",
+      "block_timestamp": 1788957815,
+      "block_utc": "2026-09-09T12:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2498.53413,
+        "status": "ok",
+        "eth_usd": 2498.24712289,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249824712289,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788954575,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 3240,
+        "usdc_age_seconds": 16980,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2503.363687,
+        "raw_rate": 2503363687,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2507.674967,
+        "arithmetic_mean_tick": 198049,
+        "delta_tick": 59414856,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2508.929055,
+        "arithmetic_mean_tick": 198044,
+        "delta_tick": 11882652,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 99,
+      "target_timestamp": 1788958415,
+      "target_utc": "2026-09-09T12:53:35+00:00",
+      "block_number": 25939940,
+      "block_hash": "0x6b6fe81c242a9afa0fbd9967b6dffacebefc490f023fbbeea39e070748565d74",
+      "block_timestamp": 1788958415,
+      "block_utc": "2026-09-09T12:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2511.812479,
+        "status": "ok",
+        "eth_usd": 2511.52394666,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 251152394666,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788958043,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 372,
+        "usdc_age_seconds": 17580,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2505.697712,
+        "raw_rate": 2505697712,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2510.685832,
+        "arithmetic_mean_tick": 198037,
+        "delta_tick": 59411340,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2510.936901,
+        "arithmetic_mean_tick": 198036,
+        "delta_tick": 11882196,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 100,
+      "target_timestamp": 1788959015,
+      "target_utc": "2026-09-09T13:03:35+00:00",
+      "block_number": 25939990,
+      "block_hash": "0x09b85a8509ba28e463938d5cd589db4b6c59d32224d73b340cb4295d8b876267",
+      "block_timestamp": 1788959015,
+      "block_utc": "2026-09-09T13:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2511.812479,
+        "status": "ok",
+        "eth_usd": 2511.52394666,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 251152394666,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788958043,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 972,
+        "usdc_age_seconds": 18180,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2505.657971,
+        "raw_rate": 2505657971,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2509.932777,
+        "arithmetic_mean_tick": 198040,
+        "delta_tick": 59412252,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2509.179948,
+        "arithmetic_mean_tick": 198043,
+        "delta_tick": 11882592,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 101,
+      "target_timestamp": 1788959615,
+      "target_utc": "2026-09-09T13:13:35+00:00",
+      "block_number": 25940040,
+      "block_hash": "0xd2eed1885951cf3b023a43db6b6fce2a48aa994bd70578439be687d3b4cf8926",
+      "block_timestamp": 1788959615,
+      "block_utc": "2026-09-09T13:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2511.812479,
+        "status": "ok",
+        "eth_usd": 2511.52394666,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 251152394666,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788958043,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1572,
+        "usdc_age_seconds": 18780,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2507.094793,
+        "raw_rate": 2507094793,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2511.941426,
+        "arithmetic_mean_tick": 198032,
+        "delta_tick": 59409720,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2511.690257,
+        "arithmetic_mean_tick": 198033,
+        "delta_tick": 11881980,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 102,
+      "target_timestamp": 1788960215,
+      "target_utc": "2026-09-09T13:23:35+00:00",
+      "block_number": 25940090,
+      "block_hash": "0xb40fe2505e75c3b95a67b30e6b0bb157ee926a0fbf5539d2e3c5353e413a4ca6",
+      "block_timestamp": 1788960215,
+      "block_utc": "2026-09-09T13:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2511.812479,
+        "status": "ok",
+        "eth_usd": 2511.52394666,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 251152394666,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788958043,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 2172,
+        "usdc_age_seconds": 19380,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2507.321057,
+        "raw_rate": 2507321057,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2512.695084,
+        "arithmetic_mean_tick": 198029,
+        "delta_tick": 59408760,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2513.197648,
+        "arithmetic_mean_tick": 198027,
+        "delta_tick": 11881620,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 103,
+      "target_timestamp": 1788960815,
+      "target_utc": "2026-09-09T13:33:35+00:00",
+      "block_number": 25940140,
+      "block_hash": "0x7eb9609835760e5ebe29409243b9ed2c314350f94e7d32f0f9bd611cc1624de5",
+      "block_timestamp": 1788960815,
+      "block_utc": "2026-09-09T13:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2511.812479,
+        "status": "ok",
+        "eth_usd": 2511.52394666,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 251152394666,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788958043,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 2772,
+        "usdc_age_seconds": 19980,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2508.834799,
+        "raw_rate": 2508834799,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2513.700313,
+        "arithmetic_mean_tick": 198025,
+        "delta_tick": 59407524,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2515.20891,
+        "arithmetic_mean_tick": 198019,
+        "delta_tick": 11881152,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 104,
+      "target_timestamp": 1788961415,
+      "target_utc": "2026-09-09T13:43:35+00:00",
+      "block_number": 25940190,
+      "block_hash": "0x3a588dac37e70193d27e57e3cbb5ab3b9b6fdda98af2a7aae7367e6d6c4d3fb1",
+      "block_timestamp": 1788961415,
+      "block_utc": "2026-09-09T13:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2511.812479,
+        "status": "ok",
+        "eth_usd": 2511.52394666,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 251152394666,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788958043,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 3372,
+        "usdc_age_seconds": 20580,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2502.927534,
+        "raw_rate": 2502927534,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2507.424224,
+        "arithmetic_mean_tick": 198050,
+        "delta_tick": 59415084,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2502.915145,
+        "arithmetic_mean_tick": 198068,
+        "delta_tick": 11884092,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 105,
+      "target_timestamp": 1788962015,
+      "target_utc": "2026-09-09T13:53:35+00:00",
+      "block_number": 25940240,
+      "block_hash": "0xb5263a1c98487f35b7ddda448007a2c7fb090d9b0b0d6aa5cd6dc376b004bbb5",
+      "block_timestamp": 1788962015,
+      "block_utc": "2026-09-09T13:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2510.907114,
+        "status": "ok",
+        "eth_usd": 2510.61868562,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 251061868562,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788961667,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 348,
+        "usdc_age_seconds": 21180,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2507.170128,
+        "raw_rate": 2507170128,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2511.187994,
+        "arithmetic_mean_tick": 198035,
+        "delta_tick": 59410692,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2510.685832,
+        "arithmetic_mean_tick": 198037,
+        "delta_tick": 11882244,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 106,
+      "target_timestamp": 1788962615,
+      "target_utc": "2026-09-09T14:03:35+00:00",
+      "block_number": 25940288,
+      "block_hash": "0x94890b5fc63c785481b7a8e23b3964f960839ca7ec560690ff3b9193650c1fa7",
+      "block_timestamp": 1788962615,
+      "block_utc": "2026-09-09T14:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2497.586262,
+        "status": "ok",
+        "eth_usd": 2497.29936458,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249729936458,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788962507,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 108,
+        "usdc_age_seconds": 21780,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2500.750474,
+        "raw_rate": 2500750474,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2501.664063,
+        "arithmetic_mean_tick": 198073,
+        "delta_tick": 59422164,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2498.414175,
+        "arithmetic_mean_tick": 198086,
+        "delta_tick": 11885160,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 107,
+      "target_timestamp": 1788963215,
+      "target_utc": "2026-09-09T14:13:35+00:00",
+      "block_number": 25940337,
+      "block_hash": "0x32d1534a0d99df5db1a6611e2fdca9eea0a7f1c7ae39300b6cc5b9afe5ae228c",
+      "block_timestamp": 1788963215,
+      "block_utc": "2026-09-09T14:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2497.586262,
+        "status": "ok",
+        "eth_usd": 2497.29936458,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249729936458,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788962507,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 708,
+        "usdc_age_seconds": 22380,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2499.714676,
+        "raw_rate": 2499714676,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2499.413691,
+        "arithmetic_mean_tick": 198082,
+        "delta_tick": 59424792,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2496.915651,
+        "arithmetic_mean_tick": 198092,
+        "delta_tick": 11885544,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 108,
+      "target_timestamp": 1788963815,
+      "target_utc": "2026-09-09T14:23:35+00:00",
+      "block_number": 25940387,
+      "block_hash": "0x68db55a5c26bebf3281cac55001c0bce30a2bf30d0482f840a1b39757e2bb07b",
+      "block_timestamp": 1788963815,
+      "block_utc": "2026-09-09T14:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2497.586262,
+        "status": "ok",
+        "eth_usd": 2497.29936458,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249729936458,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788962507,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1308,
+        "usdc_age_seconds": 22980,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2499.878239,
+        "raw_rate": 2499878239,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2497.914567,
+        "arithmetic_mean_tick": 198088,
+        "delta_tick": 59426688,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2497.914567,
+        "arithmetic_mean_tick": 198088,
+        "delta_tick": 11885328,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 109,
+      "target_timestamp": 1788964415,
+      "target_utc": "2026-09-09T14:33:35+00:00",
+      "block_number": 25940437,
+      "block_hash": "0xce772a7c723f7917805bb4d8c877525357ef8480583a6a91e784090085df062f",
+      "block_timestamp": 1788964415,
+      "block_utc": "2026-09-09T14:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2510.532085,
+        "status": "ok",
+        "eth_usd": 2510.2437,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 251024370000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788964163,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 252,
+        "usdc_age_seconds": 23580,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2505.401583,
+        "raw_rate": 2505401583,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2509.932777,
+        "arithmetic_mean_tick": 198040,
+        "delta_tick": 59412192,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2510.434789,
+        "arithmetic_mean_tick": 198038,
+        "delta_tick": 11882328,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 110,
+      "target_timestamp": 1788965015,
+      "target_utc": "2026-09-09T14:43:35+00:00",
+      "block_number": 25940487,
+      "block_hash": "0x3cc9ba69f3b97964ac365d2fb8c8ae0a0ff2ec84165b39067ff643b2efb6db12",
+      "block_timestamp": 1788965015,
+      "block_utc": "2026-09-09T14:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2510.532085,
+        "status": "ok",
+        "eth_usd": 2510.2437,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 251024370000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788964163,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 852,
+        "usdc_age_seconds": 24180,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2504.969112,
+        "raw_rate": 2504969112,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2508.929055,
+        "arithmetic_mean_tick": 198044,
+        "delta_tick": 59413260,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2506.922815,
+        "arithmetic_mean_tick": 198052,
+        "delta_tick": 11883156,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 111,
+      "target_timestamp": 1788965615,
+      "target_utc": "2026-09-09T14:53:35+00:00",
+      "block_number": 25940537,
+      "block_hash": "0x64d5d66a6bb304e36e22ac3353193330c19fc1bb843a0804320457cf6651f660",
+      "block_timestamp": 1788965615,
+      "block_utc": "2026-09-09T14:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2510.532085,
+        "status": "ok",
+        "eth_usd": 2510.2437,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 251024370000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788964163,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1452,
+        "usdc_age_seconds": 24780,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2501.050993,
+        "raw_rate": 2501050993,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2504.41727,
+        "arithmetic_mean_tick": 198062,
+        "delta_tick": 59418876,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2501.413922,
+        "arithmetic_mean_tick": 198074,
+        "delta_tick": 11884464,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 112,
+      "target_timestamp": 1788966215,
+      "target_utc": "2026-09-09T15:03:35+00:00",
+      "block_number": 25940587,
+      "block_hash": "0xde50cfacc76b56d6d29b8f16a6483e133662d4538f5c1b760cd573be6da3686d",
+      "block_timestamp": 1788966215,
+      "block_utc": "2026-09-09T15:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2497.559527,
+        "status": "ok",
+        "eth_usd": 2497.27263277,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249727263277,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788965783,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 432,
+        "usdc_age_seconds": 25380,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2497.268326,
+        "raw_rate": 2497268326,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2498.913883,
+        "arithmetic_mean_tick": 198084,
+        "delta_tick": 59425464,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2494.919017,
+        "arithmetic_mean_tick": 198100,
+        "delta_tick": 11886048,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 113,
+      "target_timestamp": 1788966815,
+      "target_utc": "2026-09-09T15:13:35+00:00",
+      "block_number": 25940637,
+      "block_hash": "0x35edb7f99194df93607417a7812b5a7cb429f1708bbbac0050da4912e3b962e3",
+      "block_timestamp": 1788966815,
+      "block_utc": "2026-09-09T15:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2482.592599,
+        "status": "ok",
+        "eth_usd": 2482.30742319,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 248230742319,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788966707,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 108,
+        "usdc_age_seconds": 25980,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2486.651106,
+        "raw_rate": 2486651106,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2487.445849,
+        "arithmetic_mean_tick": 198130,
+        "delta_tick": 59439072,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2483.469317,
+        "arithmetic_mean_tick": 198146,
+        "delta_tick": 11888808,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 114,
+      "target_timestamp": 1788967415,
+      "target_utc": "2026-09-09T15:23:35+00:00",
+      "block_number": 25940687,
+      "block_hash": "0x4e832c927f357d0dfc0bb65001224dc650f46eacb12a40b47e06ac92ecd452b8",
+      "block_timestamp": 1788967415,
+      "block_utc": "2026-09-09T15:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2482.592599,
+        "status": "ok",
+        "eth_usd": 2482.30742319,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 248230742319,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788966707,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 708,
+        "usdc_age_seconds": 26580,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2478.743457,
+        "raw_rate": 2478743457,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2482.972698,
+        "arithmetic_mean_tick": 198148,
+        "delta_tick": 59444424,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2474.545346,
+        "arithmetic_mean_tick": 198182,
+        "delta_tick": 11890932,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 115,
+      "target_timestamp": 1788968015,
+      "target_utc": "2026-09-09T15:33:35+00:00",
+      "block_number": 25940736,
+      "block_hash": "0x8c38e619d08c067ad8cd1c13203963588ebd11cb609847d896f30ac46217e9f1",
+      "block_timestamp": 1788968015,
+      "block_utc": "2026-09-09T15:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2482.592599,
+        "status": "ok",
+        "eth_usd": 2482.30742319,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 248230742319,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788966707,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1308,
+        "usdc_age_seconds": 27180,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2482.319992,
+        "raw_rate": 2482319992,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2480.739139,
+        "arithmetic_mean_tick": 198157,
+        "delta_tick": 59447280,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2482.227955,
+        "arithmetic_mean_tick": 198151,
+        "delta_tick": 11889060,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 116,
+      "target_timestamp": 1788968615,
+      "target_utc": "2026-09-09T15:43:35+00:00",
+      "block_number": 25940786,
+      "block_hash": "0xef526206a192ab721769775cefd567bb8c09629582e060e647de9041218e50e4",
+      "block_timestamp": 1788968615,
+      "block_utc": "2026-09-09T15:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2482.592599,
+        "status": "ok",
+        "eth_usd": 2482.30742319,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 248230742319,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788966707,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1908,
+        "usdc_age_seconds": 27780,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2490.600919,
+        "raw_rate": 2490600919,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2491.428749,
+        "arithmetic_mean_tick": 198114,
+        "delta_tick": 59434428,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2492.42547,
+        "arithmetic_mean_tick": 198110,
+        "delta_tick": 11886600,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 117,
+      "target_timestamp": 1788969215,
+      "target_utc": "2026-09-09T15:53:35+00:00",
+      "block_number": 25940836,
+      "block_hash": "0xaff95230b34fb3af274f3e59505e6b7289a9f1affb568e20cc211a87e58404d3",
+      "block_timestamp": 1788969215,
+      "block_utc": "2026-09-09T15:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2482.592599,
+        "status": "ok",
+        "eth_usd": 2482.30742319,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 248230742319,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788966707,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 2508,
+        "usdc_age_seconds": 28380,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2490.521753,
+        "raw_rate": 2490521753,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2491.92706,
+        "arithmetic_mean_tick": 198112,
+        "delta_tick": 59433708,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2491.428749,
+        "arithmetic_mean_tick": 198114,
+        "delta_tick": 11886840,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 118,
+      "target_timestamp": 1788969815,
+      "target_utc": "2026-09-09T16:03:35+00:00",
+      "block_number": 25940886,
+      "block_hash": "0x36ba74e70383b89dc8632d03449b0d71544dfb933c4c77ba4726a72852017263",
+      "block_timestamp": 1788969815,
+      "block_utc": "2026-09-09T16:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2482.592599,
+        "status": "ok",
+        "eth_usd": 2482.30742319,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 248230742319,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788966707,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 3108,
+        "usdc_age_seconds": 28980,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2490.412159,
+        "raw_rate": 2490412159,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2491.428749,
+        "arithmetic_mean_tick": 198114,
+        "delta_tick": 59434248,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2492.42547,
+        "arithmetic_mean_tick": 198110,
+        "delta_tick": 11886600,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 119,
+      "target_timestamp": 1788970415,
+      "target_utc": "2026-09-09T16:13:35+00:00",
+      "block_number": 25940936,
+      "block_hash": "0x03d0d7437f0d3bb42bc0d449c532709513e69ff88635b9f50723f1c74cd247a0",
+      "block_timestamp": 1788970415,
+      "block_utc": "2026-09-09T16:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2495.584368,
+        "status": "ok",
+        "eth_usd": 2495.2977,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249529770000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788969827,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 588,
+        "usdc_age_seconds": 29580,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2489.291026,
+        "raw_rate": 2489291026,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2488.93869,
+        "arithmetic_mean_tick": 198124,
+        "delta_tick": 59437248,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2489.436503,
+        "arithmetic_mean_tick": 198122,
+        "delta_tick": 11887344,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 120,
+      "target_timestamp": 1788971015,
+      "target_utc": "2026-09-09T16:23:35+00:00",
+      "block_number": 25940986,
+      "block_hash": "0x6d4418e616ebd179911227bce952cab9e54fb68783260ee31e8df82690ee6465",
+      "block_timestamp": 1788971015,
+      "block_utc": "2026-09-09T16:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2495.584368,
+        "status": "ok",
+        "eth_usd": 2495.2977,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249529770000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788969827,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1188,
+        "usdc_age_seconds": 30180,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2488.357968,
+        "raw_rate": 2488357968,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2487.694594,
+        "arithmetic_mean_tick": 198129,
+        "delta_tick": 59438904,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2487.19713,
+        "arithmetic_mean_tick": 198131,
+        "delta_tick": 11887860,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 121,
+      "target_timestamp": 1788971615,
+      "target_utc": "2026-09-09T16:33:35+00:00",
+      "block_number": 25941036,
+      "block_hash": "0xe05c80cb51fad434ef7ea9402b8237821e69a025225c4355a3a90bdf117d10fa",
+      "block_timestamp": 1788971615,
+      "block_utc": "2026-09-09T16:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2495.584368,
+        "status": "ok",
+        "eth_usd": 2495.2977,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249529770000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788969827,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1788,
+        "usdc_age_seconds": 30780,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2492.170905,
+        "raw_rate": 2492170905,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2492.176252,
+        "arithmetic_mean_tick": 198111,
+        "delta_tick": 59433552,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2494.420108,
+        "arithmetic_mean_tick": 198102,
+        "delta_tick": 11886120,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 122,
+      "target_timestamp": 1788972215,
+      "target_utc": "2026-09-09T16:43:35+00:00",
+      "block_number": 25941086,
+      "block_hash": "0xeffef488441d2dc361d7cbe6606041c9bc76a7760fa27396c5c3b126d2303677",
+      "block_timestamp": 1788972215,
+      "block_utc": "2026-09-09T16:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2495.584368,
+        "status": "ok",
+        "eth_usd": 2495.2977,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249529770000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788969827,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 2388,
+        "usdc_age_seconds": 31380,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2494.1603,
+        "raw_rate": 2494160300,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2497.165343,
+        "arithmetic_mean_tick": 198091,
+        "delta_tick": 59427480,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2497.415059,
+        "arithmetic_mean_tick": 198090,
+        "delta_tick": 11885400,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 123,
+      "target_timestamp": 1788972815,
+      "target_utc": "2026-09-09T16:53:35+00:00",
+      "block_number": 25941135,
+      "block_hash": "0xe52bf50d7b1601436e5ea36f03f9d2ef95f513447e01cc53dadee5cecc7c6d25",
+      "block_timestamp": 1788972815,
+      "block_utc": "2026-09-09T16:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2495.584368,
+        "status": "ok",
+        "eth_usd": 2495.2977,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249529770000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788969827,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 2988,
+        "usdc_age_seconds": 31980,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2494.067556,
+        "raw_rate": 2494067556,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2497.415059,
+        "arithmetic_mean_tick": 198090,
+        "delta_tick": 59427228,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2496.915651,
+        "arithmetic_mean_tick": 198092,
+        "delta_tick": 11885520,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 124,
+      "target_timestamp": 1788973415,
+      "target_utc": "2026-09-09T17:03:35+00:00",
+      "block_number": 25941184,
+      "block_hash": "0xe246a794a60da71013a3d03a2cbf999e5d8fcd48f4277853d2377200701fe768",
+      "block_timestamp": 1788973415,
+      "block_utc": "2026-09-09T17:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2495.584368,
+        "status": "ok",
+        "eth_usd": 2495.2977,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249529770000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788969827,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 3588,
+        "usdc_age_seconds": 32580,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2493.632478,
+        "raw_rate": 2493632478,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2495.418026,
+        "arithmetic_mean_tick": 198098,
+        "delta_tick": 59429424,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2495.917135,
+        "arithmetic_mean_tick": 198096,
+        "delta_tick": 11885808,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 125,
+      "target_timestamp": 1788974015,
+      "target_utc": "2026-09-09T17:13:35+00:00",
+      "block_number": 25941234,
+      "block_hash": "0x676a820b46b0aa92ada6d861ae2da994268c515071a432c3b345506fb7c0ed57",
+      "block_timestamp": 1788974015,
+      "block_utc": "2026-09-09T17:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2495.646875,
+        "status": "ok",
+        "eth_usd": 2495.3602,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249536020000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788973439,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 576,
+        "usdc_age_seconds": 33180,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2494.336931,
+        "raw_rate": 2494336931,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2495.667568,
+        "arithmetic_mean_tick": 198097,
+        "delta_tick": 59429136,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2496.665985,
+        "arithmetic_mean_tick": 198093,
+        "delta_tick": 11885628,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 126,
+      "target_timestamp": 1788974615,
+      "target_utc": "2026-09-09T17:23:35+00:00",
+      "block_number": 25941284,
+      "block_hash": "0x2788c9a058414c19c76c5bc257befca777e3240e227e63de53cc399fbebb96d6",
+      "block_timestamp": 1788974615,
+      "block_utc": "2026-09-09T17:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2495.646875,
+        "status": "ok",
+        "eth_usd": 2495.3602,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249536020000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788973439,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1176,
+        "usdc_age_seconds": 33780,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2494.177436,
+        "raw_rate": 2494177436,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2496.416343,
+        "arithmetic_mean_tick": 198094,
+        "delta_tick": 59428272,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2496.166726,
+        "arithmetic_mean_tick": 198095,
+        "delta_tick": 11885712,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 127,
+      "target_timestamp": 1788975215,
+      "target_utc": "2026-09-09T17:33:35+00:00",
+      "block_number": 25941333,
+      "block_hash": "0xab8efb775b8e537e89d8ef0ede4eb2f42c26f32b86bee88684a2fdcdb1b50f52",
+      "block_timestamp": 1788975215,
+      "block_utc": "2026-09-09T17:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2495.646875,
+        "status": "ok",
+        "eth_usd": 2495.3602,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249536020000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788973439,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1776,
+        "usdc_age_seconds": 34380,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2493.282485,
+        "raw_rate": 2493282485,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2496.416343,
+        "arithmetic_mean_tick": 198094,
+        "delta_tick": 59428356,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2494.66955,
+        "arithmetic_mean_tick": 198101,
+        "delta_tick": 11886072,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 128,
+      "target_timestamp": 1788975815,
+      "target_utc": "2026-09-09T17:43:35+00:00",
+      "block_number": 25941383,
+      "block_hash": "0x449aa9e2591dfce1f7252c4c752313342214f11c23e4b863547fcddeb82ed42d",
+      "block_timestamp": 1788975815,
+      "block_utc": "2026-09-09T17:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2495.646875,
+        "status": "ok",
+        "eth_usd": 2495.3602,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249536020000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788973439,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 2376,
+        "usdc_age_seconds": 34980,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2491.492199,
+        "raw_rate": 2491492199,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2491.92706,
+        "arithmetic_mean_tick": 198112,
+        "delta_tick": 59433708,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2489.685446,
+        "arithmetic_mean_tick": 198121,
+        "delta_tick": 11887260,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 129,
+      "target_timestamp": 1788976415,
+      "target_utc": "2026-09-09T17:53:35+00:00",
+      "block_number": 25941433,
+      "block_hash": "0xd0621728a40e27318d4883d6f726b25cb4ef1ac6a7e4846ba09ba15c7c6b163d",
+      "block_timestamp": 1788976415,
+      "block_utc": "2026-09-09T17:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2495.646875,
+        "status": "ok",
+        "eth_usd": 2495.3602,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249536020000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788973439,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 2976,
+        "usdc_age_seconds": 35580,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2492.354588,
+        "raw_rate": 2492354588,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2491.677892,
+        "arithmetic_mean_tick": 198113,
+        "delta_tick": 59434188,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2492.176252,
+        "arithmetic_mean_tick": 198111,
+        "delta_tick": 11886684,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 130,
+      "target_timestamp": 1788977015,
+      "target_utc": "2026-09-09T18:03:35+00:00",
+      "block_number": 25941483,
+      "block_hash": "0x6cc0e41de8fbece1075eab37e14e3d9024e38ebb25e03af6261260edb1a904f5",
+      "block_timestamp": 1788977015,
+      "block_utc": "2026-09-09T18:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2495.646875,
+        "status": "ok",
+        "eth_usd": 2495.3602,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249536020000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788973439,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 3576,
+        "usdc_age_seconds": 36180,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2493.645879,
+        "raw_rate": 2493645879,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2494.420108,
+        "arithmetic_mean_tick": 198102,
+        "delta_tick": 59430648,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2494.420108,
+        "arithmetic_mean_tick": 198102,
+        "delta_tick": 11886168,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 131,
+      "target_timestamp": 1788977615,
+      "target_utc": "2026-09-09T18:13:35+00:00",
+      "block_number": 25941533,
+      "block_hash": "0x213b05f085f3c36b08254c134455938d97f88811de1ac40d98986ac79c123d06",
+      "block_timestamp": 1788977615,
+      "block_utc": "2026-09-09T18:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.353326,
+        "status": "ok",
+        "eth_usd": 2494.0668,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249406680000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788977063,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 552,
+        "usdc_age_seconds": 36780,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2491.608833,
+        "raw_rate": 2491608833,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2491.428749,
+        "arithmetic_mean_tick": 198114,
+        "delta_tick": 59434320,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2490.930538,
+        "arithmetic_mean_tick": 198116,
+        "delta_tick": 11886960,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 132,
+      "target_timestamp": 1788978215,
+      "target_utc": "2026-09-09T18:23:35+00:00",
+      "block_number": 25941583,
+      "block_hash": "0x3156f0850da475310dd7b8da5fbd31f09a5a929ec92fd81653d15be926fc43b5",
+      "block_timestamp": 1788978215,
+      "block_utc": "2026-09-09T18:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.353326,
+        "status": "ok",
+        "eth_usd": 2494.0668,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249406680000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788977063,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1152,
+        "usdc_age_seconds": 37380,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2491.791122,
+        "raw_rate": 2491791122,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2490.183408,
+        "arithmetic_mean_tick": 198119,
+        "delta_tick": 59435988,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2490.68147,
+        "arithmetic_mean_tick": 198117,
+        "delta_tick": 11887020,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 133,
+      "target_timestamp": 1788978815,
+      "target_utc": "2026-09-09T18:33:35+00:00",
+      "block_number": 25941633,
+      "block_hash": "0xf99550f06300490c244a9a45974120f6ee265eeb00d8398c9afb31ace087e64b",
+      "block_timestamp": 1788978815,
+      "block_utc": "2026-09-09T18:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.353326,
+        "status": "ok",
+        "eth_usd": 2494.0668,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249406680000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788977063,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1752,
+        "usdc_age_seconds": 37980,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2491.765749,
+        "raw_rate": 2491765749,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2489.934415,
+        "arithmetic_mean_tick": 198120,
+        "delta_tick": 59436000,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2489.934415,
+        "arithmetic_mean_tick": 198120,
+        "delta_tick": 11887200,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 134,
+      "target_timestamp": 1788979415,
+      "target_utc": "2026-09-09T18:43:35+00:00",
+      "block_number": 25941683,
+      "block_hash": "0xf5b20138f6dea6eebcd59e0bfc413f26abbe58a3318f98ed38a4b539ba95027f",
+      "block_timestamp": 1788979415,
+      "block_utc": "2026-09-09T18:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.353326,
+        "status": "ok",
+        "eth_usd": 2494.0668,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249406680000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788977063,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 2352,
+        "usdc_age_seconds": 38580,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2490.576545,
+        "raw_rate": 2490576545,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2488.93869,
+        "arithmetic_mean_tick": 198124,
+        "delta_tick": 59437272,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2488.689821,
+        "arithmetic_mean_tick": 198125,
+        "delta_tick": 11887500,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 135,
+      "target_timestamp": 1788980015,
+      "target_utc": "2026-09-09T18:53:35+00:00",
+      "block_number": 25941733,
+      "block_hash": "0xafb1237ae46a2c39f505bfae3a410a8379d7db60eb3175c89f7c70758267c27e",
+      "block_timestamp": 1788980015,
+      "block_utc": "2026-09-09T18:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2494.353326,
+        "status": "ok",
+        "eth_usd": 2494.0668,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 249406680000,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788977063,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 2952,
+        "usdc_age_seconds": 39180,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2488.992781,
+        "raw_rate": 2488992781,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2487.694594,
+        "arithmetic_mean_tick": 198129,
+        "delta_tick": 59438904,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2486.948435,
+        "arithmetic_mean_tick": 198132,
+        "delta_tick": 11887944,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 136,
+      "target_timestamp": 1788980615,
+      "target_utc": "2026-09-09T19:03:35+00:00",
+      "block_number": 25941783,
+      "block_hash": "0x2d70bdf6625afe276d680bfdc9d070a38fc3c73f796f42fd78a9ec4e8447d60c",
+      "block_timestamp": 1788980615,
+      "block_utc": "2026-09-09T19:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2479.935323,
+        "status": "ok",
+        "eth_usd": 2479.65045243,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 247965045243,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788980435,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 180,
+        "usdc_age_seconds": 39780,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2484.836131,
+        "raw_rate": 2484836131,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2481.979757,
+        "arithmetic_mean_tick": 198152,
+        "delta_tick": 59445792,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2480.987213,
+        "arithmetic_mean_tick": 198156,
+        "delta_tick": 11889360,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 137,
+      "target_timestamp": 1788981215,
+      "target_utc": "2026-09-09T19:13:35+00:00",
+      "block_number": 25941833,
+      "block_hash": "0xde36cb4d82dff1eb0a77fe051c5c0aebe273aa37206e1c46148e3d7916c4c2c2",
+      "block_timestamp": 1788981215,
+      "block_utc": "2026-09-09T19:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2479.935323,
+        "status": "ok",
+        "eth_usd": 2479.65045243,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 247965045243,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788980435,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 780,
+        "usdc_age_seconds": 40380,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2484.149675,
+        "raw_rate": 2484149675,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2480.739139,
+        "arithmetic_mean_tick": 198157,
+        "delta_tick": 59447172,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2480.987213,
+        "arithmetic_mean_tick": 198156,
+        "delta_tick": 11889360,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 138,
+      "target_timestamp": 1788981815,
+      "target_utc": "2026-09-09T19:23:35+00:00",
+      "block_number": 25941882,
+      "block_hash": "0x7c3d15875163f501ccab4c92e37bdbf37da1b22042b571cd66de2957820da2a2",
+      "block_timestamp": 1788981815,
+      "block_utc": "2026-09-09T19:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2479.935323,
+        "status": "ok",
+        "eth_usd": 2479.65045243,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 247965045243,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788980435,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1380,
+        "usdc_age_seconds": 40980,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2485.525797,
+        "raw_rate": 2485525797,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2483.220995,
+        "arithmetic_mean_tick": 198147,
+        "delta_tick": 59444364,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2483.220995,
+        "arithmetic_mean_tick": 198147,
+        "delta_tick": 11888844,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 139,
+      "target_timestamp": 1788982415,
+      "target_utc": "2026-09-09T19:33:35+00:00",
+      "block_number": 25941932,
+      "block_hash": "0x75755e17a88d1ae1ac817f31ff9dd4932a68fe25b7fa4ba8d438f06d0349faa9",
+      "block_timestamp": 1788982415,
+      "block_utc": "2026-09-09T19:33:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2479.935323,
+        "status": "ok",
+        "eth_usd": 2479.65045243,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 247965045243,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788980435,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1980,
+        "usdc_age_seconds": 41580,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2484.823534,
+        "raw_rate": 2484823534,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2482.724425,
+        "arithmetic_mean_tick": 198149,
+        "delta_tick": 59444868,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2481.731584,
+        "arithmetic_mean_tick": 198153,
+        "delta_tick": 11889180,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 140,
+      "target_timestamp": 1788983015,
+      "target_utc": "2026-09-09T19:43:35+00:00",
+      "block_number": 25941982,
+      "block_hash": "0x13bf8e4be9bc9220ea249c9de32a2fd73f1ec1fdd488f4e78bbde05d22524110",
+      "block_timestamp": 1788983015,
+      "block_utc": "2026-09-09T19:43:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2479.935323,
+        "status": "ok",
+        "eth_usd": 2479.65045243,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 247965045243,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788980435,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 2580,
+        "usdc_age_seconds": 42180,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2479.211325,
+        "raw_rate": 2479211325,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2474.297917,
+        "arithmetic_mean_tick": 198183,
+        "delta_tick": 59455188,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2473.803131,
+        "arithmetic_mean_tick": 198185,
+        "delta_tick": 11891100,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 141,
+      "target_timestamp": 1788983615,
+      "target_utc": "2026-09-09T19:53:35+00:00",
+      "block_number": 25942032,
+      "block_hash": "0xaa4244bfcc93daea2a4c30b605cd551af07cee2c571a07b0c90c836528713ec0",
+      "block_timestamp": 1788983615,
+      "block_utc": "2026-09-09T19:53:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2466.430347,
+        "status": "ok",
+        "eth_usd": 2466.14702824,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 246614702824,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788983483,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 132,
+        "usdc_age_seconds": 42780,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2471.787003,
+        "raw_rate": 2471787003,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2469.107602,
+        "arithmetic_mean_tick": 198204,
+        "delta_tick": 59461260,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2466.393213,
+        "arithmetic_mean_tick": 198215,
+        "delta_tick": 11892912,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 142,
+      "target_timestamp": 1788984215,
+      "target_utc": "2026-09-09T20:03:35+00:00",
+      "block_number": 25942080,
+      "block_hash": "0x961c852645adf5442e0b9da64240cb6c762d455376e0930af88548ae7c0523b9",
+      "block_timestamp": 1788984215,
+      "block_utc": "2026-09-09T20:03:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2466.430347,
+        "status": "ok",
+        "eth_usd": 2466.14702824,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 246614702824,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788983483,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 732,
+        "usdc_age_seconds": 43380,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2472.432682,
+        "raw_rate": 2472432682,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2465.653443,
+        "arithmetic_mean_tick": 198218,
+        "delta_tick": 59465436,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2467.379918,
+        "arithmetic_mean_tick": 198211,
+        "delta_tick": 11892660,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 143,
+      "target_timestamp": 1788984815,
+      "target_utc": "2026-09-09T20:13:35+00:00",
+      "block_number": 25942130,
+      "block_hash": "0x2f017734a9d7ac7de4a8961f096d6712ab9d50cf7ad05cea460cf028dfb19a33",
+      "block_timestamp": 1788984815,
+      "block_utc": "2026-09-09T20:13:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2466.430347,
+        "status": "ok",
+        "eth_usd": 2466.14702824,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 246614702824,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788983483,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1332,
+        "usdc_age_seconds": 43980,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2471.915879,
+        "raw_rate": 2471915879,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2466.146598,
+        "arithmetic_mean_tick": 198216,
+        "delta_tick": 59464872,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2467.133205,
+        "arithmetic_mean_tick": 198212,
+        "delta_tick": 11892720,
+        "status": "ok",
+        "reason": null
+      }
+    },
+    {
+      "target_index": 144,
+      "target_timestamp": 1788985415,
+      "target_utc": "2026-09-09T20:23:35+00:00",
+      "block_number": 25942178,
+      "block_hash": "0xdbbf7a8995e0fc960f980e137dea27e0d376e28a844d73d1e1d0a453f30476fc",
+      "block_timestamp": 1788985415,
+      "block_utc": "2026-09-09T20:23:35+00:00",
+      "diff_seconds": 0,
+      "verified_bounds": true,
+      "chainlink": {
+        "price": 2466.430347,
+        "status": "ok",
+        "eth_usd": 2466.14702824,
+        "usdc_usd": 0.99988513,
+        "eth_raw_answer": 246614702824,
+        "usdc_raw_answer": 99988513,
+        "eth_updated_at": 1788983483,
+        "usdc_updated_at": 1788940835,
+        "eth_age_seconds": 1932,
+        "usdc_age_seconds": 44580,
+        "reason": null
+      },
+      "oneinch": {
+        "price": 2469.848743,
+        "raw_rate": 2469848743,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_300": {
+        "price": 2469.354513,
+        "arithmetic_mean_tick": 198203,
+        "delta_tick": 59461032,
+        "status": "ok",
+        "reason": null
+      },
+      "univ3_twap_60": {
+        "price": 2468.860716,
+        "arithmetic_mean_tick": 198205,
+        "delta_tick": 11892324,
+        "status": "ok",
+        "reason": null
+      }
+    }
+  ]
+}

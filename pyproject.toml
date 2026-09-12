@@ -1,0 +1,41 @@
+[project]
+name = "swaparch"
+version = "0.0.1"
+description = "Swap Archeology: historical on-chain liquidity reconstruction and routing research"
+requires-python = ">=3.12"
+dependencies = [
+    "eth-abi>=5.2.0",
+    "eth-utils>=5.0.0",
+    "pycryptodome>=3.20",
+    "requests>=2.32",
+    "python-dotenv>=1.0",
+]
+
+[project.scripts]
+swaparch = "swaparch.cli:main"
+swaparch-web = "swaparch.web_api:main"
+
+[project.optional-dependencies]
+benchmark = [
+    "scipy>=1.17,<2",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.0.0", "ruff>=0.5"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/swaparch"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "archive: needs local recorded evidence excluded from the public repository",
+    "rpc: needs a resolvable archive RPC endpoint",
+]
+
+[tool.ruff]
+line-length = 100

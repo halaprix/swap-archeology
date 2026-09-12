@@ -1,0 +1,300 @@
+/* ==========================================================================
+   Swap Archeology Design System - Light Research Workspace Tokens
+   ========================================================================== */
+
+:root {
+  /* Canvas & Surfaces */
+  --color-bg: #fbfaf8;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f4f3ed;
+  --color-surface-alt: #ecebe4;
+  --color-surface-hover: #f0eee7;
+
+  /* Borders & Dividers */
+  --color-border: #e6e3da;
+  --color-border-strong: #d2cfc4;
+  --color-border-subtle: #f0eee8;
+
+  /* Editorial Typography Colors */
+  --color-text: #141416;
+  --color-text-secondary: #575653;
+  --color-text-muted: #7e7d77;
+  --color-text-inverse: #ffffff;
+
+  /* Primary Accent: Research Teal */
+  --color-teal: #0f766e;
+  --color-teal-hover: #115e59;
+  --color-teal-light: #f0fdfa;
+  --color-teal-border: #99f6e4;
+  --color-teal-text: #0f766e;
+
+  /* Semantic Feedback Colors */
+  --color-success: #15803d;
+  --color-success-light: #f0fdf4;
+  --color-success-border: #bbf7d0;
+  --color-success-text: #166534;
+
+  --color-warning: #b45309;
+  --color-warning-light: #fffbeb;
+  --color-warning-border: #fde68a;
+  --color-warning-text: #92400e;
+
+  --color-error: #b91c1c;
+  --color-error-light: #fef2f2;
+  --color-error-border: #fecaca;
+  --color-error-text: #991b1b;
+
+  --color-info: #0369a1;
+  --color-info-light: #f0f9ff;
+  --color-info-border: #bae6fd;
+  --color-info-text: #075985;
+
+  /* Protocol Venue Palette */
+  --venue-uniswap-v3: #be185d;
+  --venue-uniswap-v3-bg: #fdf2f8;
+  --venue-uniswap-v3-border: #fbcfe8;
+  --venue-uniswap-v3-text: #9d174d;
+
+  --venue-uniswap-v2: #e11d48;
+  --venue-uniswap-v2-bg: #fff1f2;
+  --venue-uniswap-v2-border: #fecdd3;
+  --venue-uniswap-v2-text: #be123c;
+
+  --venue-curve: #1d4ed8;
+  --venue-curve-bg: #eff6ff;
+  --venue-curve-border: #bfdbfe;
+  --venue-curve-text: #1e40af;
+
+  --venue-balancer: #4338ca;
+  --venue-balancer-bg: #eef2ff;
+  --venue-balancer-border: #c7d2fe;
+  --venue-balancer-text: #3730a3;
+
+  --venue-lido: #0284c7;
+  --venue-lido-bg: #f0f9ff;
+  --venue-lido-border: #bae6fd;
+  --venue-lido-text: #0369a1;
+
+  --venue-maker: #b45309;
+  --venue-maker-bg: #fffbeb;
+  --venue-maker-border: #fde68a;
+  --venue-maker-text: #92400e;
+
+  --venue-origin: #0f766e;
+  --venue-origin-bg: #f0fdfa;
+  --venue-origin-border: #99f6e4;
+  --venue-origin-text: #115e59;
+
+  --venue-fluid: #059669;
+  --venue-fluid-bg: #ecfdf5;
+  --venue-fluid-border: #a7f3d0;
+  --venue-fluid-text: #065f46;
+
+  --venue-ekubo: #0891b2;
+  --venue-ekubo-bg: #ecfeff;
+  --venue-ekubo-border: #a5f3fc;
+  --venue-ekubo-text: #155e75;
+
+  --venue-erc4626: #475569;
+  --venue-erc4626-bg: #f8fafc;
+  --venue-erc4626-border: #e2e8f0;
+  --venue-erc4626-text: #334155;
+
+  --venue-lista: #7e22ce;
+  --venue-lista-bg: #faf5ff;
+  --venue-lista-border: #e9d5ff;
+  --venue-lista-text: #6b21a8;
+
+  --venue-spark: #c2410c;
+  --venue-spark-bg: #fff7ed;
+  --venue-spark-border: #ffedd5;
+  --venue-spark-text: #9a3412;
+
+  --venue-uniswap-v4: #9333ea;
+  --venue-uniswap-v4-bg: #fbf5ff;
+  --venue-uniswap-v4-border: #f3e8ff;
+  --venue-uniswap-v4-text: #7e22ce;
+
+  --venue-pancake-v3: #d97706;
+  --venue-pancake-v3-bg: #fffbeb;
+  --venue-pancake-v3-border: #fde68a;
+  --venue-pancake-v3-text: #92400e;
+
+  --venue-bebop: #4b5563;
+  --venue-bebop-bg: #f3f4f6;
+  --venue-bebop-border: #e5e7eb;
+  --venue-bebop-text: #374151;
+
+  --venue-zerox: #374151;
+  --venue-zerox-bg: #f3f4f6;
+  --venue-zerox-border: #e5e7eb;
+  --venue-zerox-text: #1f2937;
+
+  /* Route flow panel: dark, localized contrast without changing the workspace theme. */
+  --route-panel: #1d1d25;
+  --route-panel-raised: #272733;
+  --route-panel-node: #2c2c37;
+  --route-panel-border: #3a3a49;
+  --route-panel-text: #f6f5fb;
+  --route-panel-muted: #aaa9ba;
+  --route-panel-grid: rgba(255, 255, 255, 0.055);
+
+  /* Typography Scales */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Consolas, monospace;
+
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.8125rem;  /* 13px */
+  --font-size-base: 0.875rem; /* 14px */
+  --font-size-md: 0.9375rem;  /* 15px */
+  --font-size-lg: 1.0625rem;  /* 17px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+
+  /* Spacing Scale */
+  --space-0-5: 2px;
+  --space-1: 4px;
+  --space-1-5: 6px;
+  --space-2: 8px;
+  --space-2-5: 10px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* Radii */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-full: 9999px;
+
+  /* Shadows (Subtle, crisp, paper-like) */
+  --shadow-sm: 0 1px 2px 0 rgba(20, 20, 22, 0.03);
+  --shadow-md: 0 2px 5px -1px rgba(20, 20, 22, 0.05), 0 1px 3px -1px rgba(20, 20, 22, 0.03);
+  --shadow-lg: 0 10px 15px -3px rgba(20, 20, 22, 0.05), 0 4px 6px -4px rgba(20, 20, 22, 0.03);
+
+  /* Focus Ring */
+  --focus-ring: 0 0 0 2px var(--color-bg), 0 0 0 4px var(--color-teal);
+
+  /* Transitions */
+  --transition-fast: 120ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: var(--line-height-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* Accessibility: Visible Focus Outlines */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+/* Numeric & Monospace Data Formatting */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1, "zero" 1;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum" 1, "zero" 1;
+}
+
+/* Skip Link for Keyboard Navigation */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: var(--space-4);
+  background: var(--color-text);
+  color: var(--color-text-inverse);
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-sm);
+  z-index: 1000;
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: var(--space-4);
+}
+
+/* Reduced Motion Mode */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Thin Grid Container */
+.workbench-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-4);
+}
+
+@media (max-width: 1024px) {
+  .workbench-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.quote-grid { grid-template-columns: minmax(0, 1fr); }
+.quote-grid-results { grid-template-columns: minmax(0, 420px) minmax(0, 1fr); }
+.quote-grid > * { min-width: 0; }
+.research-index-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-3); }
+.research-data-modes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); }
+@media (max-width: 900px) {
+  .quote-grid-results { grid-template-columns: minmax(0, 1fr); }
+  .research-index-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .header-inner { flex-wrap: wrap; }
+  .header-brand { flex-wrap: wrap; }
+  .header-nav { flex-wrap: wrap; }
+}
+@media (max-width: 480px) {
+  .research-index-grid, .research-data-modes { grid-template-columns: minmax(0, 1fr); }
+  .header-nav a { padding: 5px 6px !important; }
+  .header-nav a > span + span { display: none; }
+}

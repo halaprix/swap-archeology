@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "crashes": [
+    {
+      "id": "crash-1",
+      "label": "2025-02-03",
+      "crashUtc": "2025-02-03T01:56:59Z",
+      "startUtc": "2025-02-03T01:26:59Z",
+      "endUtc": "2025-02-03T02:26:59Z",
+      "status": "collected",
+      "sourcesUrl": "/five-crash-liquidity/crash-1/sources.json",
+      "oracleReferencesUrl": "/five-crash-liquidity/crash-1/oracle-references.json",
+      "csvUrl": "/five-crash-liquidity/crash-1/sources.csv",
+      "coverage": {
+        "startBlock": 21762695,
+        "endBlock": 21762993,
+        "blockCount": 299,
+        "windowSeconds": 3600,
+        "windowDocumentation": "Window covers 1 hour centered at crash minute trough \u00b11800s (Crash 1-4) or 21:14:00Z..22:14:00Z (Crash 5) preserving canonical October dense dataset.",
+        "expectedBlocks": 299,
+        "stride": 1,
+        "missingBlocks": []
+      }
+    },
+    {
+      "id": "crash-2",
+      "label": "2025-02-25",
+      "crashUtc": "2025-02-25T07:25:59Z",
+      "startUtc": "2025-02-25T06:55:59Z",
+      "endUtc": "2025-02-25T07:55:59Z",
+      "status": "collected",
+      "sourcesUrl": "/five-crash-liquidity/crash-2/sources.json",
+      "oracleReferencesUrl": "/five-crash-liquidity/crash-2/oracle-references.json",
+      "csvUrl": "/five-crash-liquidity/crash-2/sources.csv",
+      "coverage": {
+        "startBlock": 21921690,
+        "endBlock": 21921989,
+        "blockCount": 300,
+        "windowSeconds": 3600,
+        "windowDocumentation": "Window covers 1 hour centered at crash minute trough \u00b11800s (Crash 1-4) or 21:14:00Z..22:14:00Z (Crash 5) preserving canonical October dense dataset.",
+        "expectedBlocks": 300,
+        "stride": 1,
+        "missingBlocks": []
+      }
+    },
+    {
+      "id": "crash-3",
+      "label": "2025-04-07",
+      "crashUtc": "2025-04-07T06:54:59Z",
+      "startUtc": "2025-04-07T06:24:59Z",
+      "endUtc": "2025-04-07T07:24:59Z",
+      "status": "collected",
+      "sourcesUrl": "/five-crash-liquidity/crash-3/sources.json",
+      "oracleReferencesUrl": "/five-crash-liquidity/crash-3/oracle-references.json",
+      "csvUrl": "/five-crash-liquidity/crash-3/sources.csv",
+      "coverage": {
+        "startBlock": 22215221,
+        "endBlock": 22215521,
+        "blockCount": 301,
+        "windowSeconds": 3600,
+        "windowDocumentation": "Window covers 1 hour centered at crash minute trough \u00b11800s (Crash 1-4) or 21:14:00Z..22:14:00Z (Crash 5) preserving canonical October dense dataset.",
+        "expectedBlocks": 301,
+        "stride": 1,
+        "missingBlocks": []
+      }
+    },
+    {
+      "id": "crash-4",
+      "label": "2025-06-21",
+      "crashUtc": "2025-06-21T21:31:59Z",
+      "startUtc": "2025-06-21T21:01:59Z",
+      "endUtc": "2025-06-21T22:01:59Z",
+      "status": "collected",
+      "sourcesUrl": "/five-crash-liquidity/crash-4/sources.json",
+      "oracleReferencesUrl": "/five-crash-liquidity/crash-4/oracle-references.json",
+      "csvUrl": "/five-crash-liquidity/crash-4/sources.csv",
+      "coverage": {
+        "startBlock": 22755384,
+        "endBlock": 22755684,
+        "blockCount": 301,
+        "windowSeconds": 3600,
+        "windowDocumentation": "Window covers 1 hour centered at crash minute trough \u00b11800s (Crash 1-4) or 21:14:00Z..22:14:00Z (Crash 5) preserving canonical October dense dataset.",
+        "expectedBlocks": 301,
+        "stride": 1,
+        "missingBlocks": []
+      }
+    },
+    {
+      "id": "crash-5",
+      "label": "2025-10-10",
+      "crashUtc": "2025-10-10T21:20:59Z",
+      "startUtc": "2025-10-10T21:14:00Z",
+      "endUtc": "2025-10-10T22:14:00Z",
+      "status": "collected",
+      "sourcesUrl": "/five-crash-liquidity/crash-5/sources.json",
+      "oracleReferencesUrl": "/five-crash-liquidity/crash-5/oracle-references.json",
+      "csvUrl": "/five-crash-liquidity/crash-5/sources.csv",
+      "coverage": {
+        "startBlock": 23549939,
+        "endBlock": 23550237,
+        "blockCount": 299,
+        "windowSeconds": 3600,
+        "windowDocumentation": "Window covers 1 hour centered at crash minute trough \u00b11800s (Crash 1-4) or 21:14:00Z..22:14:00Z (Crash 5) preserving canonical October dense dataset.",
+        "expectedBlocks": 299,
+        "stride": 1,
+        "missingBlocks": []
+      }
+    }
+  ]
+}

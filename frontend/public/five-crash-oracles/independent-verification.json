@@ -1,0 +1,14 @@
+{
+  "checkedSamples": 725,
+  "checks": [
+    "canonical header bounds and hashes",
+    "completed Binance candle lookup; lag below60s",
+    "raw Chainlink ratio and both feed ages",
+    "raw 1inch scaling",
+    "raw UniV3 observe delta and independent high-precision tick price",
+    "all source statuses",
+    "per-event gap extrema and 500bps counts"
+  ],
+  "allPassed": true,
+  "datasetSha256": "47182c973e576dc0c07539b00257a15c42009e194ebff1f7dacc8313f85e9879"
+}
