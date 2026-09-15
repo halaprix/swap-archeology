@@ -540,7 +540,7 @@ export function LiquidityGapExplorer({
               ? [{ id: "aggregate:WETH", label: "WETH aggregate", color: "#0f766e", values: data.rows.map((r) => r.aggregates.WETH[size]) }]
               : []),
             ...(visible.has("aggregate:ETH")
-              ? [{ id: "aggregate:ETH", label: "ETH aggregate", color: "#7c3aed", values: data.rows.map((r) => r.aggregates.ETH[size]) }]
+              ? [{ id: "aggregate:ETH", label: "ETH aggregate", color: "#6d563b", values: data.rows.map((r) => r.aggregates.ETH[size]) }]
               : []),
             ...(visible.has("chainlink")
               ? [{ id: "chainlink", label: "Chainlink", color: "#2563eb", values: data.rows.map((r) => r.chainlink) }]
