@@ -83,11 +83,15 @@ refreshes `frontend/public/data/catalog.json` from saved reports. The exporter
 keeps exact integer strings, hashes and source identities. Do not copy the raw
 RPC cache or credentials into the frontend.
 
-## Future Vercel deployment
+## Vercel deployment
 
 Use `frontend` as the project root and the Next.js preset (`npm run build`).
+The public site is https://swap-archeology.vercel.app. Its Vercel project is
+connected to `halaprix/swap-archeology`; `main` is the production branch.
+Pushes build the frontend from the repository, not a workstation export.
 Saved-report browsing needs only the bundled catalog, no Python or archive mount.
 Ad hoc quotes additionally need a separately hosted Python service with its
 qualified snapshots. Set its URL in the **server-only** `SWAPARCH_API_URL` variable;
-localhost will not reach this workstation from Vercel. Hosting, access controls,
-and deployment validation remain a separate task. Nothing has been deployed.
+localhost will not reach this workstation from Vercel. The deployed saved-data
+site has no RPC credentials or backend URL configured. Hosting and access controls
+for an ad hoc quote service remain a separate task.
