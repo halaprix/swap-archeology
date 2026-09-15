@@ -95,6 +95,7 @@ export function PriceChart({
 }) {
   const [isHovered, setIsHovered] = useState(false);
   const [isFocused, setIsFocused] = useState(false);
+  const [isPinned, setIsPinned] = useState(false);
 
   const values = series
     .flatMap((entry) => entry.values)
@@ -123,7 +124,12 @@ export function PriceChart({
   };
 
   const handleKeyDown = (event: React.KeyboardEvent<SVGSVGElement>) => {
-    if (event.key === "ArrowLeft") {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      setIsPinned((pinned) => !pinned);
+    } else if (event.key === "Escape") {
+      setIsPinned(false);
+    } else if (event.key === "ArrowLeft") {
       event.preventDefault();
       setIsFocused(true);
       onSelect(Math.max(0, selected - 1));
@@ -136,7 +142,7 @@ export function PriceChart({
 
   const ticks = [0.25, 0.5, 0.75].map((fraction) => start + (end - start) * fraction);
 
-  const showTooltip = (isHovered || isFocused) && rows.length > 0 && selected >= 0 && selected < rows.length;
+  const showTooltip = (isPinned || isHovered || isFocused) && rows.length > 0 && selected >= 0 && selected < rows.length;
   const selectedRow = rows[selected];
   const ranked = rankChartSeries(series, selected);
   const reference = selectedRow?.chainlink;
@@ -156,11 +162,14 @@ export function PriceChart({
           style={{ minWidth: "720px", width: "100%", display: "block", cursor: "crosshair" }}
           role="img"
           tabIndex={0}
-          aria-label="Selected source prices by recorded block timestamp. Use Left and Right arrow keys to navigate blocks."
-          onClick={nearest}
+          aria-label="Selected source prices by recorded block timestamp. Click to pin a timestamp. Use Left and Right arrow keys to navigate, Enter to toggle pin, Escape to follow cursor."
+          onClick={(event) => {
+            nearest(event);
+            setIsPinned(true);
+          }}
           onMouseMove={(e) => {
             setIsHovered(true);
-            nearest(e);
+            if (!isPinned) nearest(e);
           }}
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
@@ -236,6 +245,10 @@ export function PriceChart({
 
         {showTooltip && selectedRow && (
           <div
+            role="region"
+            aria-label="Price legend"
+            tabIndex={0}
+            data-pinned={isPinned}
             style={{
               position: "absolute",
               top: "12px",
@@ -243,6 +256,7 @@ export function PriceChart({
               width: "min(440px, calc(100% - 24px))",
               maxHeight: "calc(100% - 24px)",
               overflowY: "auto",
+              overscrollBehavior: "contain",
               pointerEvents: "auto",
               zIndex: 10,
               backgroundColor: "var(--color-surface)",
@@ -252,6 +266,10 @@ export function PriceChart({
               padding: "var(--space-2-5) var(--space-3)",
             }}
           >
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px", fontSize: "11px" }}>
+              <span>{isPinned ? "Timestamp pinned · scroll to compare prices" : "Click chart to pin timestamp"}</span>
+              {isPinned && <button type="button" onClick={() => setIsPinned(false)}>Follow cursor</button>}
+            </div>
             <div
               style={{
                 borderBottom: "1px solid var(--color-border-subtle)",
