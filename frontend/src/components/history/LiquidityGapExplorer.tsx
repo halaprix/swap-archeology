@@ -183,16 +183,20 @@ export function PriceChart({
           <text x={w - right} y={h - 10} textAnchor="end" fontSize="10" fill="var(--color-text-muted)">
             {utc.format(new Date(end))}
           </text>
-          {series.map((entry) => (
-            <path
-              key={entry.id}
-              d={linePath(entry.values, (value, index) => ({ x: x(index), y: y(value ?? lo), value }))}
-              fill="none"
-              stroke={entry.color}
-              strokeWidth="2"
-              strokeDasharray={entry.dash}
-            />
-          ))}
+          {series.map((entry) => {
+            const isReference = entry.id === "chainlink" || entry.id === "aave" || entry.id in KNOWN_ORACLE_SOURCES;
+            return (
+              <path
+                key={entry.id}
+                d={linePath(entry.values, (value, index) => ({ x: x(index), y: y(value ?? lo), value }))}
+                fill="none"
+                stroke={entry.color}
+                strokeWidth={isReference ? 3.5 : 1.2}
+                strokeOpacity={isReference ? 1 : 0.4}
+                strokeDasharray={isReference ? entry.dash : "5 4"}
+              />
+            );
+          })}
           {/* Visible selected value dots */}
           {series.map((entry) => {
             const val = entry.values[selected];
