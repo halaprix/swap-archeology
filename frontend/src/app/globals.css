@@ -298,3 +298,21 @@ body {
   .header-nav a { padding: 5px 6px !important; }
   .header-nav a > span + span { display: none; }
 }
+
+.price-rank-row {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 48px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 8px;
+  font-size: 11px;
+  line-height: 1.35;
+  background: var(--color-surface);
+  transition: transform 180ms ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .price-rank-row { transition: none; }
+}

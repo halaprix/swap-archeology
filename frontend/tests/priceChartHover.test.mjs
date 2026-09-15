@@ -18,7 +18,7 @@ const { outputText } = ts.transpileModule(source, {
 
 const customRequire = (id) => {
   if (id === "react") return React;
-  if (id === "@/lib/octoberSources") return { linePath: () => "" };
+  if (id === "@/lib/octoberSources") return { linePath: () => "", KNOWN_ORACLE_SOURCES: {} };
   return {};
 };
 
@@ -26,7 +26,7 @@ const moduleObj = { exports: {} };
 const fn = new Function("require", "exports", "module", outputText);
 fn(customRequire, moduleObj.exports, moduleObj);
 
-const { formatChartObservation, chartPriceFmt, PriceChart } = moduleObj.exports;
+const { formatChartObservation, chartPriceFmt, PriceChart, rankChartSeries, priceDifferencePercent } = moduleObj.exports;
 
 test("formatChartObservation: formats positive prices with 4-decimal precision and USDC", () => {
   const whole = formatChartObservation(2500);
@@ -96,4 +96,18 @@ test("PriceChart: renders colored dots for visible selected values and skips una
   const circleMatches = html.match(/<circle[^>]+>/g) || [];
   assert.equal(circleMatches.length, 1);
   assert.equal(circleMatches[0].includes('fill="#6b4ea2"'), true);
+});
+
+
+test("ranked legend follows price height, keeps missing last and compares to Chainlink", () => {
+  const series = [
+    { id: "low", values: [90, 120] }, { id: "missing", values: [null, null] },
+    { id: "high", values: [110, 100] },
+  ];
+  assert.deepEqual(rankChartSeries(series, 0).map(x => x.id), ["high", "low", "missing"]);
+  assert.deepEqual(rankChartSeries(series, 1).map(x => x.id), ["low", "high", "missing"]);
+  assert.equal(series[0].id, "low");
+  assert.ok(Math.abs(priceDifferencePercent(90, 100) + 10) < 1e-9);
+  assert.equal(priceDifferencePercent(null, 100), null);
+  assert.equal(priceDifferencePercent(100, 0), null);
 });

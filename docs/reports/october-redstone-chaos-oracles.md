@@ -125,3 +125,26 @@ In the collected Chronicle window, the challenge period is 600 seconds throughou
 returned read ages range from 600 to 5376 seconds. The endpoints expose
 $4017.80371455 and $3632.89 per ETH before USDC conversion. These older exposed
 values should not be mistaken for contemporaneous executable market prices.
+
+## Binance and CoinGecko market references
+
+The October chart also includes two off-chain market references, styled as bold,
+partly transparent dashed lines to distinguish them from on-chain oracles:
+
+- **Binance ETH/USDC:** one-minute candle closes from the official public spot
+  market-data API. Select the most recent *completed* candle at each Ethereum
+  timestamp, never the closing price of a minute still in progress. Retain OHLC,
+  close/completion timestamps and lag. No ETH/USDT substitution or dollar peg.
+- **CoinGecko:** the public historical range API returned hourly ETH/USD samples
+  at 20:00, 21:00 and 22:00 UTC. Only the latter two are selected in this window.
+  Carry the latest observation forward and divide by same-block Chainlink
+  USDC/USD. Do not treat the repeated per-block values as high-resolution market
+  observations. Recorded timestamps do not establish when historical API data
+  became available in real time. The hourly sampling cannot resolve this crash's
+  minute-by-minute trough.
+
+Regenerate after RedStone with
+`uv run python -m scripts.collect_october_market_references`; `--offline` reuses
+raw responses in ignored `outputs/october-market-references/`. No API key is
+required by the public endpoints used for this export. All earlier series are
+preserved.

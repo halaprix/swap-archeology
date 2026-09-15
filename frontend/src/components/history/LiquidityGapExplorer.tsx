@@ -68,6 +68,20 @@ export function formatChartObservation(
   };
 }
 
+export function rankChartSeries(series: Series[], selected: number): Series[] {
+  const price = (entry: Series) => {
+    const value = entry.values[selected];
+    return typeof value === "number" && Number.isFinite(value) && value > 0 ? value : -Infinity;
+  };
+  return [...series].sort((a, b) => price(b) - price(a) || a.id.localeCompare(b.id));
+}
+
+export function priceDifferencePercent(value: number | null | undefined, reference: number | null | undefined): number | null {
+  return typeof value === "number" && Number.isFinite(value) && value > 0 &&
+    typeof reference === "number" && Number.isFinite(reference) && reference > 0
+    ? (value / reference - 1) * 100 : null;
+}
+
 export function PriceChart({
   rows,
   series,
@@ -124,6 +138,9 @@ export function PriceChart({
 
   const showTooltip = (isHovered || isFocused) && rows.length > 0 && selected >= 0 && selected < rows.length;
   const selectedRow = rows[selected];
+  const ranked = rankChartSeries(series, selected);
+  const reference = selectedRow?.chainlink;
+
   const xPercent = (x(selected) / w) * 100;
   const isRightHalf = xPercent > 50;
 
@@ -185,14 +202,15 @@ export function PriceChart({
           </text>
           {series.map((entry) => {
             const isReference = entry.id === "chainlink" || entry.id === "aave" || entry.id in KNOWN_ORACLE_SOURCES;
+            const isMarket = KNOWN_ORACLE_SOURCES[entry.id]?.kind === "market";
             return (
               <path
                 key={entry.id}
                 d={linePath(entry.values, (value, index) => ({ x: x(index), y: y(value ?? lo), value }))}
                 fill="none"
                 stroke={entry.color}
-                strokeWidth={isReference ? 3.5 : 1.2}
-                strokeOpacity={isReference ? 1 : 0.4}
+                strokeWidth={isMarket ? 3 : isReference ? 3.5 : 1.2}
+                strokeOpacity={isMarket ? 0.75 : isReference ? 1 : 0.4}
                 strokeDasharray={isReference ? entry.dash : "5 4"}
               />
             );
@@ -222,7 +240,7 @@ export function PriceChart({
               position: "absolute",
               top: "12px",
               ...(isRightHalf ? { left: "14px", right: "auto" } : { right: "14px", left: "auto" }),
-              width: "min(360px, calc(100% - 24px))",
+              width: "min(440px, calc(100% - 24px))",
               maxHeight: "calc(100% - 24px)",
               overflowY: "auto",
               pointerEvents: "auto",
@@ -285,70 +303,27 @@ export function PriceChart({
               </div>
             </div>
 
-            <div
-              style={{
-                display: "grid",
-                gap: "var(--space-1-5)",
-              }}
-            >
-              {series.map((entry) => {
-                const val = entry.values[selected];
+            <div style={{ fontSize: "10px", color: "var(--color-text-muted)", marginBottom: "8px" }}>
+              Highest → lowest · Δ vs Chainlink
+            </div>
+            <div style={{ position: "relative", height: `${ranked.length * 52}px` }}>
+              {ranked.map((entry, rank) => {
+                const value = entry.values[selected];
                 const detail = entry.details?.[selected];
-                const { formatted, isAvailable } = formatChartObservation(val, detail);
-
+                const { formatted, isAvailable } = formatChartObservation(value, detail);
+                const delta = priceDifferencePercent(value, reference);
                 return (
-                  <div
-                    key={entry.id}
-                    style={{
-                      display: "flex",
-                      alignItems: "flex-start",
-                      justifyContent: "space-between",
-                      gap: "var(--space-2)",
-                      fontSize: "11px",
-                      lineHeight: "1.4",
-                    }}
-                  >
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "flex-start",
-                        gap: "var(--space-1-5)",
-                        minWidth: 0,
-                        flex: 1,
-                      }}
-                    >
-                      <span
-                        style={{
-                          width: "7px",
-                          height: "7px",
-                          borderRadius: "var(--radius-full)",
-                          backgroundColor: entry.color,
-                          marginTop: "4px",
-                          flexShrink: 0,
-                        }}
-                      />
-                      <span
-                        style={{
-                          color: "var(--color-text-secondary)",
-                          wordBreak: "break-word",
-                        }}
-                      >
-                        {entry.label}
+                  <div key={entry.id} className="price-rank-row" title={isAvailable ? detail?.reason : formatted}
+                    style={{ transform: `translateY(${rank * 52}px)`, borderLeft: `3px solid ${entry.color}` }}>
+                    <span style={{ minWidth: 0 }}>
+                      <span style={{ color: entry.color, fontWeight: 600 }}>{rank + 1}. </span>
+                      {entry.label}
+                    </span>
+                    <span className="font-mono" style={{ textAlign: "right", whiteSpace: "nowrap" }}>
+                      <strong>{isAvailable ? chartPriceFmt.format(value!) : "—"}</strong>
+                      <span style={{ display: "block", fontSize: "10px", color: "var(--color-text-muted)" }}>
+                        {delta === null ? "—" : `${delta > 0 ? "+" : ""}${delta.toFixed(2)}%`}
                       </span>
-                    </div>
-                    <span
-                      className="font-mono"
-                      style={{
-                        whiteSpace: "nowrap",
-                        fontVariantNumeric: "tabular-nums",
-                        fontWeight: isAvailable ? "var(--font-weight-medium)" : "var(--font-weight-regular)",
-                        color: isAvailable ? "var(--color-text)" : "var(--color-text-muted)",
-                        fontStyle: isAvailable ? "normal" : "italic",
-                        flexShrink: 0,
-                        marginLeft: "var(--space-2)",
-                      }}
-                    >
-                      {formatted}
                     </span>
                   </div>
                 );
@@ -417,6 +392,8 @@ export function LiquidityGapExplorer({
         "redstone_eth_usdc",
         "chaos_avalanche_eth_usdc",
         "chronicle_eth_usdc",
+        "binance_eth_usdc",
+        "coingecko_eth_usdc",
         "uniswap_v3_twap_300",
       ])
   );
@@ -507,7 +484,7 @@ export function LiquidityGapExplorer({
   }, [data]);
 
   const oracleSourceIds = useMemo(() => Object.keys(KNOWN_ORACLE_SOURCES).filter(
-    (id) => KNOWN_ORACLE_SOURCES[id].kind !== "oracle" || oracleData?.sources.some((source) => source.id === id)
+    (id) => ["spot", "twap"].includes(KNOWN_ORACLE_SOURCES[id].kind) || oracleData?.sources.some((source) => source.id === id)
   ), [oracleData]);
 
   const alignedOracle = useMemo(() => Object.fromEntries(

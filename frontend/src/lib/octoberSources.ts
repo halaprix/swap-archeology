@@ -44,7 +44,7 @@ export type AlignedOracleValue = {
 export type OracleSourceConfig = {
   id: string;
   label: string;
-  kind: "spot" | "twap" | "oracle";
+  kind: "spot" | "twap" | "oracle" | "market";
   windowSeconds?: number;
   description: string;
   color: string;
@@ -53,6 +53,16 @@ export type OracleSourceConfig = {
 };
 
 export const KNOWN_ORACLE_SOURCES: Record<string, OracleSourceConfig> = {
+  binance_eth_usdc: {
+    id: "binance_eth_usdc", label: "Binance ETH/USDC · 1m close", kind: "market",
+    description: "Most recent completed Binance ETHUSDC minute close; no future candle or USDT substitution.",
+    color: "#ca8a04", dash: "10 5", windowSeconds: 60, defaultVisible: true,
+  },
+  coingecko_eth_usdc: {
+    id: "coingecko_eth_usdc", label: "CoinGecko ETH · hourly / Chainlink USDC", kind: "market",
+    description: "Hourly ETH/USD observations converted with Chainlink USDC/USD. Last timestamped observation carried forward; coarse historical reference.",
+    color: "#65a30d", dash: "3 5", windowSeconds: 3600, defaultVisible: true,
+  },
   chronicle_eth_usdc: {
     id: "chronicle_eth_usdc",
     label: "Chronicle ETH / Chainlink USDC",
@@ -66,7 +76,7 @@ export const KNOWN_ORACLE_SOURCES: Record<string, OracleSourceConfig> = {
     label: "Chaos WETH (Avalanche) / Chainlink USDC",
     kind: "oracle",
     description: "Avalanche Chaos WETH/USD divided by Ethereum Chainlink USDC/USD, aligned backwards by UTC. Cross-chain reference; update ages appear below.",
-    color: "#059669",
+    color: "#ea580c",
     defaultVisible: true,
   },
   chaos_eth_usdc: {
@@ -90,7 +100,7 @@ export const KNOWN_ORACLE_SOURCES: Record<string, OracleSourceConfig> = {
     label: "1inch spot (liquidity-weighted reference)",
     kind: "spot",
     description: "1inch Spot price aggregator liquidity-weighted reference (USDC per WETH; useWrappers=false). Reference benchmark, not an executable routing quote; sidecar provides underlying connector configuration.",
-    color: "#0284c7",
+    color: "#0891b2",
     defaultVisible: true,
   },
   uniswap_v3_twap_300: {
@@ -108,7 +118,7 @@ export const KNOWN_ORACLE_SOURCES: Record<string, OracleSourceConfig> = {
     kind: "twap",
     windowSeconds: 60,
     description: "Uniswap v3 geometric mean time-weighted average price over 60 seconds (1 minute) from pool observations. On-chain benchmark reference, not an executable quote or external oracle.",
-    color: "#9d174d",
+    color: "#9a3412",
     dash: "4 2",
     defaultVisible: false,
   },
