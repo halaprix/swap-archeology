@@ -44,7 +44,7 @@ export type AlignedOracleValue = {
 export type OracleSourceConfig = {
   id: string;
   label: string;
-  kind: "spot" | "twap";
+  kind: "spot" | "twap" | "oracle";
   windowSeconds?: number;
   description: string;
   color: string;
@@ -53,6 +53,22 @@ export type OracleSourceConfig = {
 };
 
 export const KNOWN_ORACLE_SOURCES: Record<string, OracleSourceConfig> = {
+  chaos_eth_usdc: {
+    id: "chaos_eth_usdc",
+    label: "Chaos ETH/USD (unresolved)",
+    kind: "oracle",
+    description: "No verified Ethereum ETH/USD feed address for October 10, 2025. The verified historical candidate reports ETHFI/USD, a different asset.",
+    color: "#64748b",
+    defaultVisible: false,
+  },
+  redstone_eth_usdc: {
+    id: "redstone_eth_usdc",
+    label: "RedStone ETH / Chainlink USDC",
+    kind: "oracle",
+    description: "RedStone ETH/USD divided by same-block Chainlink USDC/USD. Mixed-provider USDC-per-ETH reference, independent of swap size. Update ages appear in the reference table.",
+    color: "#dc2626",
+    defaultVisible: true,
+  },
   oneinch_spot: {
     id: "oneinch_spot",
     label: "1inch spot (liquidity-weighted reference)",
@@ -169,4 +185,3 @@ export function alignOracleSeries(
 
   return baseRows.map((baseRow) => alignOracleValue(baseRow, map.get(baseRow.block), sourceId));
 }
-

@@ -26,6 +26,9 @@ exports under `frontend/public/`; they do not query Ethereum from the browser.
 
 ## October swap events
 
+The October price chart also includes a block-pinned RedStone reference and
+explicit unresolved Chaos coverage. See [feed identities, update ages and regeneration](reports/october-redstone-chaos-oracles.md).
+
 This is implemented in `scripts/october_swap_events.py`, with regression tests in
 `tests/test_october_swap_events.py`. It is a bounded repeatable experiment, **not**
 a registered source adapter or a general arbitrary-window event indexer.

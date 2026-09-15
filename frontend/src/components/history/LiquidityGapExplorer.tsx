@@ -410,6 +410,7 @@ export function LiquidityGapExplorer({
         "chainlink",
         "aave",
         "oneinch_spot",
+        "redstone_eth_usdc",
         "uniswap_v3_twap_300",
       ])
   );
@@ -499,22 +500,17 @@ export function LiquidityGapExplorer({
     return list;
   }, [data]);
 
-  const alignedOracle = useMemo(() => {
-    if (!data?.rows) return { oneinch_spot: [], uniswap_v3_twap_300: [], uniswap_v3_twap_60: [] };
-    return {
-      oneinch_spot: alignOracleSeries(data.rows, oracleData, "oneinch_spot"),
-      uniswap_v3_twap_300: alignOracleSeries(data.rows, oracleData, "uniswap_v3_twap_300"),
-      uniswap_v3_twap_60: alignOracleSeries(data.rows, oracleData, "uniswap_v3_twap_60"),
-    };
-  }, [data, oracleData]);
+  const oracleSourceIds = useMemo(() => Object.keys(KNOWN_ORACLE_SOURCES).filter(
+    (id) => KNOWN_ORACLE_SOURCES[id].kind !== "oracle" || oracleData?.sources.some((source) => source.id === id)
+  ), [oracleData]);
+
+  const alignedOracle = useMemo(() => Object.fromEntries(
+    oracleSourceIds.map((id) => [id, data?.rows ? alignOracleSeries(data.rows, oracleData, id) : []])
+  ), [data, oracleData, oracleSourceIds]);
 
   const oracleSeries = useMemo(() => {
     const list: Series[] = [];
-    const configs = [
-      { id: "oneinch_spot", fallback: KNOWN_ORACLE_SOURCES.oneinch_spot },
-      { id: "uniswap_v3_twap_300", fallback: KNOWN_ORACLE_SOURCES.uniswap_v3_twap_300 },
-      { id: "uniswap_v3_twap_60", fallback: KNOWN_ORACLE_SOURCES.uniswap_v3_twap_60 },
-    ] as const;
+    const configs = oracleSourceIds.map((id) => ({ id, fallback: KNOWN_ORACLE_SOURCES[id] }));
 
     for (const { id, fallback } of configs) {
       if (visible.has(id)) {
@@ -531,7 +527,7 @@ export function LiquidityGapExplorer({
       }
     }
     return list;
-  }, [visible, oracleData, alignedOracle]);
+  }, [visible, oracleData, alignedOracle, oracleSourceIds]);
 
   const series: Series[] = useMemo(
     () =>
@@ -683,9 +679,7 @@ export function LiquidityGapExplorer({
             { id: "aggregate:ETH", label: "ETH aggregate" },
             { id: "chainlink", label: "Chainlink" },
             { id: "aave", label: "Aave" },
-            { id: "oneinch_spot", label: getOracleLabel("oneinch_spot") },
-            { id: "uniswap_v3_twap_300", label: getOracleLabel("uniswap_v3_twap_300") },
-            { id: "uniswap_v3_twap_60", label: getOracleLabel("uniswap_v3_twap_60") },
+            ...oracleSourceIds.map((id) => ({ id, label: getOracleLabel(id) })),
           ].map((entry) => (
             <label key={entry.id} style={{ fontSize: "var(--font-size-xs)" }}>
               <input type="checkbox" checked={visible.has(entry.id)} onChange={() => toggle(entry.id)} /> {entry.label}
@@ -775,7 +769,7 @@ export function LiquidityGapExplorer({
               </tr>
             </thead>
             <tbody>
-              {(["oneinch_spot", "uniswap_v3_twap_300", "uniswap_v3_twap_60"] as const).map((sourceId) => {
+              {oracleSourceIds.map((sourceId) => {
                 const meta = oracleData?.sources?.find((s) => s.id === sourceId);
                 const fallback = KNOWN_ORACLE_SOURCES[sourceId];
                 const alignedVal = alignedOracle[sourceId]?.[boundedIndex];
@@ -793,13 +787,13 @@ export function LiquidityGapExplorer({
                     <td>
                       <Badge variant="neutral">
                         {kind.toUpperCase()}
-                        {windowSec ? ` · ${windowSec}s` : " · instantaneous"}
+                        {windowSec ? ` · ${windowSec}s` : kind === "oracle" ? " · latest reported" : " · instantaneous"}
                       </Badge>
                     </td>
                     <td className="font-mono">{isAvailable ? `${fmt.format(alignedVal.price!)} USDC` : "—"}</td>
                     <td>
                       {isAvailable ? (
-                        <Badge variant="success">available</Badge>
+                        <span><Badge variant="success">available</Badge>{alignedVal.reason ? ` (${alignedVal.reason})` : ""}</span>
                       ) : (
                         <span style={{ color: "var(--color-text-muted)" }}>
                           {alignedVal?.status ?? "unloaded"}

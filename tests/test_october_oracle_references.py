@@ -217,9 +217,9 @@ def test_published_sidecar_contract_and_integrity():
 
     # Contract checks
     assert sidecar["schemaVersion"] == 1
-    assert len(sidecar["sources"]) == 3
     source_ids = {s["id"] for s in sidecar["sources"]}
-    assert source_ids == {"oneinch_spot", "uniswap_v3_twap_60", "uniswap_v3_twap_300"}
+    assert len(source_ids) == len(sidecar["sources"])
+    assert {"oneinch_spot", "uniswap_v3_twap_60", "uniswap_v3_twap_300"} <= source_ids
 
     assert len(sidecar["rows"]) == 254
     assert len(source["rows"]) == 254
