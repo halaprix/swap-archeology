@@ -404,13 +404,15 @@ export function LiquidityGapExplorer({
   const [visible, setVisible] = useState<Set<string>>(
     () =>
       new Set([
-        ...PREFERRED_DIRECT_FAMILIES,
+        ...PREFERRED_DIRECT_FAMILIES.filter((id) => sourcesUrl !== "/october-sources.json" || id !== "pancake_v3"),
         "aggregate:ETH",
         "aggregate:WETH",
         "chainlink",
         "aave",
         "oneinch_spot",
         "redstone_eth_usdc",
+        "chaos_avalanche_eth_usdc",
+        "chronicle_eth_usdc",
         "uniswap_v3_twap_300",
       ])
   );

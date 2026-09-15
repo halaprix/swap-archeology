@@ -79,3 +79,49 @@ The extension preserves existing reference series and writes the bundled
 subset writes local evidence only. Raw responses remain under ignored
 `outputs/october-external-oracles/`; RPC configuration stays local. Re-running
 the original reference collector requires re-running this extension afterward.
+
+## Added Avalanche Chaos and Ethereum Chronicle references
+
+Chaos's Avalanche feed `0xC33FD9cC294371398a6C7880A05F6B039F3a138C`
+reports `WETH / USD`, eight decimals, and is listed in
+[BENQI's official price-feed registry](https://docs.benqi.fi/resources/contracts/price-feeds).
+This is a separate series from the unresolved Ethereum Chaos feed.
+For each Ethereum chart timestamp, select the latest Avalanche block at or before
+that timestamp. Contiguous parent-linked headers and the following block bracket
+that selection, preventing use of future chain state. Both block identities are
+retained. Divide the Avalanche USD price by the existing Ethereum Chainlink
+USDC/USD observation to preserve the chart's USDC-per-ETH units. This is a
+cross-chain, mixed-provider reference, not a feed available to an Ethereum
+contract at that block. The source describes WETH and may reflect its provider's
+asset assumptions; no equivalence to Ethereum executable liquidity is asserted.
+
+Chronicle's Ethereum feed `0x46ef0071b1E2fF6B42d36e5A177EA43Ae5917f4E`
+reports `ETH/USD`, with 18 decimals. Its historical identity is also supported by
+[Maker's March 2025 oracle migration](https://vote.makerdao.com/executive/template-executive-vote-eth-and-wsteth-oracle-migration-rate-changes-smart-burn-engine-parameter-update-bug-bounty-payout-aligned-delegate-compensation-atlas-core-development-payments-integration-boost-top-up-spark-proxy-spell-march-20-2025).
+We call `readWithAge()` at each canonical Ethereum block and divide by same-block
+Chainlink USDC/USD. The ScribeOptimistic implementation returns its finalized
+current value: a newer optimistic update becomes readable after its challenge
+period. This is neither the pending optimistic price nor the downstream Maker
+OSM value. The returned age refers to the contract's stored update time, not
+necessarily the original market observation time. `opChallengePeriod()` is
+retained per block. Historical direct and Multicall reads succeeded without
+altering caller permissions or contract state.
+
+Regenerate in this order after the base reference and RedStone collectors:
+
+```bash
+uv run python -m scripts.collect_october_chaos_avalanche
+uv run python -m scripts.collect_october_chronicle
+```
+
+Both accept `--offline` once their local caches are complete. Avalanche uses its
+public C-chain RPC with twelve concurrent batches and bounded retries; Chronicle
+uses the existing private Ethereum RPC configuration and Multicall cache. Raw
+responses remain in ignored `outputs/`. Public exports contain only public feed
+data and provenance. PancakeSwap's direct family line is hidden by default on
+`/october-gap`, while its data and toggle remain available.
+
+In the collected Chronicle window, the challenge period is 600 seconds throughout;
+returned read ages range from 600 to 5376 seconds. The endpoints expose
+$4017.80371455 and $3632.89 per ETH before USDC conversion. These older exposed
+values should not be mistaken for contemporaneous executable market prices.

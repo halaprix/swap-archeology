@@ -53,6 +53,22 @@ export type OracleSourceConfig = {
 };
 
 export const KNOWN_ORACLE_SOURCES: Record<string, OracleSourceConfig> = {
+  chronicle_eth_usdc: {
+    id: "chronicle_eth_usdc",
+    label: "Chronicle ETH / Chainlink USDC",
+    kind: "oracle",
+    description: "Exposed Chronicle ScribeOptimistic ETH/USD value divided by same-block Chainlink USDC/USD. Read age and challenge period appear below; pending updates are excluded.",
+    color: "#7c3aed",
+    defaultVisible: true,
+  },
+  chaos_avalanche_eth_usdc: {
+    id: "chaos_avalanche_eth_usdc",
+    label: "Chaos WETH (Avalanche) / Chainlink USDC",
+    kind: "oracle",
+    description: "Avalanche Chaos WETH/USD divided by Ethereum Chainlink USDC/USD, aligned backwards by UTC. Cross-chain reference; update ages appear below.",
+    color: "#059669",
+    defaultVisible: true,
+  },
   chaos_eth_usdc: {
     id: "chaos_eth_usdc",
     label: "Chaos ETH/USD (unresolved)",
